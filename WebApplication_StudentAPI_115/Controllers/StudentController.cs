@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
 using WebApplication_StudentAPI_115.Data;
 using WebApplication_StudentAPI_115.Models;
+using WebApplication_StudentAPI_115.Repository.IRepository;
 
 namespace WebApplication_StudentAPI_115.Controllers
 {
@@ -12,65 +13,62 @@ namespace WebApplication_StudentAPI_115.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
-        public StudentController(ApplicationDbContext context)
+        private readonly IUnitOfWork _unitOfWork;
+        public StudentController(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
         [Authorize(Roles = "Admin,Student")]
-        //[CustomAuthorization]
         [HttpGet]
-        public IActionResult GetAllStudent()
+        public async Task<IActionResult> GetAllStudent()
         {
-            return Ok(_context.Students.ToList());
-        }
-        [Authorize(Roles = "Admin")]
-        [HttpPost]
-        public IActionResult SaveStudent([FromBody]Student student)
-        {
-            if (student == null) return BadRequest();
-            if (!ModelState.IsValid) return BadRequest();
-            var studentInDb = _context.Students.ToList().FirstOrDefault(x => x.Email == student.Email);
-            if (studentInDb == null)
+            var studentList = await _unitOfWork.Student.GetAll();
+            if (studentList == null)
             {
-                _context.Students.Add(student);
-                _context.SaveChanges();
+                return NotFound();
             }
             else
             {
-                return StatusCode(404, "Email is already registered... Please Check");
+                return Ok(studentList);
             }
+        }
+        [Authorize(Roles = "Admin")]
+        [HttpGet("{studentId:int}")]
+        public async Task<IActionResult> GetStudentById(int studentId)
+        {
+            var student = await _unitOfWork.Student.GetById(studentId);
+            if (student == null) return NotFound();
+            else return Ok(student);
+        }
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public IActionResult CreateStudent([FromBody] Student student)
+        {
+            if (student == null) return BadRequest();
+            if (!ModelState.IsValid) return BadRequest();
+            _unitOfWork.Student.Add(student);
+            _unitOfWork.Save();
             return Ok();
         }
         [Authorize(Roles = "Admin")]
         [HttpPut]
-        public IActionResult UpdateStudent([FromBody]Student student)
+        public IActionResult UpdateStudent([FromBody] Student student)
         {
-            if(student == null) return BadRequest();
-            if(!ModelState.IsValid) return BadRequest();
-            var studentInDb = _context.Students.AsNoTracking().
-                FirstOrDefault(x => x.Email == student.Email && x.Id == student.Id);
-            var studentX = _context.Students.AsNoTracking().
-                FirstOrDefault(x => x.Email == student.Email && x.Id != student.Id);
-            if(studentInDb == null && studentX != null)
-            {
-                return StatusCode(404, "Email is already registered... Please Check");
-            }
-            else
-            {
-                _context.Students.Update(student);
-                _context.SaveChanges();
-            }
+            if (student == null) return BadRequest();
+            if (!ModelState.IsValid) return BadRequest();
+            _unitOfWork.Student.Update(student);
+            _unitOfWork.Save();
             return Ok();
         }
         [Authorize(Roles = "Admin")]
         [HttpDelete("{id:int}")]
+
         public IActionResult DeleteStudent(int id)
         {
-            var studentInDb = _context.Students.Find(id);
-            if (studentInDb == null) return NotFound("User does not exists... Please check id");
-            _context.Students.Remove(studentInDb);
-            _context.SaveChanges();
+            var student = _unitOfWork.Student.Find(id);
+            if (student == null) return NotFound();
+            _unitOfWork.Student.Delete(student);
+            _unitOfWork.Save();
             return Ok();
         }
     }

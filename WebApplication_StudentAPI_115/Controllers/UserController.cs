@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApplication_StudentAPI_115.Models;
 using WebApplication_StudentAPI_115.Models.ViewModels;
-using WebApplication_StudentAPI_115.Repository;
+using WebApplication_StudentAPI_115.Repository.IRepository;
 
 namespace WebApplication_StudentAPI_115.Controllers
 {
