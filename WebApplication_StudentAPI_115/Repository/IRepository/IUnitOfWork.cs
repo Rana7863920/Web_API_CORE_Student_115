@@ -3,6 +3,7 @@
     public interface IUnitOfWork
     {
         IStudentRepository Student { get; }
+        IEmployeeRepository Employee { get; }
         int Save();
     }
 }

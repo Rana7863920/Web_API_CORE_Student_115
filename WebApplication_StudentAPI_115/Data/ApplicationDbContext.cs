@@ -10,5 +10,6 @@ namespace WebApplication_StudentAPI_115.Data
         }
         public DbSet<Student> Students { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
