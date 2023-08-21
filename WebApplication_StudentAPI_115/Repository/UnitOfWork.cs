@@ -11,11 +11,13 @@ namespace WebApplication_StudentAPI_115.Repository
             _context = context;
             Student = new StudentRepository(context);
             Employee = new EmployeeRepository(context);
+            User = new UserRepository(context);
         }
 
         public IStudentRepository Student { get; private set; }
 
         public IEmployeeRepository Employee { get; private set; }
+        public IUserRepository User { get; private set; }
 
         public int Save()
         {

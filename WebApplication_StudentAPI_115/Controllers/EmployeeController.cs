@@ -20,7 +20,7 @@ namespace WebApplication_StudentAPI_115.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
         {
-            var employeeList = await _unitOfWork.Employee.GetAll();
+            var employeeList = _unitOfWork.Employee.GetAll();
             if (employeeList == null)
             {
                 return NotFound();

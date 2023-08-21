@@ -2,10 +2,8 @@
 
 namespace WebApplication_StudentAPI_115.Repository.IRepository
 {
-    public interface IUserRepository
+    public interface IUserRepository:IRepository<User>
     {
-        bool IsUniqueUser(string UserName);
-        User Authenticate(string UserName, string Password);
-        User Register(string UserName, string Password, string ConfirmPassword, string Role);
+        
     }
 }

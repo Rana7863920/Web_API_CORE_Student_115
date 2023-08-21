@@ -9,6 +9,8 @@ using WebApplication_StudentAPI_115.Data;
 using WebApplication_StudentAPI_115.Models;
 using WebApplication_StudentAPI_115.Repository;
 using WebApplication_StudentAPI_115.Repository.IRepository;
+using WebApplication_StudentAPI_115.Service;
+using WebApplication_StudentAPI_115.Service.IService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,10 +43,8 @@ builder.Services.AddAuthentication(x =>
     };
 });
 
-string cs = builder.Configuration.GetConnectionString("conStr");
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(cs));
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddDIServices(builder.Configuration);
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 

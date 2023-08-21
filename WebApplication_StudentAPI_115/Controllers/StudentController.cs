@@ -22,7 +22,7 @@ namespace WebApplication_StudentAPI_115.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllStudent()
         {
-            var studentList = await _unitOfWork.Student.GetAll();
+            var studentList = _unitOfWork.Student.GetAll();
             if (studentList == null)
             {
                 return NotFound();

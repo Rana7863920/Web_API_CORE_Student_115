@@ -4,6 +4,7 @@
     {
         IStudentRepository Student { get; }
         IEmployeeRepository Employee { get; }
+        IUserRepository User { get; }
         int Save();
     }
 }

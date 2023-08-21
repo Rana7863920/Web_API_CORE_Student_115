@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 using WebApplication_StudentAPI_115.Data;
 using WebApplication_StudentAPI_115.Repository.IRepository;
 
@@ -29,9 +30,37 @@ namespace WebApplication_StudentAPI_115.Repository
             return dbSet.Find(id);
         }
 
-        public async Task<IEnumerable<T>> GetAll()
+        public T FirstorDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)
         {
-            return await dbSet.ToListAsync();
+            IQueryable<T> query = dbSet;
+            if (filter != null)
+                query = query.Where(filter);
+            if (includeProperties != null)
+            {
+                foreach (var includeProp in includeProperties.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+            return query.FirstOrDefault();
+        }
+
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)
+        {
+            IQueryable<T> query = dbSet;
+            if (filter != null)
+                query = query.Where(filter);
+            if (includeProperties != null)
+            {
+                foreach (var includeProp in includeProperties.
+                    Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+            if (orderBy != null)
+                return orderBy(query).ToList();
+            return query.ToList();
         }
 
         public async Task<T> GetById(int id)

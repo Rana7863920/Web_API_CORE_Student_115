@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebApplication_StudentAPI_115.Models;
 using WebApplication_StudentAPI_115.Models.ViewModels;
 using WebApplication_StudentAPI_115.Repository.IRepository;
+using WebApplication_StudentAPI_115.Service.IService;
 
 namespace WebApplication_StudentAPI_115.Controllers
 {
@@ -10,20 +11,20 @@ namespace WebApplication_StudentAPI_115.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserRepository _userRepository;
-        public UserController(IUserRepository userRepository)
+        private readonly IUserService _userService;
+        public UserController(IUserService userService)
         {
-            _userRepository = userRepository;
+            _userService = userService;
         }
         [HttpPost("register")]
-        public IActionResult Register([FromBody]User user)
+        public IActionResult Register([FromBody]UserVM2 user)
         {
             if (ModelState.IsValid)
             {
-                var isUniqueUser = _userRepository.IsUniqueUser(user.UserName);
+                var isUniqueUser = _userService.IsUniqueUser(user.UserName);
                 if (!isUniqueUser)
                     return BadRequest("User in use!!");
-                var userInfo = _userRepository.Register(user.UserName, user.Password, user.ConfirmPassword, user.Role);
+                var userInfo = _userService.Register(user);
                 if (userInfo == null) return BadRequest();
             }
             return Ok();
@@ -31,7 +32,7 @@ namespace WebApplication_StudentAPI_115.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]UserVM userVM)
         {
-            var user = _userRepository.Authenticate(userVM.UserName, userVM.Password);
+            var user = _userService.Authenticate(userVM);
             if (user == null) return BadRequest("Wrong Username/Password");
             return Ok(user);
         }
