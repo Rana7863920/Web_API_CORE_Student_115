@@ -1,4 +1,6 @@
-﻿using WebApplication_StudentAPI_115.Data;
+﻿using Microsoft.EntityFrameworkCore.Storage;
+using System.Data;
+using WebApplication_StudentAPI_115.Data;
 using WebApplication_StudentAPI_115.Repository.IRepository;
 
 namespace WebApplication_StudentAPI_115.Repository
@@ -18,6 +20,13 @@ namespace WebApplication_StudentAPI_115.Repository
 
         public IEmployeeRepository Employee { get; private set; }
         public IUserRepository User { get; private set; }
+
+        public IDbTransaction BeginTransaction()
+        {
+            var transaction = _context.Database.BeginTransaction();
+
+            return transaction.GetDbTransaction();
+        }
 
         public int Save()
         {

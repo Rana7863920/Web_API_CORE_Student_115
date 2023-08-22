@@ -21,9 +21,9 @@ namespace WebApplication_StudentAPI_115.Service
             _appSetting = appSetting.Value;
         }
 
-        public bool IsUniqueUser(string UserName)
+        public bool IsUniqueUser(UserVM2 user)
         {
-            var userInDb = _unitOfWork.User.FirstorDefault(x => x.UserName == UserName);
+            var userInDb = _unitOfWork.User.FirstorDefault(x => x.UserName == user.UserName && x.Role == user.Role);
             if (userInDb == null)
             {
                 return true;

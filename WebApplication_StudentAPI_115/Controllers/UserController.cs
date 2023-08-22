@@ -12,21 +12,37 @@ namespace WebApplication_StudentAPI_115.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-        public UserController(IUserService userService)
+        private readonly IUnitOfWork _unitOfWork;
+        public UserController(IUserService userService, IUnitOfWork unitOfWork)
         {
             _userService = userService;
+            _unitOfWork = unitOfWork;
         }
         [HttpPost("register")]
-        public IActionResult Register([FromBody]UserVM2 user)
+        public IActionResult Register([FromBody]List<UserVM2> users)
         {
-            if (ModelState.IsValid)
+            using var transaction = _unitOfWork.BeginTransaction();
+            try
             {
-                var isUniqueUser = _userService.IsUniqueUser(user.UserName);
-                if (!isUniqueUser)
-                    return BadRequest("User in use!!");
-                var userInfo = _userService.Register(user);
-                if (userInfo == null) return BadRequest();
+                if (ModelState.IsValid)
+                {
+                    foreach (var user in users)
+                    {
+                        var isUniqueUser = _userService.IsUniqueUser(user);
+                        if (!isUniqueUser)
+                            return BadRequest("User in use!!");
+                        var userInfo = _userService.Register(user);
+                        if (userInfo == null) return BadRequest();
+                    }
+                    transaction.Commit();
+                }
             }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                return StatusCode(404, ex.Message);
+            }
+            
             return Ok();
         }
         [HttpPost("authenticate")]

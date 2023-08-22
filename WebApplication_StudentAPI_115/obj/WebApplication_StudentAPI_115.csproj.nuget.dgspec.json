@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[6.0.18, )"
             },
+            "Microsoft.Build.Tasks.Core": {
+              "target": "Package",
+              "version": "[17.7.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.18, )"
@@ -70,6 +74,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [

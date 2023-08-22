@@ -42,33 +42,75 @@ namespace WebApplication_StudentAPI_115.Controllers
         }
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult CreateStudent([FromBody] Student student)
+        public IActionResult CreateStudent([FromBody] List<Student> students)
         {
-            if (student == null) return BadRequest();
+            if (students == null) return BadRequest();
             if (!ModelState.IsValid) return BadRequest();
-            _unitOfWork.Student.Add(student);
-            _unitOfWork.Save();
+            using var transaction = _unitOfWork.BeginTransaction();
+            try
+            {
+                foreach (var student in students)
+                {
+                    _unitOfWork.Student.Add(student);
+                    _unitOfWork.Save();
+                }
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                return StatusCode(404, ex.Message);
+            }
+
             return Ok();
         }
         [Authorize(Roles = "Admin")]
         [HttpPut]
-        public IActionResult UpdateStudent([FromBody] Student student)
+        public IActionResult UpdateStudent([FromBody] List<Student> students)
         {
-            if (student == null) return BadRequest();
+            if (students == null) return BadRequest();
             if (!ModelState.IsValid) return BadRequest();
-            _unitOfWork.Student.Update(student);
-            _unitOfWork.Save();
+            using var transaction = _unitOfWork.BeginTransaction();
+            try
+            {
+                foreach (var student in students)
+                {
+                    _unitOfWork.Student.Update(student);
+                    _unitOfWork.Save();
+                }
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                return StatusCode(404, ex.Message);
+            }
+
             return Ok();
         }
         [Authorize(Roles = "Admin")]
-        [HttpDelete("{id:int}")]
+        [HttpDelete]
 
-        public IActionResult DeleteStudent(int id)
+        public IActionResult DeleteStudent(int[] IDs)
         {
-            var student = _unitOfWork.Student.Find(id);
-            if (student == null) return NotFound();
-            _unitOfWork.Student.Delete(student);
-            _unitOfWork.Save();
+            using var transaction = _unitOfWork.BeginTransaction();
+            try
+            {
+                foreach (var id in IDs)
+                {
+                    var student = _unitOfWork.Student.Find(id);
+                    if (student == null) return NotFound();
+                    _unitOfWork.Student.Delete(student);
+                    _unitOfWork.Save();
+                }
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                return StatusCode(404, ex.Message);
+            }
+
             return Ok();
         }
     }
