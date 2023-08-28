@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
@@ -51,7 +52,7 @@ namespace WebApplication_StudentAPI_115.Controllers
 
                 foreach (var emp in employees)
                 {
-                    if(emp.Name == "")
+                    if (emp.Name == "")
                     {
                         throw new Exception("Name cannot be empty");
                     }
@@ -112,13 +113,49 @@ namespace WebApplication_StudentAPI_115.Controllers
                 }
                 transaction.Commit();
             }
-            catch(Exception ex) 
-            { 
+            catch (Exception ex)
+            {
                 transaction.Rollback();
                 return StatusCode(404, ex.Message);
             }
-            
+
             return Ok();
         }
+        //[HttpPost("test")]
+        //public IActionResult TestEmployee(Employee employee)
+        //{
+        //    if (employee == null) return BadRequest();
+        //    using var transaction = _unitOfWork.BeginTransaction();
+        //    try
+        //    {
+        //        employee.Salary += 500;
+        //        _unitOfWork.Employee.Update(employee);
+        //        _unitOfWork.Save();
+        //        using var transaction2 = _unitOfWork.BeginTransaction();
+        //        try
+        //        {
+        //            employee.Salary += 1000;
+        //            _unitOfWork.Employee.Update(employee);
+        //            _unitOfWork.Save();
+        //            transaction2.Commit();
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            transaction2.Rollback();
+        //            return StatusCode(404, ex.Message);
+        //        }
+        //        if(employee.Name == "")
+        //        {
+        //            throw new Exception("name cannot be empty");
+        //        }
+        //        transaction.Commit();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        transaction.Rollback();
+        //        return StatusCode(404, ex.Message);
+        //    }
+        //    return Ok();
+        //}
     }
 }

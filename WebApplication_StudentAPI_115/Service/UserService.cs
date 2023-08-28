@@ -36,16 +36,24 @@ namespace WebApplication_StudentAPI_115.Service
 
         public User Register(UserVM2 userVM2)
         {
-            User user = new User()
+            var user2 = _unitOfWork.User.FirstorDefault(x => x.UserName == userVM2.UserName);
+            if(user2 == null)
             {
-                UserName = userVM2.UserName,
-                Password = userVM2.Password,
-                ConfirmPassword = userVM2.ConfirmPassword,
-                Role = userVM2.Role
-            };
-            _unitOfWork.User.Add(user);
-            _unitOfWork.Save();
-            return user;
+                User user = new User()
+                {
+                    UserName = userVM2.UserName,
+                    Password = userVM2.Password,
+                    ConfirmPassword = userVM2.ConfirmPassword,
+                    Role = userVM2.Role
+                };
+                _unitOfWork.User.Add(user);
+                _unitOfWork.Save();
+                return user;
+            }
+            else
+            {
+                return null;
+            }
         }
         public User Authenticate(UserVM user)
         {

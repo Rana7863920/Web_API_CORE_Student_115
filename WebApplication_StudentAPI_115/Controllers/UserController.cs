@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication_StudentAPI_115.Models;
 using WebApplication_StudentAPI_115.Models.ViewModels;
@@ -13,10 +14,12 @@ namespace WebApplication_StudentAPI_115.Controllers
     {
         private readonly IUserService _userService;
         private readonly IUnitOfWork _unitOfWork;
-        public UserController(IUserService userService, IUnitOfWork unitOfWork)
+        private readonly ILogger<User> _logger;
+        public UserController(IUserService userService, IUnitOfWork unitOfWork, ILogger<User> logger)
         {
             _userService = userService;
             _unitOfWork = unitOfWork;
+            _logger = logger;
         }
         [HttpPost("register")]
         public IActionResult Register([FromBody]List<UserVM2> users)
@@ -28,11 +31,9 @@ namespace WebApplication_StudentAPI_115.Controllers
                 {
                     foreach (var user in users)
                     {
-                        var isUniqueUser = _userService.IsUniqueUser(user);
-                        if (!isUniqueUser)
-                            return BadRequest("User in use!!");
                         var userInfo = _userService.Register(user);
-                        if (userInfo == null) return BadRequest();
+                        if (userInfo == null) return BadRequest("User in use!!");
+                        _logger.LogInformation("User get registered");
                     }
                     transaction.Commit();
                 }
@@ -42,15 +43,36 @@ namespace WebApplication_StudentAPI_115.Controllers
                 transaction.Rollback();
                 return StatusCode(404, ex.Message);
             }
-            
             return Ok();
         }
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]UserVM userVM)
         {
             var user = _userService.Authenticate(userVM);
-            if (user == null) return BadRequest("Wrong Username/Password");
+            if (user == null) throw new Exception("wrong username/password");
+            _logger.LogInformation("User got login");
             return Ok(user);
         }
+        [ApiExplorerSettings(IgnoreApi = true)]
+        [Route("/error-development")]
+        public IActionResult HandleErrorDevelopment(
+        [FromServices] IHostEnvironment hostEnvironment)
+        {
+            if (!hostEnvironment.IsDevelopment())
+            {
+                return NotFound();
+            }
+
+            var exceptionHandlerFeature =
+                HttpContext.Features.Get<IExceptionHandlerFeature>()!;
+
+            return Problem(
+                detail: exceptionHandlerFeature.Error.StackTrace,
+                title: exceptionHandlerFeature.Error.Message);
+        }
+        [ApiExplorerSettings(IgnoreApi = true)]
+        [Route("/error")]
+        public IActionResult HandleError() =>
+            Problem();
     }
 }

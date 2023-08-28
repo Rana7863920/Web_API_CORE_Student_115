@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.HttpLogging;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -11,9 +13,11 @@ using WebApplication_StudentAPI_115.Repository;
 using WebApplication_StudentAPI_115.Repository.IRepository;
 using WebApplication_StudentAPI_115.Service;
 using WebApplication_StudentAPI_115.Service.IService;
+using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -46,6 +50,27 @@ builder.Services.AddAuthentication(x =>
 builder.Services.AddDIServices(builder.Configuration);
 builder.Services.AddScoped<IUserService, UserService>();
 
+builder.Services.AddControllers()
+    .ConfigureApiBehaviorOptions(options =>
+    {
+        options.InvalidModelStateResponseFactory = context =>
+            new BadRequestObjectResult(context.ModelState)
+            {
+                ContentTypes =
+                {
+                    // using static System.Net.Mime.MediaTypeNames;
+                    Application.Json,
+                    Application.Xml
+                }
+            };
+    })
+    .AddXmlSerializerFormatters();
+
+builder.Services.AddHttpLogging(httpLogging =>
+{
+    httpLogging.LoggingFields = HttpLoggingFields.All;
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -53,8 +78,14 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseExceptionHandler("/error-development");
+}
+else
+{
+    app.UseExceptionHandler("/error");
 }
 
+app.UseHttpLogging();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
