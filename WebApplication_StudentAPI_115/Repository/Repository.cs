@@ -42,7 +42,7 @@ namespace WebApplication_StudentAPI_115.Repository
                     query = query.Include(includeProp);
                 }
             }
-            return query.FirstOrDefault();
+            return query.AsNoTracking().FirstOrDefault();
         }
 
         public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)

@@ -33,7 +33,7 @@ namespace WebApplication_StudentAPI_115.Controllers
                     {
                         var userInfo = _userService.Register(user);
                         if (userInfo == null) return BadRequest("User in use!!");
-                        _logger.LogInformation("User get registered");
+                        _logger.LogInformation("User registered");
                     }
                     transaction.Commit();
                 }

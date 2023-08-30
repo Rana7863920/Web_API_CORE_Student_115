@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using System.Text.RegularExpressions;
 using WebApplication_StudentAPI_115.Data;
 using WebApplication_StudentAPI_115.Models;
@@ -52,6 +53,8 @@ namespace WebApplication_StudentAPI_115.Controllers
             {
                 foreach (var student in students)
                 {
+                    var tempStudent = _unitOfWork.Student.FirstorDefault(x => x.Email == student.Email);
+                    if (tempStudent != null) throw new Exception(student.Email + " already in use!!... Please Check");
                     _unitOfWork.Student.Add(student);
                     _unitOfWork.Save();
                 }
@@ -76,8 +79,22 @@ namespace WebApplication_StudentAPI_115.Controllers
             {
                 foreach (var student in students)
                 {
-                    _unitOfWork.Student.Update(student);
-                    _unitOfWork.Save();
+                    var tempStudent = _unitOfWork.Student.FirstorDefault(x => x.Email == student.Email && x.Id == student.Id);
+                    if(tempStudent != null)
+                    {
+                        _unitOfWork.Student.Update(student);
+                        _unitOfWork.Save();
+                    }
+                    else
+                    {
+                        var tempStudent2 = _unitOfWork.Student.FirstorDefault(x => x.Email == student.Email && x.Id != student.Id);
+                        if(tempStudent2 != null)
+                        {
+                            throw new Exception(student.Email + " already in use!! please check");
+                        }
+                        _unitOfWork.Student.Update(student);
+                        _unitOfWork.Save();
+                    }
                 }
                 transaction.Commit();
             }
