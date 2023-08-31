@@ -1,0 +1,214 @@
+2023-08-30T16:29:21.4837364+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-08-30T16:29:21.9927625+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-08-30T16:29:21.9929167+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-08-30T16:29:22.0014485+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-30T16:29:22.0016920+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-30T16:29:22.0017352+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-08-30T16:29:23.9541092+05:30 0HMT990LA8UEO:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-08-30T16:29:24.8338496+05:30 0HMT990LA8UEO:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 889.1642ms (791a596a)
+2023-08-30T16:29:24.9589887+05:30 0HMT990LA8UEO:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-08-30T16:29:24.9589889+05:30 0HMT990LA8UEO:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-08-30T16:29:24.9665523+05:30 0HMT990LA8UEO:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 7.6197ms (791a596a)
+2023-08-30T16:29:25.1698969+05:30 0HMT990LA8UEO:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 210.6751ms (791a596a)
+2023-08-30T16:29:25.3339603+05:30 0HMT990LA8UEO:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-08-30T16:29:26.2882561+05:30 0HMT990LA8UEO:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 954.2312ms (791a596a)
+2023-08-30T16:29:41.0209242+05:30 0HMT990LA8UEP:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-08-30T16:29:41.0299296+05:30 0HMT990LA8UEP:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-08-30T16:29:41.7685367+05:30 0HMT990LA8UEP:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-08-30T16:29:41.8011349+05:30 0HMT990LA8UEP:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-08-30T16:29:43.1883692+05:30 0HMT990LA8UEP:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-08-30T16:29:43.2269996+05:30 0HMT990LA8UEP:00000001 [INF] RequestBody: "{
+  \"userName\": \"Rana\",
+  \"password\": \"Rana@123\"
+}" (6d42d084)
+2023-08-30T16:29:45.7628925+05:30 0HMT990LA8UEP:00000001 [INF] Executed DbCommand ("75"ms) [Parameters=["@__user_UserName_0='?' (Size = 4000), @__user_Password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE ([u].[UserName] = @__user_UserName_0) AND ([u].[Password] = @__user_Password_1)" (0723d8ff)
+2023-08-30T16:29:46.2010418+05:30 0HMT990LA8UEP:00000001 [INF] User got login (82c4071d)
+2023-08-30T16:29:46.2144939+05:30 0HMT990LA8UEP:00000001 [INF] Executing "OkObjectResult", writing value of type '"WebApplication_StudentAPI_115.Models.User"'. (605b4265)
+2023-08-30T16:29:46.2207106+05:30 0HMT990LA8UEP:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-08-30T16:29:46.2414353+05:30 0HMT990LA8UEP:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 4425.213ms (afa2e885)
+2023-08-30T16:29:46.2415937+05:30 0HMT990LA8UEP:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-08-30T16:29:46.2418213+05:30 0HMT990LA8UEP:00000001 [INF] ResponseBody: "{\"id\":8,\"userName\":\"Rana\",\"password\":\"\",\"confirmPassword\":\"\",\"role\":\"Admin\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiOCIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY5MzM5MzE4NiwiZXhwIjoxNjkzOTk3OTg1LCJpYXQiOjE2OTMzOTMxODZ9.lvJxB0rKE5Dpca0N54pa2NctdpaRIhdNd7nNvugN2GY\"}" (c7a8e6fd)
+2023-08-30T16:29:46.2542969+05:30 0HMT990LA8UEP:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 200 - application/json;+charset=utf-8 5234.3916ms (791a596a)
+2023-08-30T16:36:16.0892904+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-08-30T16:36:16.6729659+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-08-30T16:36:16.6730457+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-08-30T16:36:16.6759150+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-30T16:36:16.6760772+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-30T16:36:16.6761132+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-08-30T16:36:18.1844798+05:30 0HMT994GRRMOK:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-08-30T16:36:19.2353757+05:30 0HMT994GRRMOK:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 1060.0561ms (791a596a)
+2023-08-30T16:36:19.3282630+05:30 0HMT994GRRMOK:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-08-30T16:36:19.3290471+05:30 0HMT994GRRMOK:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-08-30T16:36:19.3472359+05:30 0HMT994GRRMOK:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 18.0171ms (791a596a)
+2023-08-30T16:36:19.4435343+05:30 0HMT994GRRMOK:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 115.3877ms (791a596a)
+2023-08-30T16:36:19.5746492+05:30 0HMT994GRRMOK:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-08-30T16:36:20.2974180+05:30 0HMT994GRRMOK:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 722.7270ms (791a596a)
+2023-08-30T16:36:36.3291053+05:30 0HMT994GRRMOL:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-08-30T16:36:36.3515796+05:30 0HMT994GRRMOL:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-08-30T16:36:36.4744929+05:30 0HMT994GRRMOL:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-08-30T16:36:36.5062208+05:30 0HMT994GRRMOL:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-08-30T16:36:37.3446704+05:30 0HMT994GRRMOL:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-08-30T16:36:37.3798571+05:30 0HMT994GRRMOL:00000001 [INF] RequestBody: "{
+  \"userName\": \"Rana\",
+  \"password\": \"Rana@123\"
+}" (6d42d084)
+2023-08-30T16:36:38.3786710+05:30 0HMT994GRRMOL:00000001 [INF] Executed DbCommand ("56"ms) [Parameters=["@__user_UserName_0='?' (Size = 4000), @__user_Password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE ([u].[UserName] = @__user_UserName_0) AND ([u].[Password] = @__user_Password_1)" (0723d8ff)
+2023-08-30T16:36:38.6267819+05:30 0HMT994GRRMOL:00000001 [INF] User got login (82c4071d)
+2023-08-30T16:36:38.6331460+05:30 0HMT994GRRMOL:00000001 [INF] Executing "OkObjectResult", writing value of type '"WebApplication_StudentAPI_115.Models.User"'. (605b4265)
+2023-08-30T16:36:38.6376938+05:30 0HMT994GRRMOL:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-08-30T16:36:38.6492643+05:30 0HMT994GRRMOL:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 2134.062ms (afa2e885)
+2023-08-30T16:36:38.6493813+05:30 0HMT994GRRMOL:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-08-30T16:36:38.6495366+05:30 0HMT994GRRMOL:00000001 [INF] ResponseBody: "{\"id\":8,\"userName\":\"Rana\",\"password\":\"\",\"confirmPassword\":\"\",\"role\":\"Admin\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiOCIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY5MzM5MzU5OCwiZXhwIjoxNjkzOTk4Mzk4LCJpYXQiOjE2OTMzOTM1OTh9.4f_HIFXXBwrSy1_UB7UwmNEf8X7e6laVYVoKRgpSaF4\"}" (c7a8e6fd)
+2023-08-30T16:36:38.6607828+05:30 0HMT994GRRMOL:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 200 - application/json;+charset=utf-8 2331.6570ms (791a596a)
+2023-08-30T16:41:49.6052037+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-08-30T16:41:50.0976408+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-08-30T16:41:50.0977319+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-08-30T16:41:50.1013352+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-30T16:41:50.1014816+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-30T16:41:50.1015162+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-08-30T16:41:51.8842425+05:30 0HMT997K8R0CM:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-08-30T16:41:52.6255175+05:30 0HMT997K8R0CM:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 748.2206ms (791a596a)
+2023-08-30T16:41:52.6843742+05:30 0HMT997K8R0CM:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-08-30T16:41:52.7092646+05:30 0HMT997K8R0CM:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-08-30T16:41:52.7390536+05:30 0HMT997K8R0CM:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 56.1414ms (791a596a)
+2023-08-30T16:41:52.8963539+05:30 0HMT997K8R0CM:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 187.1132ms (791a596a)
+2023-08-30T16:41:53.0090241+05:30 0HMT997K8R0CM:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-08-30T16:41:53.9955768+05:30 0HMT997K8R0CM:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 986.6066ms (791a596a)
+2023-08-30T16:42:11.5646081+05:30 0HMT997K8R0CN:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-08-30T16:42:11.5958484+05:30 0HMT997K8R0CN:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-08-30T16:42:11.6961396+05:30 0HMT997K8R0CN:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-08-30T16:42:11.7196288+05:30 0HMT997K8R0CN:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-08-30T16:42:12.5743957+05:30 0HMT997K8R0CN:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-08-30T16:42:12.6090714+05:30 0HMT997K8R0CN:00000001 [INF] RequestBody: "{
+  \"userName\": \"Rana\",
+  \"password\": \"Rana@123\"
+}" (6d42d084)
+2023-08-30T16:42:12.6368300+05:30 0HMT997K8R0CN:00000001 [INF] Executing action method "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" - Validation state: Valid (dad538d7)
+2023-08-30T16:42:13.5986220+05:30 0HMT997K8R0CN:00000001 [INF] Executed DbCommand ("60"ms) [Parameters=["@__user_UserName_0='?' (Size = 4000), @__user_Password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE ([u].[UserName] = @__user_UserName_0) AND ([u].[Password] = @__user_Password_1)" (0723d8ff)
+2023-08-30T16:42:13.8526959+05:30 0HMT997K8R0CN:00000001 [INF] User got login (82c4071d)
+2023-08-30T16:42:13.8604061+05:30 0HMT997K8R0CN:00000001 [INF] Executed action method "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1215.9326ms. (50a9e262)
+2023-08-30T16:42:13.8685112+05:30 0HMT997K8R0CN:00000001 [INF] Executing "OkObjectResult", writing value of type '"WebApplication_StudentAPI_115.Models.User"'. (605b4265)
+2023-08-30T16:42:13.8723605+05:30 0HMT997K8R0CN:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-08-30T16:42:13.8846629+05:30 0HMT997K8R0CN:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 2154.8741ms (afa2e885)
+2023-08-30T16:42:13.8847950+05:30 0HMT997K8R0CN:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-08-30T16:42:13.8849447+05:30 0HMT997K8R0CN:00000001 [INF] ResponseBody: "{\"id\":8,\"userName\":\"Rana\",\"password\":\"\",\"confirmPassword\":\"\",\"role\":\"Admin\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiOCIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY5MzM5MzkzMywiZXhwIjoxNjkzOTk4NzMzLCJpYXQiOjE2OTMzOTM5MzN9.GSympsnXsVMSa8rLTteeqUSUzCT-OXBmB5GaZld6e4E\"}" (c7a8e6fd)
+2023-08-30T16:42:13.8927910+05:30 0HMT997K8R0CN:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 200 - application/json;+charset=utf-8 2328.1870ms (791a596a)
+2023-08-30T16:42:41.2803430+05:30 0HMT997K8R0CO:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/employee - - (ca22a1cb)
+2023-08-30T16:42:41.2884733+05:30 0HMT997K8R0CO:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/employee
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-08-30T16:42:41.3791261+05:30 0HMT997K8R0CO:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.EmployeeController.GetAllAsync (WebApplication_StudentAPI_115)"' (500cc934)
+2023-08-30T16:42:41.3864050+05:30 0HMT997K8R0CO:00000001 [INF] Route matched with "{action = \"GetAll\", controller = \"Employee\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync()" on controller "WebApplication_StudentAPI_115.Controllers.EmployeeController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-08-30T16:42:41.4195982+05:30 0HMT997K8R0CO:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-08-30T16:42:41.4200666+05:30 0HMT997K8R0CO:00000001 [INF] Executing action method "WebApplication_StudentAPI_115.Controllers.EmployeeController.GetAllAsync (WebApplication_StudentAPI_115)" - Validation state: Valid (dad538d7)
+2023-08-30T16:42:44.5376970+05:30 0HMT997K8R0CO:00000001 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Address], [e].[Name], [e].[Salary]
+FROM [Employees] AS [e]" (0723d8ff)
+2023-08-30T16:42:44.5438845+05:30 0HMT997K8R0CO:00000001 [INF] Executed action method "WebApplication_StudentAPI_115.Controllers.EmployeeController.GetAllAsync (WebApplication_StudentAPI_115)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3123.6898ms. (50a9e262)
+2023-08-30T16:42:44.5441490+05:30 0HMT997K8R0CO:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Employee, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-08-30T16:42:44.5455338+05:30 0HMT997K8R0CO:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-08-30T16:42:44.5459116+05:30 0HMT997K8R0CO:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.EmployeeController.GetAllAsync (WebApplication_StudentAPI_115)" in 3159.3681ms (afa2e885)
+2023-08-30T16:42:44.5459624+05:30 0HMT997K8R0CO:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.EmployeeController.GetAllAsync (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-08-30T16:42:44.5459946+05:30 0HMT997K8R0CO:00000001 [INF] ResponseBody: "[{\"id\":1,\"name\":\"Abhishek\",\"address\":\"Fzr\",\"salary\":25000},{\"id\":2004,\"name\":\"Rana\",\"address\":\"chd\",\"salary\":23000}]" (c7a8e6fd)
+2023-08-30T16:42:44.5461859+05:30 0HMT997K8R0CO:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/employee - - - 200 - application/json;+charset=utf-8 3266.4498ms (791a596a)

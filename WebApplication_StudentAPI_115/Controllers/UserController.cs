@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using WebApplication_StudentAPI_115.Models;
 using WebApplication_StudentAPI_115.Models.ViewModels;
 using WebApplication_StudentAPI_115.Repository.IRepository;
-using WebApplication_StudentAPI_115.Service.IService;
 
 namespace WebApplication_StudentAPI_115.Controllers
 {
@@ -12,12 +11,12 @@ namespace WebApplication_StudentAPI_115.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserService _userService;
+        private readonly IUserRepository _userRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<User> _logger;
-        public UserController(IUserService userService, IUnitOfWork unitOfWork, ILogger<User> logger)
+        public UserController(IUserRepository userRepository, IUnitOfWork unitOfWork, ILogger<User> logger)
         {
-            _userService = userService;
+            _userRepository = userRepository;
             _unitOfWork = unitOfWork;
             _logger = logger;
         }
@@ -31,7 +30,7 @@ namespace WebApplication_StudentAPI_115.Controllers
                 {
                     foreach (var user in users)
                     {
-                        var userInfo = _userService.Register(user);
+                        var userInfo = _userRepository.Register(user);
                         if (userInfo == null) return BadRequest("User in use!!");
                         _logger.LogInformation("User registered");
                     }
@@ -48,7 +47,7 @@ namespace WebApplication_StudentAPI_115.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]UserVM userVM)
         {
-            var user = _userService.Authenticate(userVM);
+            var user = _userRepository.Authenticate(userVM);
             if (user == null) throw new Exception("wrong username/password");
             _logger.LogInformation("User got login");
             return Ok(user);

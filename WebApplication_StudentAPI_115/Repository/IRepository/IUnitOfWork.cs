@@ -7,6 +7,7 @@ namespace WebApplication_StudentAPI_115.Repository.IRepository
         IStudentRepository Student { get; }
         IEmployeeRepository Employee { get; }
         IUserRepository User { get; }
+        ISubjectRepository Subject { get; }
         IDbTransaction BeginTransaction();
         int Save();
     }

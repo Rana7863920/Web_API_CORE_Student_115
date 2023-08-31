@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -11,8 +12,6 @@ using WebApplication_StudentAPI_115.Data;
 using WebApplication_StudentAPI_115.Models;
 using WebApplication_StudentAPI_115.Repository;
 using WebApplication_StudentAPI_115.Repository.IRepository;
-using WebApplication_StudentAPI_115.Service;
-using WebApplication_StudentAPI_115.Service.IService;
 using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -48,7 +47,7 @@ builder.Services.AddAuthentication(x =>
 });
 
 builder.Services.AddDIServices(builder.Configuration);
-builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddControllers()
     .ConfigureApiBehaviorOptions(options =>
@@ -71,6 +70,9 @@ builder.Services.AddHttpLogging(httpLogging =>
     httpLogging.LoggingFields = HttpLoggingFields.All;
 });
 
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -84,6 +86,9 @@ else
 {
     app.UseExceptionHandler("/error");
 }
+var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
+var path = Directory.GetCurrentDirectory();
+loggerFactory.AddFile($"{path}\\Logs\\Log.txt");
 
 app.UseHttpLogging();
 app.UseHttpsRedirection();

@@ -85,3 +85,10 @@ D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_
 D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\xunit.abstractions.dll
 D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\xunit.core.dll
 D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\xunit.execution.dotnet.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Serilog.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Serilog.Extensions.Logging.File.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Serilog.Sinks.Async.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Serilog.Sinks.File.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Serilog.Sinks.RollingFile.dll

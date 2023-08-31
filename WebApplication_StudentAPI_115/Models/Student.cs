@@ -5,7 +5,6 @@ namespace WebApplication_StudentAPI_115.Models
     public class Student
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "Name cannot be empty")]
         public string Name { get; set; }
         [Required(ErrorMessage = "Address cannot be empty")]
         public string Address { get; set; }
@@ -13,5 +12,7 @@ namespace WebApplication_StudentAPI_115.Models
 
         [EmailAddress]
         public string Email { get; set; }
+        [Required(ErrorMessage = "Subject cannot be emtpy")]
+        public string Subject { get; set; }
     }
 }

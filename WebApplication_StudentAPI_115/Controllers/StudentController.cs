@@ -55,6 +55,15 @@ namespace WebApplication_StudentAPI_115.Controllers
                 {
                     var tempStudent = _unitOfWork.Student.FirstorDefault(x => x.Email == student.Email);
                     if (tempStudent != null) throw new Exception(student.Email + " already in use!!... Please Check");
+                    Subject subject = new Subject()
+                    {
+                        Name = student.Subject
+                    };
+                    var tempSubject = _unitOfWork.Subject.FirstorDefault(x => x.Name == student.Subject);
+                    if(tempSubject == null)
+                        _unitOfWork.Subject.Add(subject);
+                    _unitOfWork.Save();
+                    if (student.Name == "") throw new Exception("Name cannot be empty");
                     _unitOfWork.Student.Add(student);
                     _unitOfWork.Save();
                 }
