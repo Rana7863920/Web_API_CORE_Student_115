@@ -11,12 +11,10 @@ namespace WebApplication_StudentAPI_115.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserRepository _userRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<User> _logger;
-        public UserController(IUserRepository userRepository, IUnitOfWork unitOfWork, ILogger<User> logger)
+        public UserController(IUnitOfWork unitOfWork, ILogger<User> logger)
         {
-            _userRepository = userRepository;
             _unitOfWork = unitOfWork;
             _logger = logger;
         }
@@ -30,7 +28,7 @@ namespace WebApplication_StudentAPI_115.Controllers
                 {
                     foreach (var user in users)
                     {
-                        var userInfo = _userRepository.Register(user);
+                        var userInfo = _unitOfWork.User.Register(user);
                         if (userInfo == null) return BadRequest("User in use!!");
                         _logger.LogInformation("User registered");
                     }
@@ -47,7 +45,7 @@ namespace WebApplication_StudentAPI_115.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]UserVM userVM)
         {
-            var user = _userRepository.Authenticate(userVM);
+            var user = _unitOfWork.User.Authenticate(userVM);
             if (user == null) throw new Exception("wrong username/password");
             _logger.LogInformation("User got login");
             return Ok(user);

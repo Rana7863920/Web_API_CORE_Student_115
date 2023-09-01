@@ -1223,3 +1223,659 @@ Content-Type: application/problem+json; charset=utf-8 (999214c4)
 2023-09-01T16:26:11.9671317+05:30 0HMTAR72DDLG9:00000001 [INF] RequestBody: "" (6d42d084)
 2023-09-01T16:26:11.9671718+05:30 0HMTAR72DDLG9:00000001 [INF] ResponseBody: "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.6.1\",\"title\":\"This SqlTransaction has completed; it is no longer usable.\",\"status\":500,\"detail\":\"   at Microsoft.Data.SqlClient.SqlTransaction.ZombieCheck()\r\n   at Microsoft.Data.SqlClient.SqlTransaction.Rollback()\r\n   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.Rollback()\r\n   at WebApplication_StudentAPI_115.Repository.DepartmentRepository.CreateDepartment(Int32 employeeId, Department department) in D:\\reactapplication\\reactproject_1\\WebApplication_StudentAPI_115\\WebApplication_StudentAPI_115\\Repository\\DepartmentRepository.cs:line 39\r\n   at WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment(Int32 empId, DepartmentDTO departmentCreate) in D:\\reactapplication\\reactproject_1\\WebApplication_StudentAPI_115\\WebApplication_StudentAPI_115\\Controllers\\DepartmentController.cs:line 50\r\n   at lambda_method31(Closure , Object , Object[] )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)\",\"traceId\":\"00-6a183a4436f3129a88c75e703c970a2b-86111116d4e37b96-00\"}" (c7a8e6fd)
 2023-09-01T16:26:11.9673392+05:30 0HMTAR72DDLG9:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Department?empId=2 application/json 19 - 500 - application/problem+json;+charset=utf-8 47671.8126ms (791a596a)
+2023-09-01T16:48:50.3439612+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-01T16:48:50.6777482+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-01T16:48:50.6778487+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-01T16:48:50.6844811+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-01T16:48:50.6846750+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-01T16:48:50.6847159+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-01T16:48:52.3829134+05:30 0HMTARKS15CG8:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-01T16:48:54.6470470+05:30 0HMTARKS15CG8:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 2272.5452ms (791a596a)
+2023-09-01T16:48:54.7233013+05:30 0HMTARKS15CG8:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-01T16:48:54.7255193+05:30 0HMTARKS15CG8:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-01T16:48:54.7353687+05:30 0HMTARKS15CG8:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 11.3227ms (791a596a)
+2023-09-01T16:48:54.8071197+05:30 0HMTARKS15CG8:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.5189ms (791a596a)
+2023-09-01T16:48:54.9453149+05:30 0HMTARKS15CG8:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-01T16:48:55.8216094+05:30 0HMTARKS15CG8:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 876.2030ms (791a596a)
+2023-09-01T16:49:13.3828546+05:30 0HMTARKS15CG9:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-09-01T16:49:13.3918439+05:30 0HMTARKS15CG9:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T16:49:13.5104250+05:30 0HMTARKS15CG9:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T16:49:13.5424753+05:30 0HMTARKS15CG9:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T16:49:13.5557595+05:30 0HMTARKS15CG9:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 3.579ms (afa2e885)
+2023-09-01T16:49:13.5586439+05:30 0HMTARKS15CG9:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T16:49:13.6795351+05:30 0HMTARKS15CG9:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-01T16:49:13.6824227+05:30 0HMTARKS15CG9:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T16:49:13.6830143+05:30 0HMTARKS15CG9:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T16:49:13.6855117+05:30 0HMTARKS15CG9:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T16:49:13.6876427+05:30 0HMTARKS15CG9:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 1.9564ms (afa2e885)
+2023-09-01T16:49:13.6885460+05:30 0HMTARKS15CG9:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T16:49:13.6913801+05:30 0HMTARKS15CG9:00000001 [ERR] An exception was thrown attempting to execute the error handler. (e55ade05)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method5(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2023-09-01T16:49:13.6977096+05:30 0HMTARKS15CG9:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-01T16:49:13.7008333+05:30 0HMTARKS15CG9:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 500 - text/plain;+charset=utf-8 319.2979ms (791a596a)
+2023-09-01T16:53:45.5016737+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-01T16:53:45.8486593+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-01T16:53:45.8487302+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-01T16:53:45.8556186+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-01T16:53:45.8557975+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-01T16:53:45.8558312+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-01T16:53:47.5385191+05:30 0HMTARNK37H5L:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-01T16:53:48.1811824+05:30 0HMTARNK37H5L:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 654.0723ms (791a596a)
+2023-09-01T16:53:48.2188776+05:30 0HMTARNK37H5L:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-01T16:53:48.2193982+05:30 0HMTARNK37H5L:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-01T16:53:48.2395852+05:30 0HMTARNK37H5L:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 19.4348ms (791a596a)
+2023-09-01T16:53:48.2885113+05:30 0HMTARNK37H5L:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.6589ms (791a596a)
+2023-09-01T16:53:48.4118524+05:30 0HMTARNK37H5L:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-01T16:53:49.4439029+05:30 0HMTARNK37H5L:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1032.1511ms (791a596a)
+2023-09-01T16:54:03.9789251+05:30 0HMTARNK37H5M:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-09-01T16:54:03.9897806+05:30 0HMTARNK37H5M:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T16:54:04.1155844+05:30 0HMTARNK37H5M:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T16:54:04.1451219+05:30 0HMTARNK37H5M:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T16:54:04.1591932+05:30 0HMTARNK37H5M:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 4.7564ms (afa2e885)
+2023-09-01T16:54:04.1619434+05:30 0HMTARNK37H5M:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T16:54:04.2593938+05:30 0HMTARNK37H5M:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-01T16:54:04.2623069+05:30 0HMTARNK37H5M:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T16:54:04.2626687+05:30 0HMTARNK37H5M:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T16:54:04.2640177+05:30 0HMTARNK37H5M:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T16:54:04.2659075+05:30 0HMTARNK37H5M:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 1.7391ms (afa2e885)
+2023-09-01T16:54:04.2668492+05:30 0HMTARNK37H5M:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T16:54:04.2692750+05:30 0HMTARNK37H5M:00000001 [ERR] An exception was thrown attempting to execute the error handler. (e55ade05)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method5(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2023-09-01T16:54:04.2760519+05:30 0HMTARNK37H5M:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-01T16:54:04.2785914+05:30 0HMTARNK37H5M:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 500 - text/plain;+charset=utf-8 299.6539ms (791a596a)
+2023-09-01T17:02:32.9744984+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-01T17:02:33.3066948+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-01T17:02:33.3067770+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-01T17:02:33.3134505+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-01T17:02:33.3141812+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-01T17:02:33.3147619+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-01T17:02:34.8605447+05:30 0HMTARSH79KA2:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-01T17:02:35.8020688+05:30 0HMTARSH79KA2:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 965.5736ms (791a596a)
+2023-09-01T17:02:35.8922516+05:30 0HMTARSH79KA2:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-01T17:02:35.8922376+05:30 0HMTARSH79KA2:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-01T17:02:35.9072175+05:30 0HMTARSH79KA2:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 14.3506ms (791a596a)
+2023-09-01T17:02:36.0998618+05:30 0HMTARSH79KA2:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 207.9954ms (791a596a)
+2023-09-01T17:02:36.2231930+05:30 0HMTARSH79KA2:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-01T17:02:37.1102896+05:30 0HMTARSH79KA2:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 887.0470ms (791a596a)
+2023-09-01T17:02:57.3723981+05:30 0HMTARSH79KA3:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-09-01T17:02:57.3867200+05:30 0HMTARSH79KA3:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T17:02:57.9889972+05:30 0HMTARSH79KA3:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T17:02:58.0283796+05:30 0HMTARSH79KA3:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T17:02:58.0431652+05:30 0HMTARSH79KA3:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 4.6451ms (afa2e885)
+2023-09-01T17:02:58.0461347+05:30 0HMTARSH79KA3:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T17:02:58.3156928+05:30 0HMTARSH79KA3:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-01T17:02:58.3179737+05:30 0HMTARSH79KA3:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T17:02:58.3182949+05:30 0HMTARSH79KA3:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T17:02:58.3259960+05:30 0HMTARSH79KA3:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T17:02:58.3305403+05:30 0HMTARSH79KA3:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 4.3735ms (afa2e885)
+2023-09-01T17:02:58.3317060+05:30 0HMTARSH79KA3:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T17:02:58.3336953+05:30 0HMTARSH79KA3:00000001 [ERR] An exception was thrown attempting to execute the error handler. (e55ade05)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method5(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2023-09-01T17:02:58.3397350+05:30 0HMTARSH79KA3:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-01T17:02:58.3416359+05:30 0HMTARSH79KA3:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 500 - text/plain;+charset=utf-8 969.2628ms (791a596a)
+2023-09-01T17:08:33.1071270+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-01T17:08:33.4324991+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-01T17:08:33.4325980+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-01T17:08:33.4429356+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-01T17:08:33.4432993+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-01T17:08:33.4433897+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-01T17:08:34.9890597+05:30 0HMTARVSIGS3H:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-01T17:08:35.5243023+05:30 0HMTARVSIGS3H:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 539.6073ms (791a596a)
+2023-09-01T17:08:35.5912268+05:30 0HMTARVSIGS3H:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-01T17:08:35.5921407+05:30 0HMTARVSIGS3H:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-01T17:08:35.6168508+05:30 0HMTARVSIGS3H:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 24.8938ms (791a596a)
+2023-09-01T17:08:35.6352074+05:30 0HMTARVSIGS3H:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.0658ms (791a596a)
+2023-09-01T17:08:35.7320568+05:30 0HMTARVSIGS3H:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-01T17:08:36.4289234+05:30 0HMTARVSIGS3H:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 697.2806ms (791a596a)
+2023-09-01T17:08:53.0494062+05:30 0HMTARVSIGS3I:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-09-01T17:08:53.0604659+05:30 0HMTARVSIGS3I:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T17:08:53.1569705+05:30 0HMTARVSIGS3I:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T17:08:53.1805563+05:30 0HMTARVSIGS3I:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T17:08:53.1922481+05:30 0HMTARVSIGS3I:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 2.4868ms (afa2e885)
+2023-09-01T17:08:53.1946564+05:30 0HMTARVSIGS3I:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T17:08:53.2802645+05:30 0HMTARVSIGS3I:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-01T17:08:53.2818293+05:30 0HMTARVSIGS3I:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T17:08:53.2821158+05:30 0HMTARVSIGS3I:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T17:08:53.2837825+05:30 0HMTARVSIGS3I:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T17:08:53.2854950+05:30 0HMTARVSIGS3I:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 1.5536ms (afa2e885)
+2023-09-01T17:08:53.2864340+05:30 0HMTARVSIGS3I:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T17:08:53.2885394+05:30 0HMTARVSIGS3I:00000001 [ERR] An exception was thrown attempting to execute the error handler. (e55ade05)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method5(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2023-09-01T17:08:53.2923326+05:30 0HMTARVSIGS3I:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IUserRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-01T17:08:53.2950261+05:30 0HMTARVSIGS3I:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 500 - text/plain;+charset=utf-8 245.6519ms (791a596a)
+2023-09-01T17:09:30.0576788+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-01T17:09:30.4961156+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-01T17:09:30.4961759+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-01T17:09:30.5035293+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-01T17:09:30.5037283+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-01T17:09:30.5039043+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-01T17:09:31.7572819+05:30 0HMTAS0DGJEE7:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-01T17:09:32.2661711+05:30 0HMTAS0DGJEE7:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 517.1757ms (791a596a)
+2023-09-01T17:09:32.3085151+05:30 0HMTAS0DGJEE7:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-01T17:09:32.3112967+05:30 0HMTAS0DGJEE7:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-01T17:09:32.3206366+05:30 0HMTAS0DGJEE7:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 11.4871ms (791a596a)
+2023-09-01T17:09:32.4227959+05:30 0HMTAS0DGJEE7:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 111.5344ms (791a596a)
+2023-09-01T17:09:32.4923317+05:30 0HMTAS0DGJEE7:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-01T17:09:33.1112729+05:30 0HMTAS0DGJEE7:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 618.9837ms (791a596a)
+2023-09-01T17:09:47.9038200+05:30 0HMTAS0DGJEE8:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-09-01T17:09:47.9138122+05:30 0HMTAS0DGJEE8:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T17:09:48.0111751+05:30 0HMTAS0DGJEE8:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T17:09:48.0356551+05:30 0HMTAS0DGJEE8:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T17:09:49.3004870+05:30 0HMTAS0DGJEE8:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-01T17:09:49.3212556+05:30 0HMTAS0DGJEE8:00000001 [INF] RequestBody: "{
+  \"userName\": \"Rana\",
+  \"password\": \"Rana@123\"
+}" (6d42d084)
+2023-09-01T17:09:51.3244678+05:30 0HMTAS0DGJEE8:00000001 [INF] Executed DbCommand ("100"ms) [Parameters=["@__user_UserName_0='?' (Size = 4000), @__user_Password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE ([u].[UserName] = @__user_UserName_0) AND ([u].[Password] = @__user_Password_1)" (0723d8ff)
+2023-09-01T17:09:51.6931581+05:30 0HMTAS0DGJEE8:00000001 [INF] User got login (82c4071d)
+2023-09-01T17:09:51.7034077+05:30 0HMTAS0DGJEE8:00000001 [INF] Executing "OkObjectResult", writing value of type '"WebApplication_StudentAPI_115.Models.User"'. (605b4265)
+2023-09-01T17:09:51.7091665+05:30 0HMTAS0DGJEE8:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-01T17:09:51.7219279+05:30 0HMTAS0DGJEE8:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 3676.1855ms (afa2e885)
+2023-09-01T17:09:51.7220730+05:30 0HMTAS0DGJEE8:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T17:09:51.7222146+05:30 0HMTAS0DGJEE8:00000001 [INF] ResponseBody: "{\"id\":8,\"userName\":\"Rana\",\"password\":\"\",\"confirmPassword\":\"\",\"role\":\"Admin\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiOCIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY5MzU2ODM5MSwiZXhwIjoxNjk0MTczMTkxLCJpYXQiOjE2OTM1NjgzOTF9.qpAg49V375AopH4My3ipToa0WrC3QuIY5tFzI4jBFrc\"}" (c7a8e6fd)
+2023-09-01T17:09:51.7308417+05:30 0HMTAS0DGJEE8:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 200 - application/json;+charset=utf-8 3827.3054ms (791a596a)
+2023-09-01T17:14:12.4026615+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-01T17:14:12.7572945+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-01T17:14:12.7573811+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-01T17:14:12.7647836+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-01T17:14:12.7649408+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-01T17:14:12.7649967+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-01T17:14:14.7086889+05:30 0HMTAS31NQ59L:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-01T17:14:15.3866678+05:30 0HMTAS31NQ59L:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 686.5022ms (791a596a)
+2023-09-01T17:14:15.4360018+05:30 0HMTAS31NQ59L:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-01T17:14:15.4372944+05:30 0HMTAS31NQ59L:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-01T17:14:15.4644992+05:30 0HMTAS31NQ59L:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 21.2306ms (791a596a)
+2023-09-01T17:14:15.6039426+05:30 0HMTAS31NQ59L:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 168.0097ms (791a596a)
+2023-09-01T17:14:15.7299217+05:30 0HMTAS31NQ59L:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-01T17:14:16.7343799+05:30 0HMTAS31NQ59L:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1004.4006ms (791a596a)
+2023-09-01T17:16:08.5040433+05:30 0HMTAS31NQ59M:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 (ca22a1cb)
+2023-09-01T17:16:08.5220322+05:30 0HMTAS31NQ59M:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/authenticate
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T17:16:08.6400088+05:30 0HMTAS31NQ59M:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T17:16:08.6733065+05:30 0HMTAS31NQ59M:00000001 [INF] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApplication_StudentAPI_115.Models.ViewModels.UserVM)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T17:16:09.8681908+05:30 0HMTAS31NQ59M:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-01T17:16:09.8908331+05:30 0HMTAS31NQ59M:00000001 [INF] RequestBody: "{
+  \"userName\": \"Rana\",
+  \"password\": \"Rana@123\"
+}" (6d42d084)
+2023-09-01T17:16:11.2549831+05:30 0HMTAS31NQ59M:00000001 [INF] Executed DbCommand ("75"ms) [Parameters=["@__user_UserName_0='?' (Size = 4000), @__user_Password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE ([u].[UserName] = @__user_UserName_0) AND ([u].[Password] = @__user_Password_1)" (0723d8ff)
+2023-09-01T17:16:11.6113184+05:30 0HMTAS31NQ59M:00000001 [INF] User got login (82c4071d)
+2023-09-01T17:16:11.6248779+05:30 0HMTAS31NQ59M:00000001 [INF] Executing "OkObjectResult", writing value of type '"WebApplication_StudentAPI_115.Models.User"'. (605b4265)
+2023-09-01T17:16:11.6300595+05:30 0HMTAS31NQ59M:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-01T17:16:11.6457220+05:30 0HMTAS31NQ59M:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)" in 2960.6276ms (afa2e885)
+2023-09-01T17:16:11.6459320+05:30 0HMTAS31NQ59M:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Authenticate (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T17:16:11.6461859+05:30 0HMTAS31NQ59M:00000001 [INF] ResponseBody: "{\"id\":8,\"userName\":\"Rana\",\"password\":\"\",\"confirmPassword\":\"\",\"role\":\"Admin\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiOCIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY5MzU2ODc3MSwiZXhwIjoxNjk0MTczNTcxLCJpYXQiOjE2OTM1Njg3NzF9.7ES8Pwq67XFRElRc8Cxig312nq31gr2Sc3qxM1lg_XE\"}" (c7a8e6fd)
+2023-09-01T17:16:11.6611004+05:30 0HMTAS31NQ59M:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/authenticate application/json 50 - 200 - application/json;+charset=utf-8 3158.7471ms (791a596a)
+2023-09-01T17:16:35.8348442+05:30 0HMTAS31NQ59N:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/employee - - (ca22a1cb)
+2023-09-01T17:16:35.8366610+05:30 0HMTAS31NQ59N:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/employee
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-01T17:16:35.9247627+05:30 0HMTAS31NQ59N:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.EmployeeController.GetAllAsync (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-01T17:16:35.9297512+05:30 0HMTAS31NQ59N:00000001 [INF] Route matched with "{action = \"GetAll\", controller = \"Employee\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync()" on controller "WebApplication_StudentAPI_115.Controllers.EmployeeController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-01T17:16:35.9626861+05:30 0HMTAS31NQ59N:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-01T17:16:37.8925068+05:30 0HMTAS31NQ59N:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Address], [e].[Name], [e].[Salary]
+FROM [Employees] AS [e]" (0723d8ff)
+2023-09-01T17:16:37.9098012+05:30 0HMTAS31NQ59N:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Employee, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-01T17:16:37.9116376+05:30 0HMTAS31NQ59N:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-01T17:16:37.9119298+05:30 0HMTAS31NQ59N:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.EmployeeController.GetAllAsync (WebApplication_StudentAPI_115)" in 1982.0925ms (afa2e885)
+2023-09-01T17:16:37.9119662+05:30 0HMTAS31NQ59N:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.EmployeeController.GetAllAsync (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-01T17:16:37.9119979+05:30 0HMTAS31NQ59N:00000001 [INF] ResponseBody: "[{\"id\":1,\"name\":\"Abhishek\",\"address\":\"Fzr\",\"salary\":25000,\"employeeDepartments\":null},{\"id\":2004,\"name\":\"Rana\",\"address\":\"chd\",\"salary\":23000,\"employeeDepartments\":null}]" (c7a8e6fd)
+2023-09-01T17:16:37.9121820+05:30 0HMTAS31NQ59N:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/employee - - - 200 - application/json;+charset=utf-8 2078.8956ms (791a596a)

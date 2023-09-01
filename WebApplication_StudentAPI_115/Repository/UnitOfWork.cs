@@ -14,6 +14,7 @@ namespace WebApplication_StudentAPI_115.Repository
         public UnitOfWork(ApplicationDbContext context, IOptions<AppSetting> appSetting)
         {
             _context = context;
+            _appSetting = appSetting.Value;
             Student = new StudentRepository(context);
             Employee = new EmployeeRepository(context);
             User = new UserRepository(context, appSetting);

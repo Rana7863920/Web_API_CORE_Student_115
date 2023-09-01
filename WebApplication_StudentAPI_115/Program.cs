@@ -47,7 +47,9 @@ builder.Services.AddAuthentication(x =>
     };
 });
 
-builder.Services.AddDIServices(builder.Configuration);
+string cs = builder.Configuration.GetConnectionString("conStr");
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(cs));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddControllers()

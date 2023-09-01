@@ -13,7 +13,7 @@ namespace WebApplication_StudentAPI_115
             {
                 options.UseSqlServer(configuration.GetConnectionString("conStr"));
             });
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
