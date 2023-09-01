@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "IIzw+lgtaRERI+SFTLB5r/hZMXAOclA7XJv+lUGyB0sQPVGXZpwk+CeakSAG2cMJk7fJzCM6h9WL6dnz+HMRqw==",
+  "dgSpecHash": "eCLkyFqu9CCaFRfOC4oAUyS3rZCm0P7ZQ/6iDwGr4q3ngWJIXJlNTD3Qw7FtxAPmOz6Z21LTJp87Yg5XAbrzBw==",
   "success": true,
   "projectFilePath": "D:\\reactapplication\\reactproject_1\\WebApplication_StudentAPI_115\\WebApplication_StudentAPI_115\\WebApplication_StudentAPI_115.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ACER\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",
@@ -11,7 +13,7 @@
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.build.framework\\17.7.0\\microsoft.build.framework.17.7.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.build.tasks.core\\17.7.0\\microsoft.build.tasks.core.17.7.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.build.utilities.core\\17.7.0\\microsoft.build.utilities.core.17.7.0.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.18\\microsoft.entityframeworkcore.6.0.18.nupkg.sha512",

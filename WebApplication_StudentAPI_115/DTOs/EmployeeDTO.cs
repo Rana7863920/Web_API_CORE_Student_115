@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata.Ecma335;
+﻿using System.ComponentModel.DataAnnotations;
+using Xunit.Sdk;
 
-namespace WebApplication_StudentAPI_115.Models
+namespace WebApplication_StudentAPI_115.DTOs
 {
-    public class Employee
+    public class EmployeeDTO
     {
         public int Id { get; set; }
         //[Required(ErrorMessage = "Name cannot be emtpy")]
@@ -13,6 +12,5 @@ namespace WebApplication_StudentAPI_115.Models
         public string Address { get; set; }
         [Required(ErrorMessage = "Salary cannot be empty")]
         public int Salary { get; set; }
-        public ICollection<EmployeeDepartment> EmployeeDepartments { get; set; }
     }
 }

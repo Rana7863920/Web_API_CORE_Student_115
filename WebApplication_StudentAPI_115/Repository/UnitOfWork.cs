@@ -18,6 +18,7 @@ namespace WebApplication_StudentAPI_115.Repository
             Employee = new EmployeeRepository(context);
             User = new UserRepository(context, appSetting);
             Subject = new SubjectRepository(context);
+            Department = new DepartmentRepository(context);
         }
 
         public IStudentRepository Student { get; private set; }
@@ -26,6 +27,8 @@ namespace WebApplication_StudentAPI_115.Repository
         public IUserRepository User { get; private set; }
 
         public ISubjectRepository Subject { get; private set; }
+
+        public IDepartmentRepository Department { get; private set; }
 
         public IDbTransaction BeginTransaction()
         {

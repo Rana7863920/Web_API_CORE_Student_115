@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using System;
 using System.Text;
 using WebApplication_StudentAPI_115;
 using WebApplication_StudentAPI_115.Data;
@@ -47,7 +48,7 @@ builder.Services.AddAuthentication(x =>
 });
 
 builder.Services.AddDIServices(builder.Configuration);
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddControllers()
     .ConfigureApiBehaviorOptions(options =>
