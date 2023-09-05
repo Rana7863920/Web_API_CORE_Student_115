@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
 using WebApplication_StudentAPI_115.Models;
 
 namespace WebApplication_StudentAPI_115.Data
 {
-    public class ApplicationDbContext:DbContext
+    public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
         public DbSet<Student> Students { get; set; }
@@ -26,5 +27,7 @@ namespace WebApplication_StudentAPI_115.Data
                 .WithMany(ed => ed.EmployeeDepartments)
                 .HasForeignKey(d => d.DepartmentId);
         }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

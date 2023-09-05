@@ -13,12 +13,10 @@ namespace WebApplication_StudentAPI_115.Controllers
     public class DepartmentController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IDepartmentRepository _departmentRepository;
         private readonly IMapper _mapper;
-        public DepartmentController(IUnitOfWork unitOfWork, IMapper mapper, IDepartmentRepository departmentRepository)
+        public DepartmentController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
-            _departmentRepository = departmentRepository;
             _mapper = mapper;
         }
         [HttpGet]
@@ -47,7 +45,7 @@ namespace WebApplication_StudentAPI_115.Controllers
 
             var departmentMap = _mapper.Map<Department>(departmentCreate);
 
-            if (!_departmentRepository.CreateDepartment(empId, departmentMap))
+            if (!_unitOfWork.Department.CreateDepartment(empId, departmentMap))
             {
                 return StatusCode(500, "Something went wrong while saving");
             }

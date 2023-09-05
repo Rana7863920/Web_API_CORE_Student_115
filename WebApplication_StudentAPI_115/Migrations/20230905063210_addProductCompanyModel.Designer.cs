@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication_StudentAPI_115.Data;
 
@@ -10,9 +11,10 @@ using WebApplication_StudentAPI_115.Data;
 namespace WebApplication_StudentAPI_115.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230905063210_addProductCompanyModel")]
+    partial class addProductCompanyModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -124,53 +126,6 @@ namespace WebApplication_StudentAPI_115.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Review", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ReviewerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ReviewerId");
-
-                    b.ToTable("Reviews");
-                });
-
-            modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Reviewer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Reviewers");
-                });
-
             modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Student", b =>
                 {
                     b.Property<int>("Id")
@@ -276,17 +231,6 @@ namespace WebApplication_StudentAPI_115.Migrations
                     b.Navigation("Employee");
                 });
 
-            modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Review", b =>
-                {
-                    b.HasOne("WebApplication_StudentAPI_115.Models.Reviewer", "Reviewer")
-                        .WithMany("Reviews")
-                        .HasForeignKey("ReviewerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Reviewer");
-                });
-
             modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Department", b =>
                 {
                     b.Navigation("EmployeeDepartments");
@@ -295,11 +239,6 @@ namespace WebApplication_StudentAPI_115.Migrations
             modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Employee", b =>
                 {
                     b.Navigation("EmployeeDepartments");
-                });
-
-            modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Reviewer", b =>
-                {
-                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }

@@ -12,6 +12,12 @@ namespace WebApplication_StudentAPI_115.Helper
             CreateMap<EmployeeDTO, Employee>();
             CreateMap<Department, DepartmentDTO>();
             CreateMap<DepartmentDTO, Department>();
+            CreateMap<Company, CompanyDTO>();
+            CreateMap<CompanyDTO, Company>();
+            CreateMap<Review, ReviewDTO>();
+            CreateMap<ReviewDTO, Review>();
+            CreateMap<Reviewer, ReviewerDTO>();
+            CreateMap<ReviewerDTO, Reviewer>();
         }
     }
 }

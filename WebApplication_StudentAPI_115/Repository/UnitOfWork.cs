@@ -20,6 +20,8 @@ namespace WebApplication_StudentAPI_115.Repository
             User = new UserRepository(context, appSetting);
             Subject = new SubjectRepository(context);
             Department = new DepartmentRepository(context);
+            Company = new CompanyRepository(context);
+            Product = new ProductRepository(context);
         }
 
         public IStudentRepository Student { get; private set; }
@@ -30,6 +32,12 @@ namespace WebApplication_StudentAPI_115.Repository
         public ISubjectRepository Subject { get; private set; }
 
         public IDepartmentRepository Department { get; private set; }
+        public ICompanyRepository Company { get; private set; }
+        public IProductRepository Product { get; private set; }
+
+        public IReviewRepository Review { get; private set; }
+
+        public IReviewerRepository Reviewer { get; private set; }
 
         public IDbTransaction BeginTransaction()
         {

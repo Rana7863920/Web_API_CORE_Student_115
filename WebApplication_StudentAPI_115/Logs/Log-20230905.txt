@@ -1,0 +1,1628 @@
+2023-09-05T12:51:21.5113661+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T12:51:22.5721038+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T12:51:22.5861773+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T12:51:22.6055904+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T12:51:22.6071409+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T12:51:22.6072414+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T12:51:26.1382267+05:30 0HMTDS2QK1RHG:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T12:51:27.1290118+05:30 0HMTDS2QK1RHG:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 999.8543ms (791a596a)
+2023-09-05T12:51:27.1897211+05:30 0HMTDS2QK1RHG:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T12:51:27.2018124+05:30 0HMTDS2QK1RHG:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T12:51:27.2147349+05:30 0HMTDS2QK1RHG:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 25.0685ms (791a596a)
+2023-09-05T12:51:27.3493528+05:30 0HMTDS2QK1RHG:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 147.4729ms (791a596a)
+2023-09-05T12:51:27.4475848+05:30 0HMTDS2QK1RHG:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T12:51:28.4050379+05:30 0HMTDS2QK1RHG:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 957.3901ms (791a596a)
+2023-09-05T12:51:36.1269897+05:30 0HMTDS2QK1RHH:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Company - - (ca22a1cb)
+2023-09-05T12:51:36.1402938+05:30 0HMTDS2QK1RHH:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T12:51:37.6522865+05:30 0HMTDS2QK1RHH:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T12:51:37.6684823+05:30 0HMTDS2QK1RHH:00000001 [INF] Route matched with "{action = \"GetCompanies\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetCompanies()" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T12:51:38.8351040+05:30 0HMTDS2QK1RHH:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T12:51:39.7122009+05:30 0HMTDS2QK1RHH:00000001 [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Address], [c].[Name], [c].[ProductId]
+FROM [Companies] AS [c]" (0723d8ff)
+2023-09-05T12:51:39.7600983+05:30 0HMTDS2QK1RHH:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Company, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T12:51:39.7669954+05:30 0HMTDS2QK1RHH:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T12:51:39.7859978+05:30 0HMTDS2QK1RHH:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)" in 2103.6537ms (afa2e885)
+2023-09-05T12:51:39.7861674+05:30 0HMTDS2QK1RHH:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T12:51:39.7897925+05:30 0HMTDS2QK1RHH:00000001 [INF] ResponseBody: "[]" (c7a8e6fd)
+2023-09-05T12:51:39.7998457+05:30 0HMTDS2QK1RHH:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Company - - - 200 - application/json;+charset=utf-8 3673.4432ms (791a596a)
+2023-09-05T12:57:10.4225100+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T12:57:10.7189460+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T12:57:10.7190099+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T12:57:10.7259617+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T12:57:10.7261121+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T12:57:10.7261342+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T12:57:12.0328227+05:30 0HMTDS62ABSEM:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T12:57:12.6639156+05:30 0HMTDS62ABSEM:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 636.4978ms (791a596a)
+2023-09-05T12:57:12.7040544+05:30 0HMTDS62ABSEM:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T12:57:12.7072114+05:30 0HMTDS62ABSEM:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T12:57:12.7195017+05:30 0HMTDS62ABSEM:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 15.3537ms (791a596a)
+2023-09-05T12:57:12.8261164+05:30 0HMTDS62ABSEM:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 118.4995ms (791a596a)
+2023-09-05T12:57:12.9090159+05:30 0HMTDS62ABSEM:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T12:57:13.9769383+05:30 0HMTDS62ABSEM:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1067.8702ms (791a596a)
+2023-09-05T12:57:19.2583870+05:30 0HMTDS62ABSEN:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Department - - (ca22a1cb)
+2023-09-05T12:57:19.2677984+05:30 0HMTDS62ABSEN:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Department
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T12:57:19.3743579+05:30 0HMTDS62ABSEN:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T12:57:19.3906566+05:30 0HMTDS62ABSEN:00000001 [INF] Route matched with "{action = \"GetDepartment\", controller = \"Department\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetDepartment()" on controller "WebApplication_StudentAPI_115.Controllers.DepartmentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T12:57:20.4658115+05:30 0HMTDS62ABSEN:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T12:57:20.6161732+05:30 0HMTDS62ABSEN:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)" in 1216.686ms (afa2e885)
+2023-09-05T12:57:20.6193286+05:30 0HMTDS62ABSEN:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T12:57:20.9062684+05:30 0HMTDS62ABSEN:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IDepartmentRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-05T12:57:20.9086618+05:30 0HMTDS62ABSEN:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T12:57:20.9090412+05:30 0HMTDS62ABSEN:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T12:57:20.9216037+05:30 0HMTDS62ABSEN:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T12:57:20.9436859+05:30 0HMTDS62ABSEN:00000001 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2023-09-05T12:57:20.9497990+05:30 0HMTDS62ABSEN:00000001 [INF] Response:
+StatusCode: 500
+Content-Type: application/problem+json; charset=utf-8 (999214c4)
+2023-09-05T12:57:20.9515764+05:30 0HMTDS62ABSEN:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 29.8496ms (afa2e885)
+2023-09-05T12:57:20.9516569+05:30 0HMTDS62ABSEN:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T12:57:20.9545304+05:30 0HMTDS62ABSEN:00000001 [INF] ResponseBody: "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.6.1\",\"title\":\"Unable to resolve service for type 'WebApplication_StudentAPI_115.Repository.IRepository.IDepartmentRepository' while attempting to activate 'WebApplication_StudentAPI_115.Controllers.DepartmentController'.\",\"status\":500,\"detail\":\"   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)\r\n   at lambda_method3(Closure , IServiceProvider , Object[] )\r\n   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)\r\n   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)\",\"traceId\":\"00-97afd864981666c18b5d6dec3b82a8ac-c93ec252c40cd615-00\"}" (c7a8e6fd)
+2023-09-05T12:57:20.9686576+05:30 0HMTDS62ABSEN:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Department - - - 500 - application/problem+json;+charset=utf-8 1711.2023ms (791a596a)
+2023-09-05T12:58:34.4798885+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T12:58:34.8182719+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T12:58:34.8183685+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T12:58:34.8251218+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T12:58:34.8257902+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T12:58:34.8258363+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T12:58:35.7774498+05:30 0HMTDS6RC2AL3:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T12:58:36.9954304+05:30 0HMTDS6RC2AL3:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 1227.8969ms (791a596a)
+2023-09-05T12:58:37.0415434+05:30 0HMTDS6RC2AL3:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T12:58:37.0520125+05:30 0HMTDS6RC2AL3:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T12:58:37.0550801+05:30 0HMTDS6RC2AL3:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 13.5294ms (791a596a)
+2023-09-05T12:58:37.1434245+05:30 0HMTDS6RC2AL3:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.4145ms (791a596a)
+2023-09-05T12:58:37.2785156+05:30 0HMTDS6RC2AL3:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T12:58:37.9637478+05:30 0HMTDS6RC2AL3:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 685.1995ms (791a596a)
+2023-09-05T12:58:42.2120711+05:30 0HMTDS6RC2AL4:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Department - - (ca22a1cb)
+2023-09-05T12:58:42.2172756+05:30 0HMTDS6RC2AL4:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Department
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T12:58:42.3208639+05:30 0HMTDS6RC2AL4:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T12:58:42.3360201+05:30 0HMTDS6RC2AL4:00000001 [INF] Route matched with "{action = \"GetDepartment\", controller = \"Department\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetDepartment()" on controller "WebApplication_StudentAPI_115.Controllers.DepartmentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T12:58:43.4030029+05:30 0HMTDS6RC2AL4:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T12:58:44.3125881+05:30 0HMTDS6RC2AL4:00000001 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Name]
+FROM [Departments] AS [d]" (0723d8ff)
+2023-09-05T12:58:44.4326042+05:30 0HMTDS6RC2AL4:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.DTOs.DepartmentDTO, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T12:58:44.4371615+05:30 0HMTDS6RC2AL4:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T12:58:44.4493766+05:30 0HMTDS6RC2AL4:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)" in 2104.1709ms (afa2e885)
+2023-09-05T12:58:44.4495792+05:30 0HMTDS6RC2AL4:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T12:58:44.4518428+05:30 0HMTDS6RC2AL4:00000001 [INF] ResponseBody: "[{\"id\":1,\"name\":\"HR\"},{\"id\":2,\"name\":\"Testing\"}]" (c7a8e6fd)
+2023-09-05T12:58:44.4661567+05:30 0HMTDS6RC2AL4:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Department - - - 200 - application/json;+charset=utf-8 2254.6785ms (791a596a)
+2023-09-05T13:41:37.2131648+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T13:41:37.5358668+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T13:41:37.5359460+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T13:41:37.5424759+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T13:41:37.5426565+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T13:41:37.5427012+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T13:41:39.2734931+05:30 0HMTDSUT6B9GG:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T13:41:40.0399933+05:30 0HMTDSUT6B9GG:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 772.2374ms (791a596a)
+2023-09-05T13:41:40.0441544+05:30 0HMTDSUT6B9GG:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T13:41:40.0441544+05:30 0HMTDSUT6B9GG:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T13:41:40.0583155+05:30 0HMTDSUT6B9GG:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 14.1560ms (791a596a)
+2023-09-05T13:41:40.3499014+05:30 0HMTDSUT6B9GG:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 305.7329ms (791a596a)
+2023-09-05T13:41:40.4604763+05:30 0HMTDSUT6B9GG:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T13:41:41.3140888+05:30 0HMTDSUT6B9GG:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 853.3859ms (791a596a)
+2023-09-05T13:42:34.9995299+05:30 0HMTDSUT6B9GH:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Company application/json 64 (ca22a1cb)
+2023-09-05T13:42:35.0108554+05:30 0HMTDSUT6B9GH:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T13:42:35.1258677+05:30 0HMTDSUT6B9GH:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T13:42:35.1552978+05:30 0HMTDSUT6B9GH:00000001 [INF] Route matched with "{action = \"CreateCompany\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(WebApplication_StudentAPI_115.Models.Company)" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T13:42:36.2758857+05:30 0HMTDSUT6B9GH:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T13:42:36.2957421+05:30 0HMTDSUT6B9GH:00000001 [INF] RequestBody: "{
+  \"name\": \"CS Soft\",
+  \"address\": \"Mohali\",
+  \"productId\": 1
+}" (6d42d084)
+2023-09-05T13:42:36.3270418+05:30 0HMTDSUT6B9GH:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-05T13:42:36.3333559+05:30 0HMTDSUT6B9GH:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T13:42:36.3430516+05:30 0HMTDSUT6B9GH:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)" in 1178.4966ms (afa2e885)
+2023-09-05T13:42:36.3432134+05:30 0HMTDSUT6B9GH:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T13:42:36.3433442+05:30 0HMTDSUT6B9GH:00000001 [INF] ResponseBody: "{\"Product\":[\"The Product field is required.\"]}" (c7a8e6fd)
+2023-09-05T13:42:36.3538001+05:30 0HMTDSUT6B9GH:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Company application/json 64 - 400 - application/json;+charset=utf-8 1354.3096ms (791a596a)
+2023-09-05T14:10:03.8755942+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T14:10:04.2347328+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T14:10:04.2348468+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T14:10:04.2428999+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T14:10:04.2431104+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T14:10:04.2431413+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T14:10:05.9505751+05:30 0HMTDTEPQEEOG:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T14:10:06.6334866+05:30 0HMTDTEPQEEOG:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 692.0370ms (791a596a)
+2023-09-05T14:10:06.6897645+05:30 0HMTDTEPQEEOG:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T14:10:06.6943348+05:30 0HMTDTEPQEEOG:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T14:10:06.7026248+05:30 0HMTDTEPQEEOG:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 12.2510ms (791a596a)
+2023-09-05T14:10:06.9361106+05:30 0HMTDTEPQEEOG:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 241.7317ms (791a596a)
+2023-09-05T14:10:07.0384077+05:30 0HMTDTEPQEEOG:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T14:10:08.3862642+05:30 0HMTDTEPQEEOG:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1347.7942ms (791a596a)
+2023-09-05T14:10:14.2852371+05:30 0HMTDTEPQEEOH:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Company - - (ca22a1cb)
+2023-09-05T14:10:14.2931512+05:30 0HMTDTEPQEEOH:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:10:14.4066498+05:30 0HMTDTEPQEEOH:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:10:14.4225686+05:30 0HMTDTEPQEEOH:00000001 [INF] Route matched with "{action = \"GetCompanies\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetCompanies()" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:10:15.5288079+05:30 0HMTDTEPQEEOH:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:10:16.4519539+05:30 0HMTDTEPQEEOH:00000001 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Address], [c].[Name], [c].[ProductId]
+FROM [Companies] AS [c]" (0723d8ff)
+2023-09-05T14:10:16.5101001+05:30 0HMTDTEPQEEOH:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.DTOs.CompanyDTO, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T14:10:16.5153915+05:30 0HMTDTEPQEEOH:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T14:10:16.5291646+05:30 0HMTDTEPQEEOH:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)" in 2096.5344ms (afa2e885)
+2023-09-05T14:10:16.5292904+05:30 0HMTDTEPQEEOH:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:10:16.5316047+05:30 0HMTDTEPQEEOH:00000001 [INF] ResponseBody: "[]" (c7a8e6fd)
+2023-09-05T14:10:16.5403933+05:30 0HMTDTEPQEEOH:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Company - - - 200 - application/json;+charset=utf-8 2256.0924ms (791a596a)
+2023-09-05T14:10:44.4493165+05:30 0HMTDTEPQEEOI:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Company application/json 64 (ca22a1cb)
+2023-09-05T14:10:44.4546759+05:30 0HMTDTEPQEEOI:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:10:44.4554019+05:30 0HMTDTEPQEEOI:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:10:44.4731599+05:30 0HMTDTEPQEEOI:00000001 [INF] Route matched with "{action = \"CreateCompany\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(WebApplication_StudentAPI_115.DTOs.CompanyDTO)" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:10:44.5200328+05:30 0HMTDTEPQEEOI:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:10:44.5476449+05:30 0HMTDTEPQEEOI:00000001 [INF] RequestBody: "{
+  \"name\": \"CS Soft\",
+  \"address\": \"Mohali\",
+  \"productId\": 1
+}" (6d42d084)
+2023-09-05T14:10:44.8904820+05:30 0HMTDTEPQEEOI:00000001 [ERR] Failed executing DbCommand ("96"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Companies] ([Address], [Name], [ProductId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (627a98df)
+2023-09-05T14:10:45.0442499+05:30 0HMTDTEPQEEOI:00000001 [ERR] An exception occurred in the database while saving changes for context type '"WebApplication_StudentAPI_115.Data.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Companies_Products_ProductId\". The conflict occurred in database \"db_API_1\", table \"dbo.Products\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:be9c31fe-5140-499c-8fcb-933da4463c8f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Companies_Products_ProductId". The conflict occurred in database "db_API_1", table "dbo.Products", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:be9c31fe-5140-499c-8fcb-933da4463c8f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at WebApplication_StudentAPI_115.Repository.UnitOfWork.Save() in D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\Repository\UnitOfWork.cs:line 47
+2023-09-05T14:39:38.6995694+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T14:39:39.0551934+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T14:39:39.0553294+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T14:39:39.0609500+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T14:39:39.0611378+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T14:39:39.0611763+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T14:39:40.3943252+05:30 0HMTDTVANLKRH:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T14:39:40.9729034+05:30 0HMTDTVANLKRH:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The constraint reference 'id' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.ParameterPolicyFactory.Create(RoutePatternParameterPart parameter, RoutePatternParameterPolicyReference reference)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-05T14:39:41.3632550+05:30 0HMTDTVANLKRH:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 500 - text/html;+charset=utf-8 969.4774ms (791a596a)
+2023-09-05T14:39:41.3962016+05:30 0HMTDTVANLKRH:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T14:39:41.3963625+05:30 0HMTDTVANLKRH:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T14:39:41.4069567+05:30 0HMTDTVANLKRH:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 10.6322ms (791a596a)
+2023-09-05T14:39:41.5076495+05:30 0HMTDTVANLKRH:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 111.1865ms (791a596a)
+2023-09-05T14:39:41.5508227+05:30 0HMTDTVANLKRH:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/favicon.ico - - (ca22a1cb)
+2023-09-05T14:39:41.5559919+05:30 0HMTDTVANLKRH:00000007 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The constraint reference 'id' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.ParameterPolicyFactory.Create(RoutePatternParameterPart parameter, RoutePatternParameterPolicyReference reference)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-05T14:39:41.5637618+05:30 0HMTDTVANLKRH:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/favicon.ico - - - 500 - text/plain;+charset=utf-8 12.7850ms (791a596a)
+2023-09-05T14:40:34.8706028+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T14:40:34.9912222+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T14:40:34.9913269+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T14:40:34.9941266+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T14:40:34.9942809+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T14:40:34.9943102+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T14:40:49.4826818+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T14:40:50.0163873+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T14:40:50.0165877+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T14:40:50.0467502+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T14:40:50.0471412+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T14:40:50.0472040+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T14:40:51.1526463+05:30 0HMTDTVVRN4VS:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T14:40:51.7013032+05:30 0HMTDTVVRN4VS:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 552.2515ms (791a596a)
+2023-09-05T14:40:51.7447533+05:30 0HMTDTVVRN4VS:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T14:40:51.7465614+05:30 0HMTDTVVRN4VS:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T14:40:51.7520045+05:30 0HMTDTVVRN4VS:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 7.7531ms (791a596a)
+2023-09-05T14:40:51.7993251+05:30 0HMTDTVVRN4VS:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.6903ms (791a596a)
+2023-09-05T14:40:51.9384450+05:30 0HMTDTVVRN4VS:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T14:40:52.7772719+05:30 0HMTDTVVRN4VS:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 838.9835ms (791a596a)
+2023-09-05T14:51:51.8555164+05:30 0HMTDTVVRN4VT:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Product application/json 53 (ca22a1cb)
+2023-09-05T14:51:51.8758090+05:30 0HMTDTVVRN4VT:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Product
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:51:52.4424045+05:30 0HMTDTVVRN4VT:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:51:52.4698790+05:30 0HMTDTVVRN4VT:00000001 [INF] Route matched with "{action = \"CreateProduct\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateProduct(WebApplication_StudentAPI_115.Models.Product)" on controller "WebApplication_StudentAPI_115.Controllers.ProductController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:51:53.6809683+05:30 0HMTDTVVRN4VT:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:51:53.8331641+05:30 0HMTDTVVRN4VT:00000001 [INF] RequestBody: "{
+  \"name\": \"Keyboard\",
+  \"description\": \"keyboard\"
+}" (6d42d084)
+2023-09-05T14:51:55.6089856+05:30 0HMTDTVVRN4VT:00000001 [INF] Executed DbCommand ("62"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-05T14:51:55.6939940+05:30 0HMTDTVVRN4VT:00000001 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-05T14:51:55.7023088+05:30 0HMTDTVVRN4VT:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)" in 3223.9312ms (afa2e885)
+2023-09-05T14:51:55.7024375+05:30 0HMTDTVVRN4VT:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:51:55.7029022+05:30 0HMTDTVVRN4VT:00000001 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-05T14:51:55.7119259+05:30 0HMTDTVVRN4VT:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Product application/json 53 - 200 0 - 3856.9352ms (791a596a)
+2023-09-05T14:52:02.8622315+05:30 0HMTDTVVRN4VT:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Product - - (ca22a1cb)
+2023-09-05T14:52:02.8638896+05:30 0HMTDTVVRN4VT:00000003 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Product
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:52:02.8643001+05:30 0HMTDTVVRN4VT:00000003 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:52:02.8656508+05:30 0HMTDTVVRN4VT:00000003 [INF] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplication_StudentAPI_115.Controllers.ProductController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:52:02.9029419+05:30 0HMTDTVVRN4VT:00000003 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:52:03.1678541+05:30 0HMTDTVVRN4VT:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Description], [p].[Name]
+FROM [Products] AS [p]" (0723d8ff)
+2023-09-05T14:52:03.1844602+05:30 0HMTDTVVRN4VT:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Product, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T14:52:03.1883270+05:30 0HMTDTVVRN4VT:00000003 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T14:52:03.1914514+05:30 0HMTDTVVRN4VT:00000003 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)" in 325.5979ms (afa2e885)
+2023-09-05T14:52:03.1915511+05:30 0HMTDTVVRN4VT:00000003 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:52:03.1917229+05:30 0HMTDTVVRN4VT:00000003 [INF] ResponseBody: "[{\"id\":1,\"name\":\"Keyboard\",\"description\":\"keyboard\"}]" (c7a8e6fd)
+2023-09-05T14:52:03.1920163+05:30 0HMTDTVVRN4VT:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Product - - - 200 - application/json;+charset=utf-8 329.8006ms (791a596a)
+2023-09-05T14:55:08.9264842+05:30 0HMTDTVVRN4VU:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Company application/json 59 (ca22a1cb)
+2023-09-05T14:55:08.9272931+05:30 0HMTDTVVRN4VU:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 59
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:55:08.9291173+05:30 0HMTDTVVRN4VU:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:55:08.9305949+05:30 0HMTDTVVRN4VU:00000001 [INF] Route matched with "{action = \"CreateCompany\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(WebApplication_StudentAPI_115.DTOs.CompanyDTO)" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:55:08.9399660+05:30 0HMTDTVVRN4VU:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:55:08.9410626+05:30 0HMTDTVVRN4VU:00000001 [INF] RequestBody: "{
+  \"name\": \"CS\",
+  \"address\": \"Mohali\",
+  \"productId\": 1
+}" (6d42d084)
+2023-09-05T14:55:08.9723529+05:30 0HMTDTVVRN4VU:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Companies] ([Address], [Name], [ProductId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-05T14:55:08.9778683+05:30 0HMTDTVVRN4VU:00000001 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-05T14:55:08.9779268+05:30 0HMTDTVVRN4VU:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)" in 47.2749ms (afa2e885)
+2023-09-05T14:55:08.9779445+05:30 0HMTDTVVRN4VU:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:55:08.9779703+05:30 0HMTDTVVRN4VU:00000001 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-05T14:55:08.9781427+05:30 0HMTDTVVRN4VU:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Company application/json 59 - 200 0 - 52.1987ms (791a596a)
+2023-09-05T14:55:16.8037243+05:30 0HMTDTVVRN4VU:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Company - - (ca22a1cb)
+2023-09-05T14:55:16.8039556+05:30 0HMTDTVVRN4VU:00000003 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:55:16.8041015+05:30 0HMTDTVVRN4VU:00000003 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:55:16.8106602+05:30 0HMTDTVVRN4VU:00000003 [INF] Route matched with "{action = \"GetCompanies\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetCompanies()" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:55:16.8131015+05:30 0HMTDTVVRN4VU:00000003 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:55:16.8197361+05:30 0HMTDTVVRN4VU:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Address], [c].[Name], [c].[ProductId]
+FROM [Companies] AS [c]" (0723d8ff)
+2023-09-05T14:55:16.8369738+05:30 0HMTDTVVRN4VU:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.DTOs.CompanyDTO, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T14:55:16.8382124+05:30 0HMTDTVVRN4VU:00000003 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T14:55:16.8385383+05:30 0HMTDTVVRN4VU:00000003 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)" in 27.7887ms (afa2e885)
+2023-09-05T14:55:16.8385962+05:30 0HMTDTVVRN4VU:00000003 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:55:16.8386263+05:30 0HMTDTVVRN4VU:00000003 [INF] ResponseBody: "[{\"id\":2,\"name\":\"CS\",\"address\":\"Mohali\",\"productId\":1}]" (c7a8e6fd)
+2023-09-05T14:55:16.8387804+05:30 0HMTDTVVRN4VU:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Company - - - 200 - application/json;+charset=utf-8 35.0896ms (791a596a)
+2023-09-05T14:56:05.4760010+05:30 0HMTDTVVRN4VU:00000005 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Product application/json 44 (ca22a1cb)
+2023-09-05T14:56:05.4772933+05:30 0HMTDTVVRN4VU:00000005 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Product
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 44
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:56:05.4774990+05:30 0HMTDTVVRN4VU:00000005 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:56:05.4777989+05:30 0HMTDTVVRN4VU:00000005 [INF] Route matched with "{action = \"CreateProduct\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateProduct(WebApplication_StudentAPI_115.Models.Product)" on controller "WebApplication_StudentAPI_115.Controllers.ProductController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:56:05.4785338+05:30 0HMTDTVVRN4VU:00000005 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:56:05.4789192+05:30 0HMTDTVVRN4VU:00000005 [INF] RequestBody: "{
+  \"name\": \"Lux\",
+  \"description\": \"Soap\"
+}" (6d42d084)
+2023-09-05T14:56:05.4952707+05:30 0HMTDTVVRN4VU:00000005 [INF] Executed DbCommand ("15"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-05T14:56:05.4974797+05:30 0HMTDTVVRN4VU:00000005 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-05T14:56:05.4976992+05:30 0HMTDTVVRN4VU:00000005 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)" in 19.7218ms (afa2e885)
+2023-09-05T14:56:05.4977547+05:30 0HMTDTVVRN4VU:00000005 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:56:05.4977930+05:30 0HMTDTVVRN4VU:00000005 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-05T14:56:05.4979556+05:30 0HMTDTVVRN4VU:00000005 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Product application/json 44 - 200 0 - 22.0461ms (791a596a)
+2023-09-05T14:56:11.4828732+05:30 0HMTDTVVRN4VU:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Product - - (ca22a1cb)
+2023-09-05T14:56:11.4830426+05:30 0HMTDTVVRN4VU:00000007 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Product
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:56:11.4831252+05:30 0HMTDTVVRN4VU:00000007 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:56:11.4831995+05:30 0HMTDTVVRN4VU:00000007 [INF] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplication_StudentAPI_115.Controllers.ProductController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:56:11.4837470+05:30 0HMTDTVVRN4VU:00000007 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:56:11.4851603+05:30 0HMTDTVVRN4VU:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Description], [p].[Name]
+FROM [Products] AS [p]" (0723d8ff)
+2023-09-05T14:56:11.4854120+05:30 0HMTDTVVRN4VU:00000007 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Product, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T14:56:11.4854991+05:30 0HMTDTVVRN4VU:00000007 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T14:56:11.4856546+05:30 0HMTDTVVRN4VU:00000007 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)" in 2.4315ms (afa2e885)
+2023-09-05T14:56:11.4856857+05:30 0HMTDTVVRN4VU:00000007 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:56:11.4857071+05:30 0HMTDTVVRN4VU:00000007 [INF] ResponseBody: "[{\"id\":1,\"name\":\"Keyboard\",\"description\":\"keyboard\"},{\"id\":2,\"name\":\"Lux\",\"description\":\"Soap\"}]" (c7a8e6fd)
+2023-09-05T14:56:11.4857787+05:30 0HMTDTVVRN4VU:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Product - - - 200 - application/json;+charset=utf-8 2.9613ms (791a596a)
+2023-09-05T14:56:34.2274102+05:30 0HMTDTVVRN4VU:00000009 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Company application/json 64 (ca22a1cb)
+2023-09-05T14:56:34.2279318+05:30 0HMTDTVVRN4VU:00000009 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:56:34.2280721+05:30 0HMTDTVVRN4VU:00000009 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:56:34.2281752+05:30 0HMTDTVVRN4VU:00000009 [INF] Route matched with "{action = \"CreateCompany\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(WebApplication_StudentAPI_115.DTOs.CompanyDTO)" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:56:34.2299718+05:30 0HMTDTVVRN4VU:00000009 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:56:34.2302134+05:30 0HMTDTVVRN4VU:00000009 [INF] RequestBody: "{
+  \"name\": \"Unilever\",
+  \"address\": \"India\",
+  \"productId\": 2
+}" (6d42d084)
+2023-09-05T14:56:34.2404550+05:30 0HMTDTVVRN4VU:00000009 [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Companies] ([Address], [Name], [ProductId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-05T14:56:34.2412769+05:30 0HMTDTVVRN4VU:00000009 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-05T14:56:34.2413762+05:30 0HMTDTVVRN4VU:00000009 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)" in 13.1584ms (afa2e885)
+2023-09-05T14:56:34.2414070+05:30 0HMTDTVVRN4VU:00000009 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:56:34.2414465+05:30 0HMTDTVVRN4VU:00000009 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-05T14:56:34.2416729+05:30 0HMTDTVVRN4VU:00000009 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Company application/json 64 - 200 0 - 14.2999ms (791a596a)
+2023-09-05T14:56:38.1254631+05:30 0HMTDTVVRN4VU:0000000B [INF] Request starting HTTP/2 GET https://localhost:7252/api/Company - - (ca22a1cb)
+2023-09-05T14:56:38.1256193+05:30 0HMTDTVVRN4VU:0000000B [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:56:38.1257104+05:30 0HMTDTVVRN4VU:0000000B [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:56:38.1257985+05:30 0HMTDTVVRN4VU:0000000B [INF] Route matched with "{action = \"GetCompanies\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetCompanies()" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:56:38.1262278+05:30 0HMTDTVVRN4VU:0000000B [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:56:38.1273630+05:30 0HMTDTVVRN4VU:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Address], [c].[Name], [c].[ProductId]
+FROM [Companies] AS [c]" (0723d8ff)
+2023-09-05T14:56:38.1275746+05:30 0HMTDTVVRN4VU:0000000B [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.DTOs.CompanyDTO, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T14:56:38.1276934+05:30 0HMTDTVVRN4VU:0000000B [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T14:56:38.1279149+05:30 0HMTDTVVRN4VU:0000000B [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)" in 2.0387ms (afa2e885)
+2023-09-05T14:56:38.1279666+05:30 0HMTDTVVRN4VU:0000000B [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:56:38.1279961+05:30 0HMTDTVVRN4VU:0000000B [INF] ResponseBody: "[{\"id\":2,\"name\":\"CS\",\"address\":\"Mohali\",\"productId\":1},{\"id\":3,\"name\":\"Unilever\",\"address\":\"India\",\"productId\":2}]" (c7a8e6fd)
+2023-09-05T14:56:38.1281038+05:30 0HMTDTVVRN4VU:0000000B [INF] Request finished HTTP/2 GET https://localhost:7252/api/Company - - - 200 - application/json;+charset=utf-8 2.6601ms (791a596a)
+2023-09-05T14:57:26.9031370+05:30 0HMTDTVVRN4VU:0000000D [INF] Request starting HTTP/2 POST https://localhost:7252/api/Product application/json 52 (ca22a1cb)
+2023-09-05T14:57:26.9038405+05:30 0HMTDTVVRN4VU:0000000D [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Product
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 52
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:57:26.9039856+05:30 0HMTDTVVRN4VU:0000000D [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:57:26.9040682+05:30 0HMTDTVVRN4VU:0000000D [INF] Route matched with "{action = \"CreateProduct\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateProduct(WebApplication_StudentAPI_115.Models.Product)" on controller "WebApplication_StudentAPI_115.Controllers.ProductController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:57:26.9194340+05:30 0HMTDTVVRN4VU:0000000D [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:57:26.9213742+05:30 0HMTDTVVRN4VU:0000000D [INF] RequestBody: "{
+  \"name\": \"Navratan\",
+  \"description\": \"Bhujiya\"
+}" (6d42d084)
+2023-09-05T14:57:26.9268902+05:30 0HMTDTVVRN4VU:0000000D [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-05T14:57:26.9341024+05:30 0HMTDTVVRN4VU:0000000D [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-05T14:57:26.9342562+05:30 0HMTDTVVRN4VU:0000000D [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)" in 30.1384ms (afa2e885)
+2023-09-05T14:57:26.9343057+05:30 0HMTDTVVRN4VU:0000000D [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.CreateProduct (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:57:26.9343633+05:30 0HMTDTVVRN4VU:0000000D [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-05T14:57:26.9401744+05:30 0HMTDTVVRN4VU:0000000D [INF] Request finished HTTP/2 POST https://localhost:7252/api/Product application/json 52 - 200 0 - 37.0083ms (791a596a)
+2023-09-05T14:57:50.2590788+05:30 0HMTDTVVRN4VU:0000000F [INF] Request starting HTTP/2 POST https://localhost:7252/api/Company application/json 64 (ca22a1cb)
+2023-09-05T14:57:50.2592426+05:30 0HMTDTVVRN4VU:0000000F [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:57:50.2593236+05:30 0HMTDTVVRN4VU:0000000F [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:57:50.2594098+05:30 0HMTDTVVRN4VU:0000000F [INF] Route matched with "{action = \"CreateCompany\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(WebApplication_StudentAPI_115.DTOs.CompanyDTO)" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:57:50.2598180+05:30 0HMTDTVVRN4VU:0000000F [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:57:50.2599976+05:30 0HMTDTVVRN4VU:0000000F [INF] RequestBody: "{
+  \"name\": \"Unilever\",
+  \"address\": \"India\",
+  \"productId\": 3
+}" (6d42d084)
+2023-09-05T14:57:50.2635281+05:30 0HMTDTVVRN4VU:0000000F [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Companies] ([Address], [Name], [ProductId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-05T14:57:50.2644345+05:30 0HMTDTVVRN4VU:0000000F [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-05T14:57:50.2644787+05:30 0HMTDTVVRN4VU:0000000F [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)" in 5.045ms (afa2e885)
+2023-09-05T14:57:50.2645000+05:30 0HMTDTVVRN4VU:0000000F [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.CreateCompany (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:57:50.2645289+05:30 0HMTDTVVRN4VU:0000000F [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-05T14:57:50.2647046+05:30 0HMTDTVVRN4VU:0000000F [INF] Request finished HTTP/2 POST https://localhost:7252/api/Company application/json 64 - 200 0 - 6.5098ms (791a596a)
+2023-09-05T14:57:54.1327560+05:30 0HMTDTVVRN4VU:00000011 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Company - - (ca22a1cb)
+2023-09-05T14:57:54.1329963+05:30 0HMTDTVVRN4VU:00000011 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:57:54.1331196+05:30 0HMTDTVVRN4VU:00000011 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:57:54.1331953+05:30 0HMTDTVVRN4VU:00000011 [INF] Route matched with "{action = \"GetCompanies\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetCompanies()" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:57:54.1336650+05:30 0HMTDTVVRN4VU:00000011 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:57:54.1346769+05:30 0HMTDTVVRN4VU:00000011 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Address], [c].[Name], [c].[ProductId]
+FROM [Companies] AS [c]" (0723d8ff)
+2023-09-05T14:57:54.1349213+05:30 0HMTDTVVRN4VU:00000011 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.DTOs.CompanyDTO, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T14:57:54.1350233+05:30 0HMTDTVVRN4VU:00000011 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T14:57:54.1352245+05:30 0HMTDTVVRN4VU:00000011 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)" in 1.9848ms (afa2e885)
+2023-09-05T14:57:54.1352547+05:30 0HMTDTVVRN4VU:00000011 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:57:54.1352879+05:30 0HMTDTVVRN4VU:00000011 [INF] ResponseBody: "[{\"id\":2,\"name\":\"CS\",\"address\":\"Mohali\",\"productId\":1},{\"id\":3,\"name\":\"Unilever\",\"address\":\"India\",\"productId\":2},{\"id\":4,\"name\":\"Unilever\",\"address\":\"India\",\"productId\":3}]" (c7a8e6fd)
+2023-09-05T14:57:54.1353803+05:30 0HMTDTVVRN4VU:00000011 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Company - - - 200 - application/json;+charset=utf-8 2.9460ms (791a596a)
+2023-09-05T14:59:47.7974752+05:30 0HMTDTVVRN4VU:00000013 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Product - - (ca22a1cb)
+2023-09-05T14:59:47.7976268+05:30 0HMTDTVVRN4VU:00000013 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Product
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:59:47.7977024+05:30 0HMTDTVVRN4VU:00000013 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:59:47.7977782+05:30 0HMTDTVVRN4VU:00000013 [INF] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplication_StudentAPI_115.Controllers.ProductController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:59:47.8085636+05:30 0HMTDTVVRN4VU:00000013 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:59:47.8133447+05:30 0HMTDTVVRN4VU:00000013 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Description], [p].[Name]
+FROM [Products] AS [p]" (0723d8ff)
+2023-09-05T14:59:47.8138827+05:30 0HMTDTVVRN4VU:00000013 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Product, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T14:59:47.8139952+05:30 0HMTDTVVRN4VU:00000013 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T14:59:47.8183446+05:30 0HMTDTVVRN4VU:00000013 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)" in 19.566ms (afa2e885)
+2023-09-05T14:59:47.8184460+05:30 0HMTDTVVRN4VU:00000013 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:59:47.8184819+05:30 0HMTDTVVRN4VU:00000013 [INF] ResponseBody: "[{\"id\":1,\"name\":\"Keyboard\",\"description\":\"keyboard\"},{\"id\":2,\"name\":\"Lux\",\"description\":\"Soap\"},{\"id\":3,\"name\":\"Navratan\",\"description\":\"Bhujiya\"}]" (c7a8e6fd)
+2023-09-05T14:59:47.8194743+05:30 0HMTDTVVRN4VU:00000013 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Product - - - 200 - application/json;+charset=utf-8 22.0151ms (791a596a)
+2023-09-05T14:59:58.0694894+05:30 0HMTDTVVRN4VU:00000015 [INF] Request starting HTTP/2 DELETE https://localhost:7252/api/Product/3 - - (ca22a1cb)
+2023-09-05T14:59:58.0698818+05:30 0HMTDTVVRN4VU:00000015 [INF] Request:
+Protocol: HTTP/2
+Method: DELETE
+Scheme: https
+PathBase: 
+Path: /api/Product/3
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T14:59:58.0699699+05:30 0HMTDTVVRN4VU:00000015 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.DeleteProduct (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T14:59:58.0715244+05:30 0HMTDTVVRN4VU:00000015 [INF] Route matched with "{action = \"DeleteProduct\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult DeleteProduct(Int32)" on controller "WebApplication_StudentAPI_115.Controllers.ProductController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T14:59:58.0720730+05:30 0HMTDTVVRN4VU:00000015 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T14:59:58.2628848+05:30 0HMTDTVVRN4VU:00000015 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0" (0723d8ff)
+2023-09-05T14:59:58.2950762+05:30 0HMTDTVVRN4VU:00000015 [INF] Executed DbCommand ("19"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Products]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2023-09-05T14:59:58.2998663+05:30 0HMTDTVVRN4VU:00000015 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-05T14:59:58.2999220+05:30 0HMTDTVVRN4VU:00000015 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ProductController.DeleteProduct (WebApplication_StudentAPI_115)" in 228.345ms (afa2e885)
+2023-09-05T14:59:58.2999476+05:30 0HMTDTVVRN4VU:00000015 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.DeleteProduct (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T14:59:58.2999730+05:30 0HMTDTVVRN4VU:00000015 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-05T14:59:58.3002820+05:30 0HMTDTVVRN4VU:00000015 [INF] Request finished HTTP/2 DELETE https://localhost:7252/api/Product/3 - - - 200 0 - 230.8310ms (791a596a)
+2023-09-05T15:00:04.6405758+05:30 0HMTDTVVRN4VU:00000017 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Product - - (ca22a1cb)
+2023-09-05T15:00:04.6408347+05:30 0HMTDTVVRN4VU:00000017 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Product
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T15:00:04.6409585+05:30 0HMTDTVVRN4VU:00000017 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T15:00:04.6410420+05:30 0HMTDTVVRN4VU:00000017 [INF] Route matched with "{action = \"GetProducts\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetProducts()" on controller "WebApplication_StudentAPI_115.Controllers.ProductController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T15:00:04.6416302+05:30 0HMTDTVVRN4VU:00000017 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T15:00:04.6429684+05:30 0HMTDTVVRN4VU:00000017 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Description], [p].[Name]
+FROM [Products] AS [p]" (0723d8ff)
+2023-09-05T15:00:04.6432623+05:30 0HMTDTVVRN4VU:00000017 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Product, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T15:00:04.6434495+05:30 0HMTDTVVRN4VU:00000017 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T15:00:04.6436757+05:30 0HMTDTVVRN4VU:00000017 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)" in 2.5996ms (afa2e885)
+2023-09-05T15:00:04.6437186+05:30 0HMTDTVVRN4VU:00000017 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ProductController.GetProducts (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T15:00:04.6437489+05:30 0HMTDTVVRN4VU:00000017 [INF] ResponseBody: "[{\"id\":1,\"name\":\"Keyboard\",\"description\":\"keyboard\"},{\"id\":2,\"name\":\"Lux\",\"description\":\"Soap\"}]" (c7a8e6fd)
+2023-09-05T15:00:04.6438447+05:30 0HMTDTVVRN4VU:00000017 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Product - - - 200 - application/json;+charset=utf-8 3.3274ms (791a596a)
+2023-09-05T15:00:09.3840019+05:30 0HMTDTVVRN4VV:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Company - - (ca22a1cb)
+2023-09-05T15:00:09.3852546+05:30 0HMTDTVVRN4VV:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Company
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T15:00:09.3854377+05:30 0HMTDTVVRN4VV:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T15:00:09.3856086+05:30 0HMTDTVVRN4VV:00000001 [INF] Route matched with "{action = \"GetCompanies\", controller = \"Company\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetCompanies()" on controller "WebApplication_StudentAPI_115.Controllers.CompanyController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T15:00:09.3874491+05:30 0HMTDTVVRN4VV:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T15:00:09.3896918+05:30 0HMTDTVVRN4VV:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Address], [c].[Name], [c].[ProductId]
+FROM [Companies] AS [c]" (0723d8ff)
+2023-09-05T15:00:09.3899119+05:30 0HMTDTVVRN4VV:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.DTOs.CompanyDTO, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-05T15:00:09.3899987+05:30 0HMTDTVVRN4VV:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8 (999214c4)
+2023-09-05T15:00:09.3901587+05:30 0HMTDTVVRN4VV:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)" in 4.5071ms (afa2e885)
+2023-09-05T15:00:09.3901879+05:30 0HMTDTVVRN4VV:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.CompanyController.GetCompanies (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T15:00:09.3902071+05:30 0HMTDTVVRN4VV:00000001 [INF] ResponseBody: "[{\"id\":2,\"name\":\"CS\",\"address\":\"Mohali\",\"productId\":1},{\"id\":3,\"name\":\"Unilever\",\"address\":\"India\",\"productId\":2}]" (c7a8e6fd)
+2023-09-05T15:00:09.3902788+05:30 0HMTDTVVRN4VV:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Company - - - 200 - application/json;+charset=utf-8 6.6169ms (791a596a)
+2023-09-05T16:22:28.2403415+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T16:22:29.3344660+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T16:22:29.3345766+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T16:22:29.3543686+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T16:22:29.3546262+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T16:22:29.3546804+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T16:22:31.8581904+05:30 0HMTDVOPL2QF1:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T16:22:32.7442179+05:30 0HMTDVOPL2QF1:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 897.0580ms (791a596a)
+2023-09-05T16:22:32.8141898+05:30 0HMTDVOPL2QF1:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T16:22:32.8194705+05:30 0HMTDVOPL2QF1:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T16:22:32.8291264+05:30 0HMTDVOPL2QF1:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 14.8802ms (791a596a)
+2023-09-05T16:22:33.0536498+05:30 0HMTDVOPL2QF1:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 234.1241ms (791a596a)
+2023-09-05T16:22:33.1679972+05:30 0HMTDVOPL2QF1:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T16:22:34.1183091+05:30 0HMTDVOPL2QF1:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 950.3782ms (791a596a)
+2023-09-05T16:51:15.4066893+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T16:51:15.7566347+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T16:51:15.7567359+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T16:51:15.7629078+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T16:51:15.7633513+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T16:51:15.7638649+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T16:51:16.9658578+05:30 0HMTE08S3330G:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T16:51:17.5857527+05:30 0HMTE08S3330G:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 629.1197ms (791a596a)
+2023-09-05T16:51:17.6342471+05:30 0HMTE08S3330G:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T16:51:17.6342471+05:30 0HMTE08S3330G:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T16:51:17.6454984+05:30 0HMTE08S3330G:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 11.1746ms (791a596a)
+2023-09-05T16:51:17.7133823+05:30 0HMTE08S3330G:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.1275ms (791a596a)
+2023-09-05T16:51:17.7847257+05:30 0HMTE08S3330G:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T16:51:18.7142789+05:30 0HMTE08S3330G:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 929.5095ms (791a596a)
+2023-09-05T16:52:05.4305089+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T16:52:05.7983349+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T16:52:05.7984200+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T16:52:05.8125496+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T16:52:05.8127246+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T16:52:05.8127613+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T16:52:07.2970791+05:30 0HMTE09B3J147:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T16:52:07.9636875+05:30 0HMTE09B3J147:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 676.9454ms (791a596a)
+2023-09-05T16:52:07.9988533+05:30 0HMTE09B3J147:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T16:52:08.0070009+05:30 0HMTE09B3J147:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 8.1384ms (791a596a)
+2023-09-05T16:52:08.0110099+05:30 0HMTE09B3J147:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T16:52:08.0933782+05:30 0HMTE09B3J147:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.2780ms (791a596a)
+2023-09-05T16:52:08.1785431+05:30 0HMTE09B3J147:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T16:52:09.2161532+05:30 0HMTE09B3J147:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1037.6925ms (791a596a)
+2023-09-05T16:52:43.9399348+05:30 0HMTE09B3J148:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 (ca22a1cb)
+2023-09-05T16:52:43.9578745+05:30 0HMTE09B3J148:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T16:52:44.5746372+05:30 0HMTE09B3J148:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T16:52:44.6053948+05:30 0HMTE09B3J148:00000001 [INF] Route matched with "{action = \"CreateReviewer\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateReviewer(WebApplication_StudentAPI_115.DTOs.ReviewerDTO)" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T16:52:45.6624590+05:30 0HMTE09B3J148:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T16:52:45.8182163+05:30 0HMTE09B3J148:00000001 [INF] RequestBody: "{
+  \"firstName\": \"Abhishek\",
+  \"lastName\": \"Thakur\"
+}" (6d42d084)
+2023-09-05T16:53:46.7578532+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T16:53:47.1475104+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T16:53:47.1476379+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T16:53:47.1817804+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T16:53:47.1821341+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T16:53:47.1821943+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T16:53:48.4766907+05:30 0HMTE0A99FF3M:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T16:53:49.0578636+05:30 0HMTE0A99FF3M:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 584.3372ms (791a596a)
+2023-09-05T16:53:49.0875779+05:30 0HMTE0A99FF3M:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T16:53:49.0997431+05:30 0HMTE0A99FF3M:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 11.8728ms (791a596a)
+2023-09-05T16:53:49.1038663+05:30 0HMTE0A99FF3M:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T16:53:49.1932169+05:30 0HMTE0A99FF3M:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.3111ms (791a596a)
+2023-09-05T16:53:49.2585037+05:30 0HMTE0A99FF3M:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T16:53:50.2905269+05:30 0HMTE0A99FF3M:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1031.9781ms (791a596a)
+2023-09-05T16:54:20.3347683+05:30 0HMTE0A99FF3N:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 (ca22a1cb)
+2023-09-05T16:54:20.3422622+05:30 0HMTE0A99FF3N:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T16:54:20.4445385+05:30 0HMTE0A99FF3N:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T16:54:20.4674432+05:30 0HMTE0A99FF3N:00000001 [INF] Route matched with "{action = \"CreateReviewer\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateReviewer(WebApplication_StudentAPI_115.DTOs.ReviewerDTO)" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T16:54:21.5572290+05:30 0HMTE0A99FF3N:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T16:54:21.7171764+05:30 0HMTE0A99FF3N:00000001 [INF] RequestBody: "{
+  \"firstName\": \"Abhishek\",
+  \"lastName\": \"Thakur\"
+}" (6d42d084)
+2023-09-05T16:56:28.0493824+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T16:56:28.4095956+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T16:56:28.4097127+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T16:56:28.4180309+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T16:56:28.4183850+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T16:56:28.4184396+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T16:56:29.6431519+05:30 0HMTE0BP7LAIF:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T16:56:30.1160514+05:30 0HMTE0BP7LAIF:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 477.5099ms (791a596a)
+2023-09-05T16:56:30.1452671+05:30 0HMTE0BP7LAIF:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T16:56:30.1565949+05:30 0HMTE0BP7LAIF:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T16:56:30.1566255+05:30 0HMTE0BP7LAIF:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 11.4673ms (791a596a)
+2023-09-05T16:56:30.2051710+05:30 0HMTE0BP7LAIF:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.5671ms (791a596a)
+2023-09-05T16:56:30.2964053+05:30 0HMTE0BP7LAIF:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T16:56:31.1600803+05:30 0HMTE0BP7LAIF:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 863.6057ms (791a596a)
+2023-09-05T16:56:54.1047946+05:30 0HMTE0BP7LAIG:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 (ca22a1cb)
+2023-09-05T16:56:54.1137906+05:30 0HMTE0BP7LAIG:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T16:56:54.2127649+05:30 0HMTE0BP7LAIG:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T16:56:54.2375090+05:30 0HMTE0BP7LAIG:00000001 [INF] Route matched with "{action = \"CreateReviewer\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateReviewer(WebApplication_StudentAPI_115.DTOs.ReviewerDTO)" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T16:56:55.3103870+05:30 0HMTE0BP7LAIG:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T16:56:55.4531740+05:30 0HMTE0BP7LAIG:00000001 [INF] RequestBody: "{
+  \"firstName\": \"Abhishek\",
+  \"lastName\": \"Thakur\"
+}" (6d42d084)
+2023-09-05T16:58:21.0939389+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T16:58:21.4733676+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T16:58:21.4734793+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T16:58:21.4818656+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T16:58:21.4821273+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T16:58:21.4821908+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T16:58:22.9439418+05:30 0HMTE0CR1N2OL:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T16:58:23.5545848+05:30 0HMTE0CR1N2OL:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 623.2583ms (791a596a)
+2023-09-05T16:58:23.5882638+05:30 0HMTE0CR1N2OL:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T16:58:23.5999103+05:30 0HMTE0CR1N2OL:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 10.7976ms (791a596a)
+2023-09-05T16:58:23.6019730+05:30 0HMTE0CR1N2OL:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T16:58:23.6826543+05:30 0HMTE0CR1N2OL:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.6683ms (791a596a)
+2023-09-05T16:58:23.7503911+05:30 0HMTE0CR1N2OL:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T16:58:24.6550816+05:30 0HMTE0CR1N2OL:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 904.5855ms (791a596a)
+2023-09-05T16:58:49.3003064+05:30 0HMTE0CR1N2OM:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 (ca22a1cb)
+2023-09-05T16:58:49.3364379+05:30 0HMTE0CR1N2OM:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T16:58:49.4220653+05:30 0HMTE0CR1N2OM:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T16:58:49.4420830+05:30 0HMTE0CR1N2OM:00000001 [INF] Route matched with "{action = \"CreateReviewer\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateReviewer(WebApplication_StudentAPI_115.DTOs.ReviewerDTO)" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T16:58:50.4489344+05:30 0HMTE0CR1N2OM:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T16:58:50.5894330+05:30 0HMTE0CR1N2OM:00000001 [INF] RequestBody: "{
+  \"firstName\": \"Abhishek\",
+  \"lastName\": \"Thakur\"
+}" (6d42d084)
+2023-09-05T17:12:41.3320966+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T17:12:41.6260351+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T17:12:41.6260967+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T17:12:41.6353183+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T17:12:41.6355366+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T17:12:41.6355752+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T17:12:42.7185642+05:30 0HMTE0KR8U92E:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T17:12:43.3689495+05:30 0HMTE0KR8U92E:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 655.7107ms (791a596a)
+2023-09-05T17:12:43.4140466+05:30 0HMTE0KR8U92E:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T17:12:43.4142490+05:30 0HMTE0KR8U92E:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T17:12:43.4262091+05:30 0HMTE0KR8U92E:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 10.8493ms (791a596a)
+2023-09-05T17:12:43.4619725+05:30 0HMTE0KR8U92E:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.7741ms (791a596a)
+2023-09-05T17:12:43.6125828+05:30 0HMTE0KR8U92E:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T17:12:44.7997709+05:30 0HMTE0KR8U92E:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1187.2839ms (791a596a)
+2023-09-05T17:13:06.7076510+05:30 0HMTE0KR8U92F:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 (ca22a1cb)
+2023-09-05T17:13:06.7190061+05:30 0HMTE0KR8U92F:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T17:13:06.8269234+05:30 0HMTE0KR8U92F:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T17:13:06.8571252+05:30 0HMTE0KR8U92F:00000001 [INF] Route matched with "{action = \"CreateReviewer\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateReviewer(WebApplication_StudentAPI_115.DTOs.ReviewerDTO)" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T17:13:08.0216640+05:30 0HMTE0KR8U92F:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T17:13:08.1783377+05:30 0HMTE0KR8U92F:00000001 [INF] RequestBody: "{
+  \"firstName\": \"Abhishek\",
+  \"lastName\": \"Thakur\"
+}" (6d42d084)
+2023-09-05T17:26:29.1045540+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T17:26:29.3865453+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T17:26:29.3866093+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T17:26:29.3933703+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T17:26:29.3936572+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T17:26:29.3937373+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T17:26:30.9265693+05:30 0HMTE0SI08UH3:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T17:26:31.4562659+05:30 0HMTE0SI08UH3:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 537.8325ms (791a596a)
+2023-09-05T17:26:31.4995598+05:30 0HMTE0SI08UH3:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T17:26:31.5096758+05:30 0HMTE0SI08UH3:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T17:26:31.5118014+05:30 0HMTE0SI08UH3:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 12.1884ms (791a596a)
+2023-09-05T17:26:31.5590698+05:30 0HMTE0SI08UH3:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.2231ms (791a596a)
+2023-09-05T17:26:31.6634034+05:30 0HMTE0SI08UH3:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T17:26:32.5603601+05:30 0HMTE0SI08UH3:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 896.8626ms (791a596a)
+2023-09-05T17:26:59.3214895+05:30 0HMTE0SI08UH4:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 (ca22a1cb)
+2023-09-05T17:26:59.3342475+05:30 0HMTE0SI08UH4:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T17:26:59.4372659+05:30 0HMTE0SI08UH4:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T17:26:59.4650123+05:30 0HMTE0SI08UH4:00000001 [INF] Route matched with "{action = \"CreateReviewer\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateReviewer(WebApplication_StudentAPI_115.DTOs.ReviewerDTO)" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T17:27:00.6902464+05:30 0HMTE0SI08UH4:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T17:27:00.8543374+05:30 0HMTE0SI08UH4:00000001 [INF] RequestBody: "{
+  \"firstName\": \"Abhishek\",
+  \"lastName\": \"Thakur\"
+}" (6d42d084)
+2023-09-05T17:29:21.8282510+05:30 0HMTE0SI08UH4:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)" in 142355.132ms (afa2e885)
+2023-09-05T17:29:21.8310885+05:30 0HMTE0SI08UH4:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T17:29:22.1481092+05:30 0HMTE0SI08UH4:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer(ReviewerDTO reviewerDTO) in D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\Controllers\ReviewerController.cs:line 35
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-05T17:29:22.1507338+05:30 0HMTE0SI08UH4:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T17:29:22.1510567+05:30 0HMTE0SI08UH4:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T17:29:22.1526634+05:30 0HMTE0SI08UH4:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T17:29:22.1643289+05:30 0HMTE0SI08UH4:00000001 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2023-09-05T17:29:22.1702134+05:30 0HMTE0SI08UH4:00000001 [INF] Response:
+StatusCode: 500
+Content-Type: application/problem+json; charset=utf-8 (999214c4)
+2023-09-05T17:29:22.1716539+05:30 0HMTE0SI08UH4:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 18.8385ms (afa2e885)
+2023-09-05T17:29:22.1717187+05:30 0HMTE0SI08UH4:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T17:29:22.1717427+05:30 0HMTE0SI08UH4:00000001 [INF] RequestBody: "" (6d42d084)
+2023-09-05T17:29:22.1719178+05:30 0HMTE0SI08UH4:00000001 [INF] ResponseBody: "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.6.1\",\"title\":\"Object reference not set to an instance of an object.\",\"status\":500,\"detail\":\"   at WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer(ReviewerDTO reviewerDTO) in D:\\reactapplication\\reactproject_1\\WebApplication_StudentAPI_115\\WebApplication_StudentAPI_115\\Controllers\\ReviewerController.cs:line 35\r\n   at lambda_method2(Closure , Object , Object[] )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)\",\"traceId\":\"00-e21ff1095937ea6877a1858c96a2496e-178f98c8ee860cee-00\"}" (c7a8e6fd)
+2023-09-05T17:29:22.1867918+05:30 0HMTE0SI08UH4:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 - 500 - application/problem+json;+charset=utf-8 142865.2760ms (791a596a)
+2023-09-05T17:30:17.5053647+05:30 0HMTE0SI08UH5:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Reviewer - - (ca22a1cb)
+2023-09-05T17:30:17.5143079+05:30 0HMTE0SI08UH5:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T17:30:17.5223061+05:30 0HMTE0SI08UH5:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.GetReviewers (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T17:30:17.5231947+05:30 0HMTE0SI08UH5:00000001 [INF] Route matched with "{action = \"GetReviewers\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetReviewers()" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T17:30:17.5601228+05:30 0HMTE0SI08UH5:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T17:30:36.2601826+05:30 0HMTE0SI08UH5:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ReviewerController.GetReviewers (WebApplication_StudentAPI_115)" in 18736.8944ms (afa2e885)
+2023-09-05T17:30:36.2610963+05:30 0HMTE0SI08UH5:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.GetReviewers (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T17:30:36.2634506+05:30 0HMTE0SI08UH5:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication_StudentAPI_115.Controllers.ReviewerController.GetReviewers() in D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\Controllers\ReviewerController.cs:line 25
+   at lambda_method16(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-05T17:30:36.2646345+05:30 0HMTE0SI08UH5:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T17:30:36.2647810+05:30 0HMTE0SI08UH5:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T17:30:36.2649745+05:30 0HMTE0SI08UH5:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T17:30:36.2670223+05:30 0HMTE0SI08UH5:00000001 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2023-09-05T17:30:36.2674044+05:30 0HMTE0SI08UH5:00000001 [INF] Response:
+StatusCode: 500
+Content-Type: application/problem+json; charset=utf-8 (999214c4)
+2023-09-05T17:30:36.2677512+05:30 0HMTE0SI08UH5:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 2.6347ms (afa2e885)
+2023-09-05T17:30:36.2678153+05:30 0HMTE0SI08UH5:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T17:30:36.2679190+05:30 0HMTE0SI08UH5:00000001 [INF] ResponseBody: "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.6.1\",\"title\":\"Object reference not set to an instance of an object.\",\"status\":500,\"detail\":\"   at WebApplication_StudentAPI_115.Controllers.ReviewerController.GetReviewers() in D:\\reactapplication\\reactproject_1\\WebApplication_StudentAPI_115\\WebApplication_StudentAPI_115\\Controllers\\ReviewerController.cs:line 25\r\n   at lambda_method16(Closure , Object , Object[] )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)\",\"traceId\":\"00-2d76281da83c6ab5ff1d4da3241bdf52-2c4709643aae0868-00\"}" (c7a8e6fd)
+2023-09-05T17:30:36.2680700+05:30 0HMTE0SI08UH5:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Reviewer - - - 500 - application/problem+json;+charset=utf-8 18763.4615ms (791a596a)
+2023-09-05T17:31:17.0083583+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-05T17:31:17.3899003+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-05T17:31:17.3899960+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-05T17:31:17.3983991+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-05T17:31:17.3986884+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-05T17:31:17.3987378+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-05T17:31:18.6757811+05:30 0HMTE0V7RMULL:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-05T17:31:19.1961301+05:30 0HMTE0V7RMULL:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 528.5172ms (791a596a)
+2023-09-05T17:31:19.2553420+05:30 0HMTE0V7RMULL:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-05T17:31:19.2558478+05:30 0HMTE0V7RMULL:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-05T17:31:19.2658299+05:30 0HMTE0V7RMULL:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 9.3478ms (791a596a)
+2023-09-05T17:31:19.3682262+05:30 0HMTE0V7RMULL:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 112.8893ms (791a596a)
+2023-09-05T17:31:19.4977729+05:30 0HMTE0V7RMULL:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-05T17:31:20.4350211+05:30 0HMTE0V7RMULL:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 937.2288ms (791a596a)
+2023-09-05T17:31:41.2239005+05:30 0HMTE0V7RMULM:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 (ca22a1cb)
+2023-09-05T17:31:41.2329558+05:30 0HMTE0V7RMULM:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T17:31:41.3403452+05:30 0HMTE0V7RMULM:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T17:31:41.3708472+05:30 0HMTE0V7RMULM:00000001 [INF] Route matched with "{action = \"CreateReviewer\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateReviewer(WebApplication_StudentAPI_115.DTOs.ReviewerDTO)" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T17:31:42.5209137+05:30 0HMTE0V7RMULM:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T17:31:42.6749787+05:30 0HMTE0V7RMULM:00000001 [INF] RequestBody: "{
+  \"firstName\": \"Abhishek\",
+  \"lastName\": \"Thakur\"
+}" (6d42d084)
+2023-09-05T17:31:47.8649446+05:30 0HMTE0V7RMULM:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)" in 6483.389ms (afa2e885)
+2023-09-05T17:31:47.8771721+05:30 0HMTE0V7RMULM:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T17:31:48.1066500+05:30 0HMTE0V7RMULM:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer(ReviewerDTO reviewerDTO) in D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\Controllers\ReviewerController.cs:line 35
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-05T17:31:48.1103771+05:30 0HMTE0V7RMULM:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T17:31:48.1109581+05:30 0HMTE0V7RMULM:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T17:31:48.1128405+05:30 0HMTE0V7RMULM:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T17:31:51.7197130+05:30 0HMTE0V7RMULM:00000001 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2023-09-05T17:31:51.7271339+05:30 0HMTE0V7RMULM:00000001 [INF] Response:
+StatusCode: 500
+Content-Type: application/problem+json; charset=utf-8 (999214c4)
+2023-09-05T17:31:51.7288182+05:30 0HMTE0V7RMULM:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 3615.7289ms (afa2e885)
+2023-09-05T17:31:51.7289181+05:30 0HMTE0V7RMULM:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T17:31:51.7289545+05:30 0HMTE0V7RMULM:00000001 [INF] RequestBody: "" (6d42d084)
+2023-09-05T17:31:51.7291321+05:30 0HMTE0V7RMULM:00000001 [INF] ResponseBody: "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.6.1\",\"title\":\"Object reference not set to an instance of an object.\",\"status\":500,\"detail\":\"   at WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer(ReviewerDTO reviewerDTO) in D:\\reactapplication\\reactproject_1\\WebApplication_StudentAPI_115\\WebApplication_StudentAPI_115\\Controllers\\ReviewerController.cs:line 35\r\n   at lambda_method2(Closure , Object , Object[] )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)\",\"traceId\":\"00-76936c4fa367370268309b4b7e161b2f-48bc0251f975fdd2-00\"}" (c7a8e6fd)
+2023-09-05T17:31:51.7495731+05:30 0HMTE0V7RMULM:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 - 500 - application/problem+json;+charset=utf-8 10526.6462ms (791a596a)
+2023-09-05T18:01:21.1852026+05:30 0HMTE0V7RMULN:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 (ca22a1cb)
+2023-09-05T18:01:21.1866007+05:30 0HMTE0V7RMULN:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Reviewer
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T18:01:21.1878553+05:30 0HMTE0V7RMULN:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T18:01:21.1880222+05:30 0HMTE0V7RMULN:00000001 [INF] Route matched with "{action = \"CreateReviewer\", controller = \"Reviewer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateReviewer(WebApplication_StudentAPI_115.DTOs.ReviewerDTO)" on controller "WebApplication_StudentAPI_115.Controllers.ReviewerController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T18:01:25.3733749+05:30 0HMTE0V7RMULN:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-05T18:01:25.3738178+05:30 0HMTE0V7RMULN:00000001 [INF] RequestBody: "{
+  \"firstName\": \"Abhishek\",
+  \"lastName\": \"Thakur\"
+}" (6d42d084)
+2023-09-05T18:03:12.3095370+05:30 0HMTE0V7RMULN:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)" in 111121.3992ms (afa2e885)
+2023-09-05T18:03:12.3196027+05:30 0HMTE0V7RMULN:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T18:03:12.3522318+05:30 0HMTE0V7RMULN:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer(ReviewerDTO reviewerDTO)
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-09-05T18:03:12.3548911+05:30 0HMTE0V7RMULN:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /error-development
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 53
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-05T18:03:12.3550336+05:30 0HMTE0V7RMULN:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-05T18:03:12.3551244+05:30 0HMTE0V7RMULN:00000001 [INF] Route matched with "{action = \"HandleErrorDevelopment\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-05T18:03:14.7979520+05:30 0HMTE0V7RMULN:00000001 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2023-09-05T18:03:14.7982451+05:30 0HMTE0V7RMULN:00000001 [INF] Response:
+StatusCode: 500
+Content-Type: application/problem+json; charset=utf-8 (999214c4)
+2023-09-05T18:03:14.7985234+05:30 0HMTE0V7RMULN:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)" in 2443.3705ms (afa2e885)
+2023-09-05T18:03:14.7985664+05:30 0HMTE0V7RMULN:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.HandleErrorDevelopment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-05T18:03:14.7985810+05:30 0HMTE0V7RMULN:00000001 [INF] RequestBody: "" (6d42d084)
+2023-09-05T18:03:14.7986121+05:30 0HMTE0V7RMULN:00000001 [INF] ResponseBody: "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.6.1\",\"title\":\"Object reference not set to an instance of an object.\",\"status\":500,\"detail\":\"   at WebApplication_StudentAPI_115.Controllers.ReviewerController.CreateReviewer(ReviewerDTO reviewerDTO)\r\n   at lambda_method2(Closure , Object , Object[] )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\r\n   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)\",\"traceId\":\"00-af3e7c93613043691fe3b831be425978-debe872c133cf70b-00\"}" (c7a8e6fd)
+2023-09-05T18:03:14.7987632+05:30 0HMTE0V7RMULN:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Reviewer application/json 53 - 500 - application/problem+json;+charset=utf-8 113614.2438ms (791a596a)
