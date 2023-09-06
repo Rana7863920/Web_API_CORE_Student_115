@@ -15,16 +15,26 @@ namespace WebApplication_StudentAPI_115.Repository
 
         public bool CreateEmployee(int departmentId, Employee employee)
         {
-            var departmentEntity = _context.Departments.FirstOrDefault(x => x.Id == departmentId);
-
-            var employeeDepartment = new EmployeeDepartment()
+            using var transaction = _context.Database.BeginTransaction();
+            try
             {
-                Department = departmentEntity,
-                Employee = employee
-            };
+                var departmentEntity = _context.Departments.FirstOrDefault(x => x.Id == departmentId);
 
-            _context.Add(employee);
-            _context.Add(employeeDepartment);
+                var employeeDepartment = new EmployeeDepartment()
+                {
+                    Department = departmentEntity,
+                    Employee = employee
+                };
+
+                _context.Add(employee);
+                _context.Add(employeeDepartment);
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                return false;
+            }
+            
 
             return Save();
         }
