@@ -14,6 +14,7 @@ namespace WebApplication_StudentAPI_115.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<EmployeeDepartment> EmployeeDepartments { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<EmployeeDepartment>()
@@ -26,8 +27,15 @@ namespace WebApplication_StudentAPI_115.Data
                 .HasOne(d => d.Department)
                 .WithMany(ed => ed.EmployeeDepartments)
                 .HasForeignKey(d => d.DepartmentId);
+            modelBuilder.Entity<Blog>()
+            .HasMany(e => e.Posts)
+            .WithOne(e => e.Blog)
+            .HasForeignKey(e => e.BlogId)
+            .IsRequired();
         }
         public DbSet<Company> Companies { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }

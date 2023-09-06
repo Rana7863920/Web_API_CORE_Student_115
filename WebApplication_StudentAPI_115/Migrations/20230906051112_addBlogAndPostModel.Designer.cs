@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication_StudentAPI_115.Data;
 
@@ -10,9 +11,10 @@ using WebApplication_StudentAPI_115.Data;
 namespace WebApplication_StudentAPI_115.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230906051112_addBlogAndPostModel")]
+    partial class addBlogAndPostModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -117,7 +119,7 @@ namespace WebApplication_StudentAPI_115.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("EmployeeDepartments");
+                    b.ToTable("EmployeeDepartment");
                 });
 
             modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Post", b =>

@@ -30,27 +30,37 @@ namespace WebApplication_StudentAPI_115.Controllers
             return Ok(departments);
         }
         [HttpPost]
-        public IActionResult CreateDepartment([FromQuery]int empId, [FromBody]DepartmentDTO departmentCreate)
+        public IActionResult CreateDepartment([FromBody] DepartmentDTO departmentDTO)
         {
-            if(departmentCreate == null) return BadRequest(ModelState);
-
-            var department = _unitOfWork.Department.FirstorDefault(x => x.Name == departmentCreate.Name);
-            if(department != null)
+            if (departmentDTO == null) return BadRequest();
+            if (ModelState.IsValid)
             {
-                ModelState.AddModelError("", "Department already exists");
-                return StatusCode(404, ModelState);
+                var departmentMap = _mapper.Map<Department>(departmentDTO);
+                _unitOfWork.Department.Add(departmentMap);
+                _unitOfWork.Save();
             }
-
-            if(!ModelState.IsValid) return BadRequest(ModelState);
-
-            var departmentMap = _mapper.Map<Department>(departmentCreate);
-
-            if (!_unitOfWork.Department.CreateDepartment(empId, departmentMap))
+            return Ok();
+        }
+        [HttpPut]
+        public IActionResult UpdateDepartment([FromBody] DepartmentDTO departmentDTO)
+        {
+            if (departmentDTO == null) return BadRequest();
+            if (ModelState.IsValid)
             {
-                return StatusCode(500, "Something went wrong while saving");
+                var departmentMap = _mapper.Map<Department>(departmentDTO);
+                _unitOfWork.Department.Update(departmentMap);
+                _unitOfWork.Save();
             }
-
-            return Ok("Successfully Created");
+            return Ok();
+        }
+        [HttpDelete]
+        public IActionResult DeleteDepartment(int id)
+        {
+            var department = _unitOfWork.Department.Find(id);
+            if (department == null) return NotFound();
+            _unitOfWork.Department.Delete(department);
+            _unitOfWork.Save();
+            return Ok();
         }
     }
 }

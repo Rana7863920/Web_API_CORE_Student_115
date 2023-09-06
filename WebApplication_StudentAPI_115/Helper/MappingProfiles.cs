@@ -14,10 +14,10 @@ namespace WebApplication_StudentAPI_115.Helper
             CreateMap<DepartmentDTO, Department>();
             CreateMap<Company, CompanyDTO>();
             CreateMap<CompanyDTO, Company>();
-            CreateMap<Review, ReviewDTO>();
-            CreateMap<ReviewDTO, Review>();
-            CreateMap<Reviewer, ReviewerDTO>();
-            CreateMap<ReviewerDTO, Reviewer>();
+            CreateMap<Blog, BlogDTO>();
+            CreateMap<BlogDTO, Blog>();
+            CreateMap<Post, PostDTO>();
+            CreateMap<PostDTO, Post>();
         }
     }
 }

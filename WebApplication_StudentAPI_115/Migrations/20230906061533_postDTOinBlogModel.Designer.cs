@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication_StudentAPI_115.Data;
 
@@ -10,9 +11,10 @@ using WebApplication_StudentAPI_115.Data;
 namespace WebApplication_StudentAPI_115.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230906061533_postDTOinBlogModel")]
+    partial class postDTOinBlogModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,6 +22,32 @@ namespace WebApplication_StudentAPI_115.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("WebApplication_StudentAPI_115.DTOs.PostDTO", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("BlogId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BlogId");
+
+                    b.ToTable("PostDTO");
+                });
 
             modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Blog", b =>
                 {
@@ -117,7 +145,7 @@ namespace WebApplication_StudentAPI_115.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("EmployeeDepartments");
+                    b.ToTable("EmployeeDepartment");
                 });
 
             modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Post", b =>
@@ -242,6 +270,15 @@ namespace WebApplication_StudentAPI_115.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("WebApplication_StudentAPI_115.DTOs.PostDTO", b =>
+                {
+                    b.HasOne("WebApplication_StudentAPI_115.Models.Blog", null)
+                        .WithMany("PostDTO")
+                        .HasForeignKey("BlogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Company", b =>
                 {
                     b.HasOne("WebApplication_StudentAPI_115.Models.Product", "Product")
@@ -285,6 +322,8 @@ namespace WebApplication_StudentAPI_115.Migrations
 
             modelBuilder.Entity("WebApplication_StudentAPI_115.Models.Blog", b =>
                 {
+                    b.Navigation("PostDTO");
+
                     b.Navigation("Posts");
                 });
 

@@ -11,8 +11,8 @@ namespace WebApplication_StudentAPI_115.Repository.IRepository
         IDepartmentRepository Department { get; }
         ICompanyRepository Company { get; }
         IProductRepository Product { get; }
-        IReviewRepository Review { get; }
-        IReviewerRepository Reviewer { get; }
+        IBlogRepository Blog { get; }
+        IPostRepository Post { get; }
         IDbTransaction BeginTransaction();
         int Save();
     }

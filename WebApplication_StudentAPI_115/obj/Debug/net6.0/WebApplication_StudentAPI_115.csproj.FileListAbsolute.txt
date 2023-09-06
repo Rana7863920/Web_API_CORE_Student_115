@@ -94,3 +94,5 @@ D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_
 D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Serilog.Sinks.RollingFile.dll
 D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\AutoMapper.dll
 D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll

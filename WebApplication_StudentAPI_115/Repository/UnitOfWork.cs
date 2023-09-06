@@ -22,6 +22,8 @@ namespace WebApplication_StudentAPI_115.Repository
             Department = new DepartmentRepository(context);
             Company = new CompanyRepository(context);
             Product = new ProductRepository(context);
+            Blog = new BlogRepository(context);
+            Post = new PostRepository(context);
         }
 
         public IStudentRepository Student { get; private set; }
@@ -35,9 +37,9 @@ namespace WebApplication_StudentAPI_115.Repository
         public ICompanyRepository Company { get; private set; }
         public IProductRepository Product { get; private set; }
 
-        public IReviewRepository Review { get; private set; }
+        public IBlogRepository Blog { get; private set; }
 
-        public IReviewerRepository Reviewer { get; private set; }
+        public IPostRepository Post { get; private set; }
 
         public IDbTransaction BeginTransaction()
         {

@@ -68,6 +68,11 @@ builder.Services.AddControllers()
     })
     .AddXmlSerializerFormatters();
 
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
+
 builder.Services.AddHttpLogging(httpLogging =>
 {
     httpLogging.LoggingFields = HttpLoggingFields.All;
