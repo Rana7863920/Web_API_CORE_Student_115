@@ -1,0 +1,1463 @@
+2023-09-14T14:08:41.2013002+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T14:08:41.2987080+05:30  [INF] Creating key {d8e73bcd-ab13-4153-bc0b-bf14ed863702} with creation date 2023-09-14 08:38:41Z, activation date 2023-09-15 13:48:40Z, and expiration date 2023-12-13 08:38:41Z. (77afce94)
+2023-09-14T14:08:41.3082113+05:30  [INF] Writing data to file '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys\key-d8e73bcd-ab13-4153-bc0b-bf14ed863702.xml"'. (da22a8b1)
+2023-09-14T14:08:41.5556663+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T14:08:41.5557044+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T14:08:41.5613537+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T14:08:41.5614707+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T14:08:41.5615234+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T14:08:43.9895109+05:30 0HMTKVO01MCP7:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T14:08:44.7031345+05:30 0HMTKVO01MCP7:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 721.2265ms (791a596a)
+2023-09-14T14:08:44.7847819+05:30 0HMTKVO01MCP7:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T14:08:44.7864826+05:30 0HMTKVO01MCP7:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T14:08:44.8049709+05:30 0HMTKVO01MCP7:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 18.5424ms (791a596a)
+2023-09-14T14:08:45.0460207+05:30 0HMTKVO01MCP7:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 261.0390ms (791a596a)
+2023-09-14T14:08:45.1780798+05:30 0HMTKVO01MCP7:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T14:08:46.0215783+05:30 0HMTKVO01MCP7:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 843.5783ms (791a596a)
+2023-09-14T14:09:31.4514224+05:30 0HMTKVO01MCP8:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Department application/json 27 (ca22a1cb)
+2023-09-14T14:09:31.5364650+05:30 0HMTKVO01MCP8:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Department
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 27
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T14:09:32.1778660+05:30 0HMTKVO01MCP8:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T14:09:32.2147702+05:30 0HMTKVO01MCP8:00000001 [INF] Route matched with "{action = \"CreateDepartment\", controller = \"Department\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateDepartment(WebApplication_StudentAPI_115.DTOs.DepartmentDTO)" on controller "WebApplication_StudentAPI_115.Controllers.DepartmentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T14:09:33.4931075+05:30 0HMTKVO01MCP8:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T14:09:33.6395370+05:30 0HMTKVO01MCP8:00000001 [INF] RequestBody: "{
+  \"id\": 0,
+  \"name\": \"\"
+}" (6d42d084)
+2023-09-14T14:09:33.8480241+05:30 0HMTKVO01MCP8:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (605b4265)
+2023-09-14T14:09:33.8671713+05:30 0HMTKVO01MCP8:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/xml; charset=utf-8
+Content-Length: 48 (999214c4)
+2023-09-14T14:09:33.8778277+05:30 0HMTKVO01MCP8:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)" in 1653.357ms (afa2e885)
+2023-09-14T14:09:33.8779593+05:30 0HMTKVO01MCP8:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T14:09:33.8781291+05:30 0HMTKVO01MCP8:00000001 [INF] ResponseBody: "<Error><Name>Name cannot be emtpy</Name></Error>" (c7a8e6fd)
+2023-09-14T14:09:33.8874521+05:30 0HMTKVO01MCP8:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Department application/json 27 - 400 48 application/xml;+charset=utf-8 2439.9214ms (791a596a)
+2023-09-14T15:16:00.7249439+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T15:16:01.0203006+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T15:16:01.0203584+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T15:16:01.0257101+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T15:16:01.0258817+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T15:16:01.0259101+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T15:16:02.6648625+05:30 0HMTL0TJQQV03:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T15:16:03.2062906+05:30 0HMTL0TJQQV03:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 545.1982ms (791a596a)
+2023-09-14T15:16:03.2780132+05:30 0HMTL0TJQQV03:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T15:16:03.2780131+05:30 0HMTL0TJQQV03:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T15:16:03.3326500+05:30 0HMTL0TJQQV03:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 54.1036ms (791a596a)
+2023-09-14T15:16:03.4203293+05:30 0HMTL0TJQQV03:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 142.2924ms (791a596a)
+2023-09-14T15:16:03.6835949+05:30 0HMTL0TJQQV03:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T15:16:03.8513411+05:30 0HMTL0TJQQV03:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.9297ms (791a596a)
+2023-09-14T15:16:18.9993063+05:30 0HMTL0TJQQV04:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Department application/json-patch+json 27 (ca22a1cb)
+2023-09-14T15:16:19.0088022+05:30 0HMTL0TJQQV04:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Department
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 27
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T15:16:19.0962793+05:30 0HMTL0TJQQV04:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T15:16:19.1248476+05:30 0HMTL0TJQQV04:00000001 [INF] Route matched with "{action = \"CreateDepartment\", controller = \"Department\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateDepartment(WebApplication_StudentAPI_115.DTOs.DepartmentDTO)" on controller "WebApplication_StudentAPI_115.Controllers.DepartmentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T15:16:20.1919662+05:30 0HMTL0TJQQV04:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T15:16:20.3464777+05:30 0HMTL0TJQQV04:00000001 [INF] RequestBody: "{
+  \"id\": 0,
+  \"name\": \"\"
+}" (6d42d084)
+2023-09-14T15:16:20.5356571+05:30 0HMTL0TJQQV04:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T15:16:20.6137444+05:30 0HMTL0TJQQV04:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 234 (999214c4)
+2023-09-14T15:16:20.6234140+05:30 0HMTL0TJQQV04:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)" in 1490.5805ms (afa2e885)
+2023-09-14T15:16:20.6235029+05:30 0HMTL0TJQQV04:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T15:16:20.6236138+05:30 0HMTL0TJQQV04:00000001 [INF] ResponseBody: "{\"errors\":{\"Name\":[\"Name cannot be emtpy\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-5b729937e7c36a5f5b52a33a2442378b-a22b8a9190c5dcb5-00\"}" (c7a8e6fd)
+2023-09-14T15:16:20.6348450+05:30 0HMTL0TJQQV04:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Department application/json-patch+json 27 - 400 234 application/problem+json;+charset=utf-8 1635.5145ms (791a596a)
+2023-09-14T15:16:53.2280564+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T15:16:53.4742440+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T15:16:53.4743162+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T15:16:53.4807986+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T15:16:53.4809763+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T15:16:53.4810192+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T15:16:54.5027739+05:30 0HMTL0U3DQ0F9:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T15:16:55.0271293+05:30 0HMTL0U3DQ0F9:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 546.7410ms (791a596a)
+2023-09-14T15:16:55.0683498+05:30 0HMTL0U3DQ0F9:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T15:16:55.0706816+05:30 0HMTL0U3DQ0F9:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T15:16:55.0769042+05:30 0HMTL0U3DQ0F9:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 8.5833ms (791a596a)
+2023-09-14T15:16:55.1808084+05:30 0HMTL0U3DQ0F9:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 110.1044ms (791a596a)
+2023-09-14T15:16:55.2941472+05:30 0HMTL0U3DQ0F9:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T15:16:55.6715017+05:30 0HMTL0U3DQ0F9:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 377.5328ms (791a596a)
+2023-09-14T15:18:00.0926411+05:30 0HMTL0U3DQ0FA:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Department - - (ca22a1cb)
+2023-09-14T15:18:00.1112298+05:30 0HMTL0U3DQ0FA:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Department
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T15:18:00.1953638+05:30 0HMTL0U3DQ0FA:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T15:18:00.2102618+05:30 0HMTL0U3DQ0FA:00000001 [INF] Route matched with "{action = \"GetDepartment\", controller = \"Department\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetDepartment()" on controller "WebApplication_StudentAPI_115.Controllers.DepartmentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T15:18:01.2283412+05:30 0HMTL0U3DQ0FA:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T15:18:03.2117416+05:30 0HMTL0U3DQ0FA:00000001 [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Name]
+FROM [Departments] AS [d]" (0723d8ff)
+2023-09-14T15:18:03.3229866+05:30 0HMTL0U3DQ0FA:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.DTOs.DepartmentDTO, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-14T15:18:03.4678359+05:30 0HMTL0U3DQ0FA:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 78 (999214c4)
+2023-09-14T15:18:03.4798799+05:30 0HMTL0U3DQ0FA:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)" in 3260.7557ms (afa2e885)
+2023-09-14T15:18:03.4800374+05:30 0HMTL0U3DQ0FA:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.GetDepartment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T15:18:03.4832271+05:30 0HMTL0U3DQ0FA:00000001 [INF] ResponseBody: "[{\"id\":1,\"name\":\"HR\"},{\"id\":2,\"name\":\"Testing\"},{\"id\":3,\"name\":\"Development\"}]" (c7a8e6fd)
+2023-09-14T15:18:03.4914639+05:30 0HMTL0U3DQ0FA:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Department - - - 200 78 application/json;+charset=utf-8 3398.9886ms (791a596a)
+2023-09-14T15:18:14.1435592+05:30 0HMTL0U3DQ0FB:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Department application/json-patch+json 27 (ca22a1cb)
+2023-09-14T15:18:14.1464874+05:30 0HMTL0U3DQ0FB:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Department
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 27
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T15:18:14.1469119+05:30 0HMTL0U3DQ0FB:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T15:18:14.1579458+05:30 0HMTL0U3DQ0FB:00000001 [INF] Route matched with "{action = \"CreateDepartment\", controller = \"Department\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateDepartment(WebApplication_StudentAPI_115.DTOs.DepartmentDTO)" on controller "WebApplication_StudentAPI_115.Controllers.DepartmentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T15:18:14.1908967+05:30 0HMTL0U3DQ0FB:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T15:18:14.2098105+05:30 0HMTL0U3DQ0FB:00000001 [INF] RequestBody: "{
+  \"id\": 0,
+  \"name\": \"\"
+}" (6d42d084)
+2023-09-14T15:18:14.2892358+05:30 0HMTL0U3DQ0FB:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T15:18:14.3159905+05:30 0HMTL0U3DQ0FB:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 234 (999214c4)
+2023-09-14T15:18:14.3162646+05:30 0HMTL0U3DQ0FB:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)" in 158.2442ms (afa2e885)
+2023-09-14T15:18:14.3162973+05:30 0HMTL0U3DQ0FB:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T15:18:14.3163412+05:30 0HMTL0U3DQ0FB:00000001 [INF] ResponseBody: "{\"errors\":{\"Name\":[\"Name cannot be emtpy\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-8b1dd21152afda885fa8ad90a8b90786-85dbb188d88456f9-00\"}" (c7a8e6fd)
+2023-09-14T15:18:14.3164834+05:30 0HMTL0U3DQ0FB:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Department application/json-patch+json 27 - 400 234 application/problem+json;+charset=utf-8 172.9640ms (791a596a)
+2023-09-14T15:20:24.4483941+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T15:20:24.6623173+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T15:20:24.6623922+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T15:20:24.6670101+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T15:20:24.6672121+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T15:20:24.6674816+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T15:20:25.6619603+05:30 0HMTL102DP4KD:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T15:20:26.0439635+05:30 0HMTL102DP4KD:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 388.7020ms (791a596a)
+2023-09-14T15:20:26.0713413+05:30 0HMTL102DP4KD:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T15:20:26.0749325+05:30 0HMTL102DP4KD:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T15:20:26.0777008+05:30 0HMTL102DP4KD:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 6.4891ms (791a596a)
+2023-09-14T15:20:26.1030628+05:30 0HMTL102DP4KD:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.0620ms (791a596a)
+2023-09-14T15:20:26.2293749+05:30 0HMTL102DP4KD:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T15:20:26.5147407+05:30 0HMTL102DP4KD:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 285.5295ms (791a596a)
+2023-09-14T15:20:44.2047100+05:30 0HMTL102DP4KE:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Post application/json-patch+json 64 (ca22a1cb)
+2023-09-14T15:20:44.2173615+05:30 0HMTL102DP4KE:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Post
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T15:20:44.3064099+05:30 0HMTL102DP4KE:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T15:20:44.3334303+05:30 0HMTL102DP4KE:00000001 [INF] Route matched with "{action = \"CreatePost\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreatePost(WebApplication_StudentAPI_115.DTOs.PostDTO)" on controller "WebApplication_StudentAPI_115.Controllers.PostController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T15:20:45.3190628+05:30 0HMTL102DP4KE:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T15:20:45.4749211+05:30 0HMTL102DP4KE:00000001 [INF] RequestBody: "{
+  \"id\": 0,
+  \"title\": \"\",
+  \"description\": \"\",
+  \"blogId\": 0
+}" (6d42d084)
+2023-09-14T15:20:45.7250187+05:30 0HMTL102DP4KE:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T15:20:45.7961742+05:30 0HMTL102DP4KE:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 241 (999214c4)
+2023-09-14T15:20:45.8052888+05:30 0HMTL102DP4KE:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)" in 1463.2892ms (afa2e885)
+2023-09-14T15:20:45.8054155+05:30 0HMTL102DP4KE:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T15:20:45.8055978+05:30 0HMTL102DP4KE:00000001 [INF] ResponseBody: "{\"errors\":{\"Title\":[\"'Title' must not be empty.\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-2d676a9fe8b6293f872e58427f854256-0de8b413048bd29f-00\"}" (c7a8e6fd)
+2023-09-14T15:20:45.8142174+05:30 0HMTL102DP4KE:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Post application/json-patch+json 64 - 400 241 application/problem+json;+charset=utf-8 1609.4842ms (791a596a)
+2023-09-14T15:24:20.8503260+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T15:24:21.0639936+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T15:24:21.0680446+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T15:24:21.0733365+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T15:24:21.0735442+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T15:24:21.0735890+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T15:24:22.0972090+05:30 0HMTL128S7P9V:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T15:24:22.7770194+05:30 0HMTL128S7P9V:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 685.8984ms (791a596a)
+2023-09-14T15:24:22.7993959+05:30 0HMTL128S7P9V:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T15:24:22.8054793+05:30 0HMTL128S7P9V:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 6.0489ms (791a596a)
+2023-09-14T15:24:22.8116716+05:30 0HMTL128S7P9V:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T15:24:22.9075013+05:30 0HMTL128S7P9V:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 95.9988ms (791a596a)
+2023-09-14T15:24:23.0035078+05:30 0HMTL128S7P9V:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T15:24:23.2812367+05:30 0HMTL128S7P9V:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.4718ms (791a596a)
+2023-09-14T15:24:35.1125662+05:30 0HMTL128S7PA0:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Post application/json-patch+json 64 (ca22a1cb)
+2023-09-14T15:24:35.1216486+05:30 0HMTL128S7PA0:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Post
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T15:24:35.2050598+05:30 0HMTL128S7PA0:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T15:24:35.2310165+05:30 0HMTL128S7PA0:00000001 [INF] Route matched with "{action = \"CreatePost\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreatePost(WebApplication_StudentAPI_115.DTOs.PostDTO)" on controller "WebApplication_StudentAPI_115.Controllers.PostController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T15:24:36.2508631+05:30 0HMTL128S7PA0:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T15:24:36.3998895+05:30 0HMTL128S7PA0:00000001 [INF] RequestBody: "{
+  \"id\": 0,
+  \"title\": \"\",
+  \"description\": \"\",
+  \"blogId\": 0
+}" (6d42d084)
+2023-09-14T15:24:36.6446860+05:30 0HMTL128S7PA0:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T15:24:36.7385601+05:30 0HMTL128S7PA0:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 292 (999214c4)
+2023-09-14T15:24:36.7528097+05:30 0HMTL128S7PA0:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)" in 1508.6149ms (afa2e885)
+2023-09-14T15:24:36.7529220+05:30 0HMTL128S7PA0:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T15:24:36.7530796+05:30 0HMTL128S7PA0:00000001 [INF] ResponseBody: "{\"errors\":{\"Title\":[\"Title should not be empty!!\"],\"Description\":[\"Description should not be empty\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-c6e5a81a0e3078402f7c501196b4b10a-8edbffa1a288ae28-00\"}" (c7a8e6fd)
+2023-09-14T15:24:36.7653389+05:30 0HMTL128S7PA0:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Post application/json-patch+json 64 - 400 292 application/problem+json;+charset=utf-8 1652.7386ms (791a596a)
+2023-09-14T15:33:19.1854593+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T15:33:19.4037324+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T15:33:19.4038815+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T15:33:19.4090128+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T15:33:19.4091495+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T15:33:19.4091838+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T15:33:20.3957663+05:30 0HMTL17997Q26:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T15:33:20.9754812+05:30 0HMTL17997Q26:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 586.1846ms (791a596a)
+2023-09-14T15:33:20.9976351+05:30 0HMTL17997Q26:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T15:33:21.0017394+05:30 0HMTL17997Q26:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T15:33:21.0053765+05:30 0HMTL17997Q26:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 7.5333ms (791a596a)
+2023-09-14T15:33:21.0358192+05:30 0HMTL17997Q26:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.0338ms (791a596a)
+2023-09-14T15:33:21.1414022+05:30 0HMTL17997Q26:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T15:33:21.4164247+05:30 0HMTL17997Q26:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 275.0684ms (791a596a)
+2023-09-14T15:33:35.5693424+05:30 0HMTL17997Q27:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Post application/json-patch+json 64 (ca22a1cb)
+2023-09-14T15:33:35.5807235+05:30 0HMTL17997Q27:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Post
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T15:33:35.6622678+05:30 0HMTL17997Q27:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T15:33:35.6889820+05:30 0HMTL17997Q27:00000001 [INF] Route matched with "{action = \"CreatePost\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreatePost(WebApplication_StudentAPI_115.DTOs.PostDTO)" on controller "WebApplication_StudentAPI_115.Controllers.PostController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T15:33:36.6849734+05:30 0HMTL17997Q27:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T15:33:36.8312863+05:30 0HMTL17997Q27:00000001 [INF] RequestBody: "{
+  \"id\": 0,
+  \"title\": \"\",
+  \"description\": \"\",
+  \"blogId\": 0
+}" (6d42d084)
+2023-09-14T15:33:37.0691187+05:30 0HMTL17997Q27:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T15:33:37.1431639+05:30 0HMTL17997Q27:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 446 (999214c4)
+2023-09-14T15:33:37.1524240+05:30 0HMTL17997Q27:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)" in 1455.2557ms (afa2e885)
+2023-09-14T15:33:37.1525657+05:30 0HMTL17997Q27:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.PostController.CreatePost (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T15:33:37.1526909+05:30 0HMTL17997Q27:00000001 [INF] ResponseBody: "{\"errors\":{\"Title\":[\"Title should not be empty!!\",\"'Title' must be between 2 and 20 characters. You entered 0 characters.\"],\"Description\":[\"Description should not be empty\",\"'Description' must be between 10 and 100 characters. You entered 0 characters.\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-76201a2fd4d4f8de0db4305835fe353f-300bdf400f5f6eee-00\"}" (c7a8e6fd)
+2023-09-14T15:33:37.1619419+05:30 0HMTL17997Q27:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Post application/json-patch+json 64 - 400 446 application/problem+json;+charset=utf-8 1592.7184ms (791a596a)
+2023-09-14T15:42:30.2990762+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T15:42:30.5088442+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T15:42:30.5089034+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T15:42:30.5144438+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T15:42:30.5145961+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T15:42:30.5146229+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T15:42:31.5990919+05:30 0HMTL1CDHCHAS:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T15:42:32.0599124+05:30 0HMTL1CDHCHAS:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 464.1642ms (791a596a)
+2023-09-14T15:42:32.0951803+05:30 0HMTL1CDHCHAS:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T15:42:32.0988635+05:30 0HMTL1CDHCHAS:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T15:42:32.1029141+05:30 0HMTL1CDHCHAS:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 7.6513ms (791a596a)
+2023-09-14T15:42:32.1633388+05:30 0HMTL1CDHCHAS:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.3151ms (791a596a)
+2023-09-14T15:42:32.2984759+05:30 0HMTL1CDHCHAS:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T15:42:32.5612709+05:30 0HMTL1CDHCHAS:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 262.9989ms (791a596a)
+2023-09-14T15:42:43.8276539+05:30 0HMTL1CDHCHAT:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Department application/json-patch+json 27 (ca22a1cb)
+2023-09-14T15:42:43.8394434+05:30 0HMTL1CDHCHAT:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Department
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 27
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T15:42:43.9336554+05:30 0HMTL1CDHCHAT:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T15:42:43.9646263+05:30 0HMTL1CDHCHAT:00000001 [INF] Route matched with "{action = \"CreateDepartment\", controller = \"Department\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateDepartment(WebApplication_StudentAPI_115.DTOs.DepartmentDTO)" on controller "WebApplication_StudentAPI_115.Controllers.DepartmentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T15:42:44.9517594+05:30 0HMTL1CDHCHAT:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T15:42:45.1016193+05:30 0HMTL1CDHCHAT:00000001 [INF] RequestBody: "{
+  \"id\": 0,
+  \"name\": \"\"
+}" (6d42d084)
+2023-09-14T15:42:45.4521252+05:30 0HMTL1CDHCHAT:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T15:42:45.5790776+05:30 0HMTL1CDHCHAT:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 308 (999214c4)
+2023-09-14T15:42:45.5881806+05:30 0HMTL1CDHCHAT:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)" in 1615.3285ms (afa2e885)
+2023-09-14T15:42:45.5883834+05:30 0HMTL1CDHCHAT:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T15:42:45.5885647+05:30 0HMTL1CDHCHAT:00000001 [INF] ResponseBody: "{\"errors\":{\"Name\":[\"Name must not be empty\",\"'Name' must be between 2 and 20 characters. You entered 0 characters.\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-b85b0b0c332b3e86286fee0a4efd52d2-5cab49542e68e065-00\"}" (c7a8e6fd)
+2023-09-14T15:42:45.6000970+05:30 0HMTL1CDHCHAT:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Department application/json-patch+json 27 - 400 308 application/problem+json;+charset=utf-8 1772.4548ms (791a596a)
+2023-09-14T15:43:11.6048433+05:30 0HMTL1CDHCHAU:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Department application/json-patch+json 31 (ca22a1cb)
+2023-09-14T15:43:11.6108027+05:30 0HMTL1CDHCHAU:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Department
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 31
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T15:43:11.6111934+05:30 0HMTL1CDHCHAU:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T15:43:11.6113888+05:30 0HMTL1CDHCHAU:00000001 [INF] Route matched with "{action = \"CreateDepartment\", controller = \"Department\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateDepartment(WebApplication_StudentAPI_115.DTOs.DepartmentDTO)" on controller "WebApplication_StudentAPI_115.Controllers.DepartmentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T15:43:11.6446790+05:30 0HMTL1CDHCHAU:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T15:43:11.6451635+05:30 0HMTL1CDHCHAU:00000001 [INF] RequestBody: "{
+  \"id\": 0,
+  \"name\": \"2332\"
+}" (6d42d084)
+2023-09-14T15:43:11.6475090+05:30 0HMTL1CDHCHAU:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T15:43:11.6477250+05:30 0HMTL1CDHCHAU:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 240 (999214c4)
+2023-09-14T15:43:11.6478680+05:30 0HMTL1CDHCHAU:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)" in 36.4355ms (afa2e885)
+2023-09-14T15:43:11.6478954+05:30 0HMTL1CDHCHAU:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.DepartmentController.CreateDepartment (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T15:43:11.6479151+05:30 0HMTL1CDHCHAU:00000001 [INF] ResponseBody: "{\"errors\":{\"Name\":[\"Name should be all letters\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-202b6b8d985ebd5ef973db82e14953c1-4c7cd4d9c5fdf06e-00\"}" (c7a8e6fd)
+2023-09-14T15:43:11.6480165+05:30 0HMTL1CDHCHAU:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Department application/json-patch+json 31 - 400 240 application/problem+json;+charset=utf-8 43.4115ms (791a596a)
+2023-09-14T15:53:21.8538749+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T15:53:22.0687395+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T15:53:22.0687946+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T15:53:22.0746804+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T15:53:22.0748675+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T15:53:22.0748951+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T15:53:23.1357232+05:30 0HMTL1IFNFAA8:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T15:53:23.6459288+05:30 0HMTL1IFNFAA8:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 514.1890ms (791a596a)
+2023-09-14T15:53:23.6745557+05:30 0HMTL1IFNFAA8:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T15:53:23.6803475+05:30 0HMTL1IFNFAA8:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T15:53:23.6816218+05:30 0HMTL1IFNFAA8:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 7.1367ms (791a596a)
+2023-09-14T15:53:23.7145801+05:30 0HMTL1IFNFAA8:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.1704ms (791a596a)
+2023-09-14T15:53:23.8291163+05:30 0HMTL1IFNFAA8:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T15:53:24.1430021+05:30 0HMTL1IFNFAA8:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 314.8277ms (791a596a)
+2023-09-14T16:02:19.2188821+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:02:19.5329337+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:02:19.5330128+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:02:19.5380893+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:02:19.5382520+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:02:19.5382833+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:02:20.8046785+05:30 0HMTL1NFU2S41:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:02:21.5196129+05:30 0HMTL1NFU2S41:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 719.6127ms (791a596a)
+2023-09-14T16:02:21.5688547+05:30 0HMTL1NFU2S41:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:02:21.5720779+05:30 0HMTL1NFU2S41:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:02:21.5783151+05:30 0HMTL1NFU2S41:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 9.3960ms (791a596a)
+2023-09-14T16:02:22.4736197+05:30 0HMTL1NFU2S41:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 901.5204ms (791a596a)
+2023-09-14T16:02:22.5438287+05:30 0HMTL1NFU2S41:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:02:22.7067275+05:30 0HMTL1NFU2S41:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 162.9470ms (791a596a)
+2023-09-14T16:02:50.4762155+05:30 0HMTL1NFU2S42:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 77 (ca22a1cb)
+2023-09-14T16:02:50.4928770+05:30 0HMTL1NFU2S42:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 77
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:02:50.6090469+05:30 0HMTL1NFU2S42:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:02:50.6371137+05:30 0HMTL1NFU2S42:00000001 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:02:51.6653733+05:30 0HMTL1NFU2S42:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:02:51.6901166+05:30 0HMTL1NFU2S42:00000001 [INF] RequestBody: "{
+  \"name\": \"\",
+  \"address\": \"\",
+  \"email\": \"asfjsd@2sfsf\",
+  \"subject\": \"\"
+}" (6d42d084)
+2023-09-14T16:02:51.9279661+05:30 0HMTL1NFU2S42:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:02:52.0024353+05:30 0HMTL1NFU2S42:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 388 (999214c4)
+2023-09-14T16:02:52.0128903+05:30 0HMTL1NFU2S42:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 1366.4139ms (afa2e885)
+2023-09-14T16:02:52.0130133+05:30 0HMTL1NFU2S42:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:02:52.0131583+05:30 0HMTL1NFU2S42:00000001 [INF] ResponseBody: "{\"errors\":{\"Name\":[\"Name cannot be empty\",\"'Name' must be between 2 and 20 characters. You entered 0 characters.\"],\"Address\":[\"Address cannot be empty\"],\"Subject\":[\"{PropertyName cannot be empty\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-d22cb2497d68be54f09ca0b2ee93e108-ad12577a53ad8107-00\"}" (c7a8e6fd)
+2023-09-14T16:02:52.0215668+05:30 0HMTL1NFU2S42:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 77 - 400 388 application/problem+json;+charset=utf-8 1545.3743ms (791a596a)
+2023-09-14T16:03:14.2118040+05:30 0HMTL1NFU2S43:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 80 (ca22a1cb)
+2023-09-14T16:03:14.2165493+05:30 0HMTL1NFU2S43:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 80
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:03:14.2169371+05:30 0HMTL1NFU2S43:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:03:14.2172858+05:30 0HMTL1NFU2S43:00000001 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:03:14.2537813+05:30 0HMTL1NFU2S43:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:03:14.2545503+05:30 0HMTL1NFU2S43:00000001 [INF] RequestBody: "{
+  \"name\": \"456\",
+  \"address\": \"\",
+  \"email\": \"asfjsd@2sfsf\",
+  \"subject\": \"\"
+}" (6d42d084)
+2023-09-14T16:03:14.2564225+05:30 0HMTL1NFU2S43:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:03:14.2566506+05:30 0HMTL1NFU2S43:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 325 (999214c4)
+2023-09-14T16:03:14.2568052+05:30 0HMTL1NFU2S43:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 39.447ms (afa2e885)
+2023-09-14T16:03:14.2568323+05:30 0HMTL1NFU2S43:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:03:14.2568655+05:30 0HMTL1NFU2S43:00000001 [INF] ResponseBody: "{\"errors\":{\"Name\":[\"Name must contain all letters\"],\"Address\":[\"Address cannot be empty\"],\"Subject\":[\"{PropertyName cannot be empty\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-b00ed430b42a27193bf815736722e827-7ec4ff57ec0e96b8-00\"}" (c7a8e6fd)
+2023-09-14T16:03:14.2569667+05:30 0HMTL1NFU2S43:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 80 - 400 325 application/problem+json;+charset=utf-8 45.8991ms (791a596a)
+2023-09-14T16:04:05.5337127+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:04:05.7473467+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:04:05.7474221+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:04:05.7524441+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:04:05.7525931+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:04:05.7526260+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:04:06.8181987+05:30 0HMTL1OFHDPE3:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:04:08.3178134+05:30 0HMTL1OFHDPE3:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 1505.4584ms (791a596a)
+2023-09-14T16:04:08.3566233+05:30 0HMTL1OFHDPE3:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:04:08.3622280+05:30 0HMTL1OFHDPE3:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 5.5932ms (791a596a)
+2023-09-14T16:04:08.3692883+05:30 0HMTL1OFHDPE3:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:04:08.4065155+05:30 0HMTL1OFHDPE3:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.3953ms (791a596a)
+2023-09-14T16:04:08.4887463+05:30 0HMTL1OFHDPE3:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:04:08.6333869+05:30 0HMTL1OFHDPE3:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.8198ms (791a596a)
+2023-09-14T16:04:41.0885110+05:30 0HMTL1OFHDPE4:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 76 (ca22a1cb)
+2023-09-14T16:04:41.0962181+05:30 0HMTL1OFHDPE4:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 76
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:04:41.1754709+05:30 0HMTL1OFHDPE4:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:04:41.2020467+05:30 0HMTL1OFHDPE4:00000001 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:04:42.1675407+05:30 0HMTL1OFHDPE4:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:04:42.1894100+05:30 0HMTL1OFHDPE4:00000001 [INF] RequestBody: "{
+  \"name\": \"234\",
+  \"address\": \"\",
+  \"email\": \"sdfd@!34\",
+  \"subject\": \"\"
+}" (6d42d084)
+2023-09-14T16:04:42.4180597+05:30 0HMTL1OFHDPE4:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:04:42.4964496+05:30 0HMTL1OFHDPE4:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 319 (999214c4)
+2023-09-14T16:04:42.5050107+05:30 0HMTL1OFHDPE4:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 1295.0609ms (afa2e885)
+2023-09-14T16:04:42.5051189+05:30 0HMTL1OFHDPE4:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:04:42.5052610+05:30 0HMTL1OFHDPE4:00000001 [INF] ResponseBody: "{\"errors\":{\"Name\":[\"Name must contain all letters\"],\"Address\":[\"Address cannot be empty\"],\"Subject\":[\"Subject cannot be empty\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-76507c531072bf41e286b40fd7f83a40-6bad9f3a4c387266-00\"}" (c7a8e6fd)
+2023-09-14T16:04:42.5128498+05:30 0HMTL1OFHDPE4:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 76 - 400 319 application/problem+json;+charset=utf-8 1424.2958ms (791a596a)
+2023-09-14T16:06:06.5240228+05:30 0HMTL1OFHDPE5:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 85 (ca22a1cb)
+2023-09-14T16:06:06.5299371+05:30 0HMTL1OFHDPE5:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 85
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:06:06.5528474+05:30 0HMTL1OFHDPE5:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:06:06.5566544+05:30 0HMTL1OFHDPE5:00000001 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:06:06.6054724+05:30 0HMTL1OFHDPE5:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:06:06.6060793+05:30 0HMTL1OFHDPE5:00000001 [INF] RequestBody: "{
+  \"name\": \"rana\",
+  \"address\": \"fzr\",
+  \"email\": \"sdfd@!34\",
+  \"subject\": \"hindi\"
+}" (6d42d084)
+2023-09-14T16:06:07.4187087+05:30 0HMTL1OFHDPE5:00000001 [INF] Executed DbCommand ("104"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Address], [Email], [Name], [Subject])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-14T16:06:07.5083705+05:30 0HMTL1OFHDPE5:00000001 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-14T16:06:07.5085302+05:30 0HMTL1OFHDPE5:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 951.7705ms (afa2e885)
+2023-09-14T16:06:07.5085608+05:30 0HMTL1OFHDPE5:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:06:07.5086264+05:30 0HMTL1OFHDPE5:00000001 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-14T16:06:07.5105910+05:30 0HMTL1OFHDPE5:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 85 - 200 0 - 986.7267ms (791a596a)
+2023-09-14T16:06:38.2669222+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:06:38.4724465+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:06:38.4725303+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:06:38.4781924+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:06:38.4784077+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:06:38.4784435+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:06:39.6154487+05:30 0HMTL1PT4AE8J:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:06:40.0121190+05:30 0HMTL1PT4AE8J:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 409.4647ms (791a596a)
+2023-09-14T16:06:40.0555786+05:30 0HMTL1PT4AE8J:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:06:40.0604975+05:30 0HMTL1PT4AE8J:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:06:40.0675278+05:30 0HMTL1PT4AE8J:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 12.2215ms (791a596a)
+2023-09-14T16:06:40.0938653+05:30 0HMTL1PT4AE8J:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.5487ms (791a596a)
+2023-09-14T16:06:40.1804686+05:30 0HMTL1PT4AE8J:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:06:40.4005966+05:30 0HMTL1PT4AE8J:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 220.1625ms (791a596a)
+2023-09-14T16:07:07.4046121+05:30 0HMTL1PT4AE8K:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 92 (ca22a1cb)
+2023-09-14T16:07:07.4126223+05:30 0HMTL1PT4AE8K:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 92
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:07:07.5006671+05:30 0HMTL1PT4AE8K:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:07:07.5261665+05:30 0HMTL1PT4AE8K:00000001 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:07:08.5027273+05:30 0HMTL1PT4AE8K:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:07:08.5262762+05:30 0HMTL1PT4AE8K:00000001 [INF] RequestBody: "{
+  \"name\": \"thakur\",
+  \"address\": \"chd\",
+  \"email\": \"sdf@2323fsf\",
+  \"subject\": \"punjabi\"
+}" (6d42d084)
+2023-09-14T16:07:09.4840769+05:30 0HMTL1PT4AE8K:00000001 [INF] Executed DbCommand ("56"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Address], [Email], [Name], [Subject])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-14T16:07:09.5609705+05:30 0HMTL1PT4AE8K:00000001 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-14T16:07:09.5686636+05:30 0HMTL1PT4AE8K:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 2034.7961ms (afa2e885)
+2023-09-14T16:07:09.5687610+05:30 0HMTL1PT4AE8K:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:07:09.5691115+05:30 0HMTL1PT4AE8K:00000001 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-14T16:07:09.5779053+05:30 0HMTL1PT4AE8K:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 92 - 200 0 - 2173.3141ms (791a596a)
+2023-09-14T16:08:10.3079991+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:08:10.5022795+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:08:10.5023541+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:08:10.5073976+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:08:10.5075516+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:08:10.5075848+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:08:11.5193840+05:30 0HMTL1QOGALGS:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:08:11.9254922+05:30 0HMTL1QOGALGS:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 411.0266ms (791a596a)
+2023-09-14T16:08:11.9485126+05:30 0HMTL1QOGALGS:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:08:11.9542229+05:30 0HMTL1QOGALGS:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 5.6364ms (791a596a)
+2023-09-14T16:08:11.9560009+05:30 0HMTL1QOGALGS:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:08:11.9860728+05:30 0HMTL1QOGALGS:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.0580ms (791a596a)
+2023-09-14T16:08:12.0854411+05:30 0HMTL1QOGALGS:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:08:12.3038258+05:30 0HMTL1QOGALGS:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 218.4900ms (791a596a)
+2023-09-14T16:08:25.4576597+05:30 0HMTL1QOGALGT:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 89 (ca22a1cb)
+2023-09-14T16:08:25.4657530+05:30 0HMTL1QOGALGT:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 89
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:08:25.5374992+05:30 0HMTL1QOGALGT:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:08:25.5601737+05:30 0HMTL1QOGALGT:00000001 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:08:26.4764783+05:30 0HMTL1QOGALGT:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:08:26.4923311+05:30 0HMTL1QOGALGT:00000001 [INF] RequestBody: "{
+  \"name\": \"string\",
+  \"address\": \"string\",
+  \"email\": \"string\",
+  \"subject\": \"string\"
+}" (6d42d084)
+2023-09-14T16:08:26.7064253+05:30 0HMTL1QOGALGT:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:08:26.7815656+05:30 0HMTL1QOGALGT:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 252 (999214c4)
+2023-09-14T16:08:26.7908895+05:30 0HMTL1QOGALGT:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 1222.1643ms (afa2e885)
+2023-09-14T16:08:26.7911000+05:30 0HMTL1QOGALGT:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:08:26.7913274+05:30 0HMTL1QOGALGT:00000001 [INF] ResponseBody: "{\"errors\":{\"Email\":[\"'Email' is not a valid email address.\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-21081bd638bccebb79a31965c385fe41-64dff5b603bd85ad-00\"}" (c7a8e6fd)
+2023-09-14T16:08:26.8006330+05:30 0HMTL1QOGALGT:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 89 - 400 252 application/problem+json;+charset=utf-8 1343.4675ms (791a596a)
+2023-09-14T16:08:38.4697404+05:30 0HMTL1QOGALGU:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 93 (ca22a1cb)
+2023-09-14T16:08:38.4737584+05:30 0HMTL1QOGALGU:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 93
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:08:38.4741840+05:30 0HMTL1QOGALGU:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:08:38.4744360+05:30 0HMTL1QOGALGU:00000001 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:08:38.5083542+05:30 0HMTL1QOGALGU:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:08:38.5088348+05:30 0HMTL1QOGALGU:00000001 [INF] RequestBody: "{
+  \"name\": \"string\",
+  \"address\": \"string\",
+  \"email\": \"string@ddd\",
+  \"subject\": \"string\"
+}" (6d42d084)
+2023-09-14T16:08:39.3760401+05:30 0HMTL1QOGALGU:00000001 [INF] Executed DbCommand ("56"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Address], [Email], [Name], [Subject])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-14T16:08:39.4586432+05:30 0HMTL1QOGALGU:00000001 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-14T16:08:39.4590730+05:30 0HMTL1QOGALGU:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 984.426ms (afa2e885)
+2023-09-14T16:08:39.4591472+05:30 0HMTL1QOGALGU:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:08:39.4592980+05:30 0HMTL1QOGALGU:00000001 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-14T16:08:39.4603966+05:30 0HMTL1QOGALGU:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 93 - 200 0 - 990.8193ms (791a596a)
+2023-09-14T16:22:22.0406654+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:22:22.2492003+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:22:22.2492565+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:22:22.2543999+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:22:22.2545386+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:22:22.2545612+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:22:23.2776588+05:30 0HMTL22MC0NR7:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:22:23.7264875+05:30 0HMTL22MC0NR7:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 456.1310ms (791a596a)
+2023-09-14T16:22:23.7589165+05:30 0HMTL22MC0NR7:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:22:23.7627877+05:30 0HMTL22MC0NR7:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:22:23.7667157+05:30 0HMTL22MC0NR7:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 7.7788ms (791a596a)
+2023-09-14T16:22:23.7919380+05:30 0HMTL22MC0NR7:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.0736ms (791a596a)
+2023-09-14T16:22:23.8907114+05:30 0HMTL22MC0NR7:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:22:24.1123608+05:30 0HMTL22MC0NR7:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 221.8299ms (791a596a)
+2023-09-14T16:23:02.7575249+05:30 0HMTL22MC0NR8:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 93 (ca22a1cb)
+2023-09-14T16:23:02.7663874+05:30 0HMTL22MC0NR8:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 93
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:23:02.8410939+05:30 0HMTL22MC0NR8:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:23:02.8632156+05:30 0HMTL22MC0NR8:00000001 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:23:03.8370865+05:30 0HMTL22MC0NR8:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:23:03.8541519+05:30 0HMTL22MC0NR8:00000001 [INF] RequestBody: "{
+  \"name\": \"abhi\",
+  \"address\": \"mohali\",
+  \"email\": \"asd@alskdfj\",
+  \"subject\": \"english\"
+}" (6d42d084)
+2023-09-14T16:23:04.1021123+05:30 0HMTL22MC0NR8:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:23:04.1740463+05:30 0HMTL22MC0NR8:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 252 (999214c4)
+2023-09-14T16:23:04.1825430+05:30 0HMTL22MC0NR8:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 1311.6394ms (afa2e885)
+2023-09-14T16:23:04.1826539+05:30 0HMTL22MC0NR8:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:23:04.1828079+05:30 0HMTL22MC0NR8:00000001 [INF] ResponseBody: "{\"errors\":{\"Email\":[\"'Email' is not a valid email address.\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-38f179f6096d7bf04b98ae21049a3471-5557c509b95e5731-00\"}" (c7a8e6fd)
+2023-09-14T16:23:04.1923563+05:30 0HMTL22MC0NR8:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 93 - 400 252 application/problem+json;+charset=utf-8 1434.7891ms (791a596a)
+2023-09-14T16:23:16.0211369+05:30 0HMTL22MC0NR8:00000003 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 97 (ca22a1cb)
+2023-09-14T16:23:16.0229901+05:30 0HMTL22MC0NR8:00000003 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 97
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:23:16.0233514+05:30 0HMTL22MC0NR8:00000003 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:23:16.0235526+05:30 0HMTL22MC0NR8:00000003 [INF] Route matched with "{action = \"CreateStudent\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CreateStudent(WebApplication_StudentAPI_115.Models.Student)" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:23:16.0600841+05:30 0HMTL22MC0NR8:00000003 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:23:16.0608470+05:30 0HMTL22MC0NR8:00000003 [INF] RequestBody: "{
+  \"name\": \"abhi\",
+  \"address\": \"mohali\",
+  \"email\": \"asd@alskdfj.com\",
+  \"subject\": \"english\"
+}" (6d42d084)
+2023-09-14T16:23:16.7762315+05:30 0HMTL22MC0NR8:00000003 [INF] Executed DbCommand ("55"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Address], [Email], [Name], [Subject])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-14T16:23:16.8589381+05:30 0HMTL22MC0NR8:00000003 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-14T16:23:16.8590521+05:30 0HMTL22MC0NR8:00000003 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)" in 835.4307ms (afa2e885)
+2023-09-14T16:23:16.8590782+05:30 0HMTL22MC0NR8:00000003 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.CreateStudent (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:23:16.8591263+05:30 0HMTL22MC0NR8:00000003 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-14T16:23:16.8609817+05:30 0HMTL22MC0NR8:00000003 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Student application/json-patch+json 97 - 200 0 - 840.0906ms (791a596a)
+2023-09-14T16:23:23.3299867+05:30 0HMTL22MC0NR8:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Student - - (ca22a1cb)
+2023-09-14T16:23:23.3302583+05:30 0HMTL22MC0NR8:00000005 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Student
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:23:23.3322424+05:30 0HMTL22MC0NR8:00000005 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.GetStudents (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:23:23.3332921+05:30 0HMTL22MC0NR8:00000005 [INF] Route matched with "{action = \"GetStudents\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetStudents()" on controller "WebApplication_StudentAPI_115.Controllers.StudentController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:23:23.3427155+05:30 0HMTL22MC0NR8:00000005 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:23:23.5851795+05:30 0HMTL22MC0NR8:00000005 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Address], [s].[Email], [s].[Name], [s].[Subject]
+FROM [Students] AS [s]" (0723d8ff)
+2023-09-14T16:23:23.5916226+05:30 0HMTL22MC0NR8:00000005 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Student, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-14T16:23:23.5940070+05:30 0HMTL22MC0NR8:00000005 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 502 (999214c4)
+2023-09-14T16:23:23.5969749+05:30 0HMTL22MC0NR8:00000005 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.StudentController.GetStudents (WebApplication_StudentAPI_115)" in 263.6027ms (afa2e885)
+2023-09-14T16:23:23.5970247+05:30 0HMTL22MC0NR8:00000005 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.StudentController.GetStudents (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:23:23.5970599+05:30 0HMTL22MC0NR8:00000005 [INF] ResponseBody: "[{\"id\":1,\"name\":\"Rana\",\"address\":\"chd\",\"email\":\"rana@gmail.com\",\"subject\":\"\"},{\"id\":2,\"name\":\"Thakur\",\"address\":\"chd\",\"email\":\"thakur@gmail.com\",\"subject\":\"\"},{\"id\":1009,\"name\":\"rana\",\"address\":\"fzr\",\"email\":\"sdfd@!34\",\"subject\":\"hindi\"},{\"id\":1010,\"name\":\"thakur\",\"address\":\"chd\",\"email\":\"sdf@2323fsf\",\"subject\":\"punjabi\"},{\"id\":1011,\"name\":\"string\",\"address\":\"string\",\"email\":\"string@ddd\",\"subject\":\"string\"},{\"id\":1012,\"name\":\"abhi\",\"address\":\"mohali\",\"email\":\"asd@alskdfj.com\",\"subject\":\"english\"}]" (c7a8e6fd)
+2023-09-14T16:23:23.5971699+05:30 0HMTL22MC0NR8:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Student - - - 200 502 application/json;+charset=utf-8 267.3665ms (791a596a)
+2023-09-14T16:43:02.2531808+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:43:02.4548758+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:43:02.4549260+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:43:02.4596023+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:43:02.4597897+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:43:02.4598362+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:43:03.5441017+05:30 0HMTL2E7T9ID7:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:43:03.9751225+05:30 0HMTL2E7T9ID7:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 434.0849ms (791a596a)
+2023-09-14T16:43:04.0031385+05:30 0HMTL2E7T9ID7:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:43:04.0064517+05:30 0HMTL2E7T9ID7:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:43:04.0089969+05:30 0HMTL2E7T9ID7:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 5.8063ms (791a596a)
+2023-09-14T16:43:04.0600160+05:30 0HMTL2E7T9ID7:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.4889ms (791a596a)
+2023-09-14T16:43:04.1663574+05:30 0HMTL2E7T9ID7:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:43:04.4597882+05:30 0HMTL2E7T9ID7:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 293.4292ms (791a596a)
+2023-09-14T16:43:23.1847380+05:30 0HMTL2E7T9ID8:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 93 (ca22a1cb)
+2023-09-14T16:43:23.1927221+05:30 0HMTL2E7T9ID8:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 93
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:43:23.2776160+05:30 0HMTL2E7T9ID8:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:43:23.3050967+05:30 0HMTL2E7T9ID8:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:43:24.3355307+05:30 0HMTL2E7T9ID8:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:43:24.3584270+05:30 0HMTL2E7T9ID8:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"\",
+    \"password\": \"\",
+    \"confirmPassword\": \"\",
+    \"role\": \"\"
+  }
+]" (6d42d084)
+2023-09-14T16:43:28.5321495+05:30 0HMTL2E7T9ID8:00000001 [INF] Executed DbCommand ("64"ms) [Parameters=["@__userVM2_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__userVM2_UserName_0" (0723d8ff)
+2023-09-14T16:43:28.6489243+05:30 0HMTL2E7T9ID8:00000001 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'. (9afd893e)
+2023-09-14T16:43:28.7010627+05:30 0HMTL2E7T9ID8:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([ConfirmPassword], [Password], [Role], [UserName])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-14T16:43:28.7365068+05:30 0HMTL2E7T9ID8:00000001 [INF] User registered (00db87f5)
+2023-09-14T16:43:28.7478218+05:30 0HMTL2E7T9ID8:00000001 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-14T16:43:28.7557378+05:30 0HMTL2E7T9ID8:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 5442.5072ms (afa2e885)
+2023-09-14T16:43:28.7559348+05:30 0HMTL2E7T9ID8:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:43:28.7564550+05:30 0HMTL2E7T9ID8:00000001 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-14T16:43:28.7894029+05:30 0HMTL2E7T9ID8:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 93 - 200 0 - 5604.9726ms (791a596a)
+2023-09-14T16:48:02.9726964+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:48:03.1734913+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:48:03.1735603+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:48:03.1787334+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:48:03.1789224+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:48:03.1789707+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:48:04.2455963+05:30 0HMTL2H1I9G1R:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:48:04.9577117+05:30 0HMTL2H1I9G1R:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 720.7714ms (791a596a)
+2023-09-14T16:48:04.9820540+05:30 0HMTL2H1I9G1R:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:48:04.9871373+05:30 0HMTL2H1I9G1R:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:48:04.9896500+05:30 0HMTL2H1I9G1R:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 7.5801ms (791a596a)
+2023-09-14T16:48:05.0153930+05:30 0HMTL2H1I9G1R:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.1692ms (791a596a)
+2023-09-14T16:48:05.1214324+05:30 0HMTL2H1I9G1R:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:48:05.4012341+05:30 0HMTL2H1I9G1R:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 279.9749ms (791a596a)
+2023-09-14T16:48:35.6108553+05:30 0HMTL2H1I9G1S:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 93 (ca22a1cb)
+2023-09-14T16:48:35.6308692+05:30 0HMTL2H1I9G1S:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 93
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:48:35.7169152+05:30 0HMTL2H1I9G1S:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:48:35.7460324+05:30 0HMTL2H1I9G1S:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:48:36.7493298+05:30 0HMTL2H1I9G1S:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:48:36.7725842+05:30 0HMTL2H1I9G1S:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"\",
+    \"password\": \"\",
+    \"confirmPassword\": \"\",
+    \"role\": \"\"
+  }
+]" (6d42d084)
+2023-09-14T16:48:37.0396399+05:30 0HMTL2H1I9G1S:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:48:37.1111037+05:30 0HMTL2H1I9G1S:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 480 (999214c4)
+2023-09-14T16:48:37.1217200+05:30 0HMTL2H1I9G1S:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 1366.066ms (afa2e885)
+2023-09-14T16:48:37.1218817+05:30 0HMTL2H1I9G1S:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:48:37.1220724+05:30 0HMTL2H1I9G1S:00000001 [INF] ResponseBody: "{\"errors\":{\"[0].Role\":[\"Role cannot be empty\"],\"[0].Password\":[\"Password cannot be empty\",\"'Password' is not in the correct format.\"],\"[0].UserName\":[\"User Name cannot be empty\"],\"[0].ConfirmPassword\":[\"Confirm Password cannot be empty\",\"'Confirm Password' is not in the correct format.\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-47d9b478e14180fb73d75ddc9522c519-727d9bc71c150a2b-00\"}" (c7a8e6fd)
+2023-09-14T16:48:37.1312642+05:30 0HMTL2H1I9G1S:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 93 - 400 480 application/problem+json;+charset=utf-8 1521.1785ms (791a596a)
+2023-09-14T16:49:27.8081550+05:30 0HMTL2H1I9G1T:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 123 (ca22a1cb)
+2023-09-14T16:49:27.8183260+05:30 0HMTL2H1I9G1T:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 123
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:49:27.8186671+05:30 0HMTL2H1I9G1T:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:49:27.8189731+05:30 0HMTL2H1I9G1T:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:49:27.8506367+05:30 0HMTL2H1I9G1T:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:49:27.8511331+05:30 0HMTL2H1I9G1T:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"thakur222\",
+    \"password\": \"Rana@ji\",
+    \"confirmPassword\": \"rana@22\",
+    \"role\": \"student\"
+  }
+]" (6d42d084)
+2023-09-14T16:49:27.8529805+05:30 0HMTL2H1I9G1T:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:49:27.8531972+05:30 0HMTL2H1I9G1T:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 386 (999214c4)
+2023-09-14T16:49:27.8533693+05:30 0HMTL2H1I9G1T:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 34.3232ms (afa2e885)
+2023-09-14T16:49:27.8533988+05:30 0HMTL2H1I9G1T:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:49:27.8534214+05:30 0HMTL2H1I9G1T:00000001 [INF] ResponseBody: "{\"errors\":{\"[0].Password\":[\"'Password' is not in the correct format.\"],\"[0].ConfirmPassword\":[\"'Confirm Password' is not in the correct format.\",\"'Confirm Password' must be equal to 'Rana@ji'.\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-76c6ed607e0bb631c043e62b97792c39-5c4c3b3d61a5b51a-00\"}" (c7a8e6fd)
+2023-09-14T16:49:27.8535513+05:30 0HMTL2H1I9G1T:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 123 - 400 386 application/problem+json;+charset=utf-8 45.4207ms (791a596a)
+2023-09-14T16:52:25.6791009+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:52:25.8970489+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:52:25.8971311+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:52:25.9021923+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:52:25.9023811+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:52:25.9024066+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:52:26.7133330+05:30 0HMTL2JFR977L:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:52:27.1557624+05:30 0HMTL2JFR977L:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 453.7658ms (791a596a)
+2023-09-14T16:52:27.1791172+05:30 0HMTL2JFR977L:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:52:27.1863497+05:30 0HMTL2JFR977L:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 7.0696ms (791a596a)
+2023-09-14T16:52:27.1868616+05:30 0HMTL2JFR977L:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:52:27.2576246+05:30 0HMTL2JFR977L:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.5035ms (791a596a)
+2023-09-14T16:52:27.3351833+05:30 0HMTL2JFR977L:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:52:27.5427357+05:30 0HMTL2JFR977L:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 207.5407ms (791a596a)
+2023-09-14T16:53:15.6933016+05:30 0HMTL2JFR977M:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 122 (ca22a1cb)
+2023-09-14T16:53:15.7009972+05:30 0HMTL2JFR977M:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 122
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:53:15.7881835+05:30 0HMTL2JFR977M:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:53:15.8154770+05:30 0HMTL2JFR977M:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:53:16.8012081+05:30 0HMTL2JFR977M:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:53:16.8250423+05:30 0HMTL2JFR977M:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"thakur22\",
+    \"password\": \"Rana@ss\",
+    \"confirmPassword\": \"rAna@ss\",
+    \"role\": \"student\"
+  }
+]" (6d42d084)
+2023-09-14T16:53:17.0719880+05:30 0HMTL2JFR977M:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:53:17.1392376+05:30 0HMTL2JFR977M:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 556 (999214c4)
+2023-09-14T16:53:17.1485363+05:30 0HMTL2JFR977M:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 1324.6616ms (afa2e885)
+2023-09-14T16:53:17.1486239+05:30 0HMTL2JFR977M:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:53:17.1487412+05:30 0HMTL2JFR977M:00000001 [INF] ResponseBody: "{\"errors\":{\"[0].Password\":[\"Password must be 8-15 characters long and must contain a small and Capital letter along with a special character and a number\"],\"[0].ConfirmPassword\":[\"Confirm Password must be 8-15 characters long and must contain a small and Capital letter along with a special character and a number\",\"'Confirm Password' must be equal to 'Rana@ss'.\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-804bdbc73ac8089135d880faa1cacd1c-cb2fd0dabb7fcb09-00\"}" (c7a8e6fd)
+2023-09-14T16:53:17.1593408+05:30 0HMTL2JFR977M:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 122 - 400 556 application/problem+json;+charset=utf-8 1466.1356ms (791a596a)
+2023-09-14T16:55:10.3755114+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-14T16:55:10.5915308+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-14T16:55:10.5915791+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-14T16:55:10.5971531+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-14T16:55:10.5977241+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-14T16:55:10.5977618+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-14T16:55:11.5847050+05:30 0HMTL2L0TFINV:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-14T16:55:11.9982847+05:30 0HMTL2L0TFINV:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 422.1231ms (791a596a)
+2023-09-14T16:55:12.0233132+05:30 0HMTL2L0TFINV:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-14T16:55:12.0278344+05:30 0HMTL2L0TFINV:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 4.4922ms (791a596a)
+2023-09-14T16:55:12.0318821+05:30 0HMTL2L0TFINV:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-14T16:55:12.0718102+05:30 0HMTL2L0TFINV:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.0657ms (791a596a)
+2023-09-14T16:55:12.1714760+05:30 0HMTL2L0TFINV:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-14T16:55:12.3898479+05:30 0HMTL2L0TFINV:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 218.4219ms (791a596a)
+2023-09-14T16:55:35.8698012+05:30 0HMTL2L0TFIO0:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 93 (ca22a1cb)
+2023-09-14T16:55:35.8793333+05:30 0HMTL2L0TFIO0:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 93
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:55:35.9515610+05:30 0HMTL2L0TFIO0:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:55:35.9717023+05:30 0HMTL2L0TFIO0:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:55:36.9370484+05:30 0HMTL2L0TFIO0:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:55:36.9534673+05:30 0HMTL2L0TFIO0:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"\",
+    \"password\": \"\",
+    \"confirmPassword\": \"\",
+    \"role\": \"\"
+  }
+]" (6d42d084)
+2023-09-14T16:55:37.1648651+05:30 0HMTL2L0TFIO0:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:55:37.2257590+05:30 0HMTL2L0TFIO0:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 386 (999214c4)
+2023-09-14T16:55:37.2345404+05:30 0HMTL2L0TFIO0:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 1254.8517ms (afa2e885)
+2023-09-14T16:55:37.2346399+05:30 0HMTL2L0TFIO0:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:55:37.2347793+05:30 0HMTL2L0TFIO0:00000001 [INF] ResponseBody: "{\"errors\":{\"[0].Role\":[\"Role cannot be empty\"],\"[0].Password\":[\"Password cannot be empty\"],\"[0].UserName\":[\"User Name cannot be empty\"],\"[0].ConfirmPassword\":[\"Confirm Password cannot be empty\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-56a9c044b7f43952fc48017fa337d702-e0f8583477ce968a-00\"}" (c7a8e6fd)
+2023-09-14T16:55:37.2419063+05:30 0HMTL2L0TFIO0:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 93 - 400 386 application/problem+json;+charset=utf-8 1372.1892ms (791a596a)
+2023-09-14T16:56:38.6820541+05:30 0HMTL2L0TFIO1:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 123 (ca22a1cb)
+2023-09-14T16:56:38.7192929+05:30 0HMTL2L0TFIO1:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 123
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:56:38.7196559+05:30 0HMTL2L0TFIO1:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:56:38.7198478+05:30 0HMTL2L0TFIO1:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:56:38.7526383+05:30 0HMTL2L0TFIO1:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:56:38.7533678+05:30 0HMTL2L0TFIO1:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"thakur22\",
+    \"password\": \"Rana@ss\",
+    \"confirmPassword\": \"Rana@dd\",
+    \"role\": \"employee\"
+  }
+]" (6d42d084)
+2023-09-14T16:56:38.7558534+05:30 0HMTL2L0TFIO1:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:56:38.7589098+05:30 0HMTL2L0TFIO1:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 507 (999214c4)
+2023-09-14T16:56:38.7591243+05:30 0HMTL2L0TFIO1:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 39.2105ms (afa2e885)
+2023-09-14T16:56:38.7591538+05:30 0HMTL2L0TFIO1:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:56:38.7591787+05:30 0HMTL2L0TFIO1:00000001 [INF] ResponseBody: "{\"errors\":{\"[0].Password\":[\"Password must be 8-15 characters long and must contain a small and Capital letter along with a special character and a number\"],\"[0].ConfirmPassword\":[\"Confirm Password must be 8-15 characters long and must contain a small and Capital letter along with a special character and a number\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-d8e1d431dde13ebd6fb3273cb33e86ff-7981751953ca28d8-00\"}" (c7a8e6fd)
+2023-09-14T16:56:38.7592854+05:30 0HMTL2L0TFIO1:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 123 - 400 507 application/problem+json;+charset=utf-8 78.4263ms (791a596a)
+2023-09-14T16:56:51.5650048+05:30 0HMTL2L0TFIO2:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 123 (ca22a1cb)
+2023-09-14T16:56:51.5652774+05:30 0HMTL2L0TFIO2:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 123
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:56:51.5677127+05:30 0HMTL2L0TFIO2:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:56:51.5678256+05:30 0HMTL2L0TFIO2:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:56:51.5775927+05:30 0HMTL2L0TFIO2:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:56:51.5778604+05:30 0HMTL2L0TFIO2:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"thakur22\",
+    \"password\": \"Rana@12\",
+    \"confirmPassword\": \"Rana@dd\",
+    \"role\": \"employee\"
+  }
+]" (6d42d084)
+2023-09-14T16:56:51.5790737+05:30 0HMTL2L0TFIO2:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:56:51.5792486+05:30 0HMTL2L0TFIO2:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 507 (999214c4)
+2023-09-14T16:56:51.5794062+05:30 0HMTL2L0TFIO2:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 11.5378ms (afa2e885)
+2023-09-14T16:56:51.5794322+05:30 0HMTL2L0TFIO2:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:56:51.5794578+05:30 0HMTL2L0TFIO2:00000001 [INF] ResponseBody: "{\"errors\":{\"[0].Password\":[\"Password must be 8-15 characters long and must contain a small and Capital letter along with a special character and a number\"],\"[0].ConfirmPassword\":[\"Confirm Password must be 8-15 characters long and must contain a small and Capital letter along with a special character and a number\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-1c42c257984ed8d05e14f18409d36cdc-f61af422ca1317be-00\"}" (c7a8e6fd)
+2023-09-14T16:56:51.5795467+05:30 0HMTL2L0TFIO2:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 123 - 400 507 application/problem+json;+charset=utf-8 14.8168ms (791a596a)
+2023-09-14T16:57:02.7944058+05:30 0HMTL2L0TFIO3:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 123 (ca22a1cb)
+2023-09-14T16:57:02.7946486+05:30 0HMTL2L0TFIO3:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 123
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:57:02.7947828+05:30 0HMTL2L0TFIO3:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:57:02.7948748+05:30 0HMTL2L0TFIO3:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:57:02.7954324+05:30 0HMTL2L0TFIO3:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:57:02.7956340+05:30 0HMTL2L0TFIO3:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"thakur22\",
+    \"password\": \"Rana@12\",
+    \"confirmPassword\": \"Rana@34\",
+    \"role\": \"employee\"
+  }
+]" (6d42d084)
+2023-09-14T16:57:02.7964729+05:30 0HMTL2L0TFIO3:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:57:02.7966826+05:30 0HMTL2L0TFIO3:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 507 (999214c4)
+2023-09-14T16:57:02.7968449+05:30 0HMTL2L0TFIO3:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 1.9265ms (afa2e885)
+2023-09-14T16:57:02.7968819+05:30 0HMTL2L0TFIO3:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:57:02.7969200+05:30 0HMTL2L0TFIO3:00000001 [INF] ResponseBody: "{\"errors\":{\"[0].Password\":[\"Password must be 8-15 characters long and must contain a small and Capital letter along with a special character and a number\"],\"[0].ConfirmPassword\":[\"Confirm Password must be 8-15 characters long and must contain a small and Capital letter along with a special character and a number\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-a04acf4028323beb02b4f18acd4c8dd8-00240f44c8cbc50c-00\"}" (c7a8e6fd)
+2023-09-14T16:57:02.7970421+05:30 0HMTL2L0TFIO3:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 123 - 400 507 application/problem+json;+charset=utf-8 3.0819ms (791a596a)
+2023-09-14T16:57:22.5408125+05:30 0HMTL2L0TFIO4:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 125 (ca22a1cb)
+2023-09-14T16:57:22.5415614+05:30 0HMTL2L0TFIO4:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 125
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:57:22.5416619+05:30 0HMTL2L0TFIO4:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:57:22.5417274+05:30 0HMTL2L0TFIO4:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:57:22.5454513+05:30 0HMTL2L0TFIO4:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:57:22.5456854+05:30 0HMTL2L0TFIO4:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"thakur22\",
+    \"password\": \"Rana@123\",
+    \"confirmPassword\": \"Rana@345\",
+    \"role\": \"employee\"
+  }
+]" (6d42d084)
+2023-09-14T16:57:22.5473457+05:30 0HMTL2L0TFIO4:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2023-09-14T16:57:22.5475500+05:30 0HMTL2L0TFIO4:00000001 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+Content-Length: 272 (999214c4)
+2023-09-14T16:57:22.5477402+05:30 0HMTL2L0TFIO4:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 5.9714ms (afa2e885)
+2023-09-14T16:57:22.5477718+05:30 0HMTL2L0TFIO4:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:57:22.5477951+05:30 0HMTL2L0TFIO4:00000001 [INF] ResponseBody: "{\"errors\":{\"[0].ConfirmPassword\":[\"Confirm Password must be equals to Password\"]},\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"00-ef6f41d8d35864f95e7b6ce3fb41a5f4-8df8d1b72765a0f2-00\"}" (c7a8e6fd)
+2023-09-14T16:57:22.5479136+05:30 0HMTL2L0TFIO4:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 125 - 400 272 application/problem+json;+charset=utf-8 7.4644ms (791a596a)
+2023-09-14T16:57:33.6917099+05:30 0HMTL2L0TFIO5:00000001 [INF] Request starting HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 125 (ca22a1cb)
+2023-09-14T16:57:33.6922652+05:30 0HMTL2L0TFIO5:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/user/register
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json-patch+json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 125
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-14T16:57:33.6923989+05:30 0HMTL2L0TFIO5:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-14T16:57:33.6925039+05:30 0HMTL2L0TFIO5:00000001 [INF] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.ViewModels.UserVM2])" on controller "WebApplication_StudentAPI_115.Controllers.UserController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-14T16:57:33.6933065+05:30 0HMTL2L0TFIO5:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-14T16:57:33.6935920+05:30 0HMTL2L0TFIO5:00000001 [INF] RequestBody: "[
+  {
+    \"userName\": \"thakur22\",
+    \"password\": \"Rana@123\",
+    \"confirmPassword\": \"Rana@123\",
+    \"role\": \"employee\"
+  }
+]" (6d42d084)
+2023-09-14T16:57:37.3582687+05:30 0HMTL2L0TFIO5:00000001 [INF] Executed DbCommand ("171"ms) [Parameters=["@__userVM2_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConfirmPassword], [u].[Password], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__userVM2_UserName_0" (0723d8ff)
+2023-09-14T16:57:37.5164824+05:30 0HMTL2L0TFIO5:00000001 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'. (9afd893e)
+2023-09-14T16:57:37.5880485+05:30 0HMTL2L0TFIO5:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([ConfirmPassword], [Password], [Role], [UserName])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2023-09-14T16:57:37.6289057+05:30 0HMTL2L0TFIO5:00000001 [INF] User registered (00db87f5)
+2023-09-14T16:57:37.6404555+05:30 0HMTL2L0TFIO5:00000001 [INF] Executing StatusCodeResult, setting HTTP status code 200 (3fe03d2f)
+2023-09-14T16:57:37.6405459+05:30 0HMTL2L0TFIO5:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)" in 3947.9986ms (afa2e885)
+2023-09-14T16:57:37.6405662+05:30 0HMTL2L0TFIO5:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.UserController.Register (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-14T16:57:37.6405953+05:30 0HMTL2L0TFIO5:00000001 [INF] Response:
+StatusCode: 200 (999214c4)
+2023-09-14T16:57:37.6698893+05:30 0HMTL2L0TFIO5:00000001 [INF] Request finished HTTP/2 POST https://localhost:7252/api/user/register application/json-patch+json 125 - 200 0 - 3978.4057ms (791a596a)

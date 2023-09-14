@@ -1,0 +1,116 @@
+2023-09-11T12:35:07.3864813+05:30  [INF] User profile is available. Using '"C:\Users\ACER\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2023-09-11T12:35:07.8391433+05:30  [INF] Now listening on: "https://localhost:7252" (d826f4b8)
+2023-09-11T12:35:07.8392298+05:30  [INF] Now listening on: "http://localhost:5041" (d826f4b8)
+2023-09-11T12:35:07.8473208+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-09-11T12:35:07.8475177+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-09-11T12:35:07.8475431+05:30  [INF] Content root path: "D:\reactapplication\reactproject_1\WebApplication_StudentAPI_115\WebApplication_StudentAPI_115\" (b5d60022)
+2023-09-11T12:35:11.3038756+05:30 0HMTIILNACMPV:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - - (ca22a1cb)
+2023-09-11T12:35:12.2028245+05:30 0HMTIILNACMPV:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - - - 200 - text/html;charset=utf-8 906.3975ms (791a596a)
+2023-09-11T12:35:12.2695847+05:30 0HMTIILNACMPV:00000003 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2023-09-11T12:35:12.2758263+05:30 0HMTIILNACMPV:00000005 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - - (ca22a1cb)
+2023-09-11T12:35:12.2822695+05:30 0HMTIILNACMPV:00000003 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 12.4893ms (791a596a)
+2023-09-11T12:35:12.5520445+05:30 0HMTIILNACMPV:00000005 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 276.2051ms (791a596a)
+2023-09-11T12:35:12.7301438+05:30 0HMTIILNACMPV:00000007 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - (ca22a1cb)
+2023-09-11T12:35:14.9245134+05:30 0HMTIILNACMPV:00000007 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2194.5553ms (791a596a)
+2023-09-11T12:35:38.7043324+05:30 0HMTIILNACMQ0:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Blog - - (ca22a1cb)
+2023-09-11T12:35:38.7211051+05:30 0HMTIILNACMQ0:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Blog
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-11T12:35:39.3174431+05:30 0HMTIILNACMQ0:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.BlogController.GetBlogs (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-11T12:35:39.3341856+05:30 0HMTIILNACMQ0:00000001 [INF] Route matched with "{action = \"GetBlogs\", controller = \"Blog\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetBlogs()" on controller "WebApplication_StudentAPI_115.Controllers.BlogController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-11T12:35:40.7328149+05:30 0HMTIILNACMQ0:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-11T12:35:48.0884789+05:30 0HMTIILNACMQ0:00000001 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [b].[Id], [b].[Title]
+FROM [Blogs] AS [b]" (0723d8ff)
+2023-09-11T12:35:48.4862705+05:30 0HMTIILNACMQ0:00000001 [INF] Executed DbCommand ("97"ms) [Parameters=["@__blog_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[BlogId], [p].[Description], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[BlogId] = @__blog_Id_0" (0723d8ff)
+2023-09-11T12:35:48.5419985+05:30 0HMTIILNACMQ0:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__blog_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[BlogId], [p].[Description], [p].[Title]
+FROM [Posts] AS [p]
+WHERE [p].[BlogId] = @__blog_Id_0" (0723d8ff)
+2023-09-11T12:35:48.8068774+05:30 0HMTIILNACMQ0:00000001 [WRN] An error occurred while trying to create an XmlSerializer for the type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Blog, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (3e7ed175)
+System.InvalidOperationException: There was an error reflecting type 'System.Collections.Generic.List`1[WebApplication_StudentAPI_115.Models.Blog]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'WebApplication_StudentAPI_115.Models.Blog'.
+ ---> System.InvalidOperationException: Cannot serialize member 'WebApplication_StudentAPI_115.Models.Blog.Posts' of type 'System.Collections.Generic.ICollection`1[[WebApplication_StudentAPI_115.Models.Post, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member WebApplication_StudentAPI_115.Models.Blog.Posts of type System.Collections.Generic.ICollection`1[[WebApplication_StudentAPI_115.Models.Post, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2023-09-11T12:35:48.8136841+05:30 0HMTIILNACMQ0:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.Models.Blog, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-11T12:35:49.0040660+05:30 0HMTIILNACMQ0:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 446 (999214c4)
+2023-09-11T12:35:49.0194907+05:30 0HMTIILNACMQ0:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.BlogController.GetBlogs (WebApplication_StudentAPI_115)" in 9676.0426ms (afa2e885)
+2023-09-11T12:35:49.0196277+05:30 0HMTIILNACMQ0:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.BlogController.GetBlogs (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-11T12:35:49.0220371+05:30 0HMTIILNACMQ0:00000001 [INF] ResponseBody: "[{\"id\":1,\"title\":\"Murder Mystery\",\"posts\":[{\"id\":1,\"title\":\"Mysterious affair at styles\",\"description\":\"agatha christie murder mystery\",\"blogId\":1},{\"id\":2,\"title\":\"Murder of Roger Arkyord\",\"description\":\"agatha christie murder mystery\",\"blogId\":1}]},{\"id\":2,\"title\":\"Science Fiction\",\"posts\":[{\"id\":3,\"title\":\"Dune chapter 1\",\"description\":\"Frank Herbert\",\"blogId\":2},{\"id\":4,\"title\":\"Dune chapter 2\",\"description\":\"Frank Herbert\",\"blogId\":2}]}]" (c7a8e6fd)
+2023-09-11T12:35:49.0341979+05:30 0HMTIILNACMQ0:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Blog - - - 200 446 application/json;+charset=utf-8 10330.2545ms (791a596a)
+2023-09-11T12:36:23.5145173+05:30 0HMTIILNACMQ1:00000001 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Post - - (ca22a1cb)
+2023-09-11T12:36:23.5171711+05:30 0HMTIILNACMQ1:00000001 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Post
+Accept: */*
+Host: localhost:7252
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2023-09-11T12:36:23.5180850+05:30 0HMTIILNACMQ1:00000001 [INF] Executing endpoint '"WebApplication_StudentAPI_115.Controllers.PostController.GetPosts (WebApplication_StudentAPI_115)"' (500cc934)
+2023-09-11T12:36:23.5282777+05:30 0HMTIILNACMQ1:00000001 [INF] Route matched with "{action = \"GetPosts\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetPosts()" on controller "WebApplication_StudentAPI_115.Controllers.PostController" ("WebApplication_StudentAPI_115"). (122b2fdf)
+2023-09-11T12:36:23.5628992+05:30 0HMTIILNACMQ1:00000001 [INF] Entity Framework Core "6.0.18" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.18"' with options: "None" (d2805559)
+2023-09-11T12:36:23.5776874+05:30 0HMTIILNACMQ1:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[BlogId], [p].[Description], [p].[Title]
+FROM [Posts] AS [p]" (0723d8ff)
+2023-09-11T12:36:23.6211935+05:30 0HMTIILNACMQ1:00000001 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[WebApplication_StudentAPI_115.DTOs.PostDTO, WebApplication_StudentAPI_115, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2023-09-11T12:36:23.6301502+05:30 0HMTIILNACMQ1:00000001 [INF] Response:
+StatusCode: 200
+Content-Type: application/xml; charset=utf-8
+Content-Length: 652 (999214c4)
+2023-09-11T12:36:23.6306197+05:30 0HMTIILNACMQ1:00000001 [INF] Executed action "WebApplication_StudentAPI_115.Controllers.PostController.GetPosts (WebApplication_StudentAPI_115)" in 102.2377ms (afa2e885)
+2023-09-11T12:36:23.6306868+05:30 0HMTIILNACMQ1:00000001 [INF] Executed endpoint '"WebApplication_StudentAPI_115.Controllers.PostController.GetPosts (WebApplication_StudentAPI_115)"' (99874f2b)
+2023-09-11T12:36:23.6307993+05:30 0HMTIILNACMQ1:00000001 [INF] ResponseBody: "<ArrayOfPostDTO xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><PostDTO><Id>1</Id><Title>Mysterious affair at styles</Title><Description>agatha christie murder mystery</Description><BlogId>1</BlogId></PostDTO><PostDTO><Id>2</Id><Title>Murder of Roger Arkyord</Title><Description>agatha christie murder mystery</Description><BlogId>1</BlogId></PostDTO><PostDTO><Id>3</Id><Title>Dune chapter 1</Title><Description>Frank Herbert</Description><BlogId>2</BlogId></PostDTO><PostDTO><Id>4</Id><Title>Dune chapter 2</Title><Description>Frank Herbert</Description><BlogId>2</BlogId></PostDTO></ArrayOfPostDTO>" (c7a8e6fd)
+2023-09-11T12:36:23.6310468+05:30 0HMTIILNACMQ1:00000001 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Post - - - 200 652 application/xml;+charset=utf-8 116.8806ms (791a596a)

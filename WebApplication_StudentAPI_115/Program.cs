@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
+using System.Reflection;
 using System.Text;
 using WebApplication_StudentAPI_115;
 using WebApplication_StudentAPI_115.Data;
@@ -20,7 +22,16 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddFluentValidation(options =>
+    {
+        // Validate child properties and root collection elements
+        options.ImplicitlyValidateChildProperties = true;
+        options.ImplicitlyValidateRootCollectionElements = true;
+
+        // Automatic registration of validators in assembly
+        options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+    }); 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -52,21 +63,21 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddControllers()
-    .ConfigureApiBehaviorOptions(options =>
-    {
-        options.InvalidModelStateResponseFactory = context =>
-            new BadRequestObjectResult(context.ModelState)
-            {
-                ContentTypes =
-                {
-                    // using static System.Net.Mime.MediaTypeNames;
-                    Application.Json,
-                    Application.Xml
-                }
-            };
-    })
-    .AddXmlSerializerFormatters();
+//builder.Services.AddControllers()
+//    .ConfigureApiBehaviorOptions(options =>
+//    {
+//        options.InvalidModelStateResponseFactory = context =>
+//            new BadRequestObjectResult(context.ModelState)
+//            {
+//                ContentTypes =
+//                {
+//                    // using static System.Net.Mime.MediaTypeNames;
+//                    Application.Json,
+//                    Application.Xml
+//                }
+//            };
+//    })
+//    .AddXmlSerializerFormatters();
 
 builder.Services.AddControllers()
     .AddNewtonsoftJson(options =>

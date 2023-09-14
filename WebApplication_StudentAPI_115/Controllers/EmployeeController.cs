@@ -25,7 +25,7 @@ namespace WebApplication_StudentAPI_115.Controllers
         //[Authorize(Roles = "Admin,Employee")]
         //[CustomAuthorization]
         [HttpGet]
-        public async Task<IActionResult> GetAllAsync()
+        public IActionResult GetAllAsync()
         {
             var employeeList = _mapper.Map<List<EmployeeDTO>>(_unitOfWork.Employee.GetAll());
             if (employeeList == null)
